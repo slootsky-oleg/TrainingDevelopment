@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentCollectionEntity&lt;T&gt;">
-    <Position X="4.75" Y="2.75" Width="2.75" />
+    <Position X="7" Y="2.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\TrainingDevelopmentCollectionEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task">
-    <Position X="11.75" Y="2.75" Width="1.75" />
+    <Position X="16.25" Y="2.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Task.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -36,17 +36,24 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentEntity" Collapsed="true">
-    <Position X="6.25" Y="1.25" Width="2" />
+    <Position X="8.5" Y="1.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\TrainingDevelopmentEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.Operational.OperationalEntity" Collapsed="true">
-    <Position X="15.75" Y="1.75" Width="1.5" />
+    <Position X="19" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Operational\OperationalEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.TrainingDevelopment.Plans.TrainingPlan">
+    <Position X="11.75" Y="4.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAKAAAAAAAAAAAAAAAAAAAAAAQAAIAAAAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Plans\TrainingPlan.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
