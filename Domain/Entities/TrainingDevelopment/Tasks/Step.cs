@@ -7,11 +7,11 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
     {
         public IReadOnlyCollection<Step> Steps { get; set; }
 
-        public override IReadOnlyCollection<Step> GetItems()
+        public override IReadOnlyCollection<Step> GetTrainingItems()
         {
             //TODO: recursively get all steps. Handle duplicates is steps are sharable
             return Steps
-                .Select(s => s.GetItems())
+                .Select(s => s.GetTrainingItems())
                 .SelectMany(s => s)
                 .ToList();
         }

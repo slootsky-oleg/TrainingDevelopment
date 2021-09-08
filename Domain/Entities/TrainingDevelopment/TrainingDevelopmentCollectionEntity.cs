@@ -6,6 +6,6 @@ namespace Domain.Entities.TrainingDevelopment
         where T: TrainingDevelopmentEntity
     {
         //TODO: Choose a better name: Items, Trainings, TrainingItems...
-        public abstract IReadOnlyCollection<T> GetItems();
+        public abstract IReadOnlyCollection<T> GetTrainingItems();
     }
 }

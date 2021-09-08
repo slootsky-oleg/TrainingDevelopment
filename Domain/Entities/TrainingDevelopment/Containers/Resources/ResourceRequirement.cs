@@ -1,6 +1,6 @@
 ﻿using Domain.Values.Ids;
 
-namespace Domain.Entities.TrainingDevelopment.Containers
+namespace Domain.Entities.TrainingDevelopment.Containers.Resources
 {
     public class ResourceRequirement
     {
