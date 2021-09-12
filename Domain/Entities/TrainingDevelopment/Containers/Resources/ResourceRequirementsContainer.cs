@@ -2,7 +2,7 @@
 
 namespace Domain.Entities.TrainingDevelopment.Containers.Resources
 {
-    public class ResourceRequirementsEnvelop : IResourceRequirementsEnvelop
+    public class ResourceRequirementsContainer
     {
         //TODO: define AggregationStrategy
         public AggregationStrategy Strategy { get; set; }
@@ -15,5 +15,8 @@ namespace Domain.Entities.TrainingDevelopment.Containers.Resources
             //TODO: Implement collecting bottom-up and combined requirements
             throw new System.NotImplementedException();
         }
+
+        //TODO: ResourceRequirementsContainer - Primary and alternative requirements
+        //TODO: ResourceRequirementsContainer - Additional resources
     }
 }

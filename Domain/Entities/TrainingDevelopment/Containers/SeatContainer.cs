@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.TrainingDevelopment.Containers
 {
-    public class EvaluationOutline
+    public class SeatContainer
     {
         public AggregationStrategy Strategy { get; set; }
     }

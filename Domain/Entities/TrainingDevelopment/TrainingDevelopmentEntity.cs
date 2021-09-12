@@ -9,11 +9,17 @@ namespace Domain.Entities.TrainingDevelopment
     public abstract class TrainingDevelopmentEntity : BaseEntity
     {
         //TODO: Define Audience
-        public TargetAudienceContainer AudienceContainer { get; set; }
+        public TargetAudienceContainer TargetAudience { get; set; }
 
         public EvaluationOutline EvaluationOutline { get; set; }
 
         //TODO: Define ResourceRequirements
-        public IResourceRequirementsEnvelop ResourceRequirementsEnvelop { get; set; }
+        public ResourceRequirementsContainer ResourceRequirements { get; set; }
+
+        //TODO: Define CheckListContainer
+        public CheckListContainer CheckList { get; set; }
+
+        public PrerequisiteContainer Prerequisites { get; set; }
+        public SeatContainer Seats { get; set; }
     }
 }

@@ -10,12 +10,14 @@ namespace Domain.Entities
         public ExternalId ExternalId { get; set; }
         public Description Description { get; set; }
         public Name Name { get; set; }
+        
+        //TODO: consider replacing with a custom field set id inside the custom field container
         public EntityTypeId TypeId { get; set; }
 
         //TODO: Define CustomFields
-        public CustomFieldsContainer CustomFieldsContainer { get; set; }
+        public CustomFieldContainer CustomFields { get; set; }
 
         //TODO: Define Content
-        public ContentContainer ContentContainer { get; set; }
+        public ContentContainer Content { get; set; }
     }
 }
