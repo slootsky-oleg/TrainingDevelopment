@@ -63,5 +63,12 @@
       <FileName>Entities\BaseEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Domain.Entities.Operational.Events.Event">
+    <Position X="18.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAACAAAACgAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Entities\Operational\Events\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
