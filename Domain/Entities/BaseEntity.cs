@@ -19,5 +19,10 @@ namespace Domain.Entities
 
         //TODO: Define Content
         public ContentContainer Content { get; set; }
+
+        public abstract void Archive();
+        public abstract void Restore();
+
+        //TODO: Versioning
     }
 }

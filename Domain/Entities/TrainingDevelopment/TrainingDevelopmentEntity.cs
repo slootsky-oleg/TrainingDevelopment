@@ -1,7 +1,5 @@
 ﻿using Domain.Entities.TrainingDevelopment.Containers;
 using Domain.Entities.TrainingDevelopment.Containers.Resources;
-using Domain.Values;
-using Domain.Values.Ids;
 
 namespace Domain.Entities.TrainingDevelopment
 {
@@ -13,7 +11,7 @@ namespace Domain.Entities.TrainingDevelopment
 
         public EvaluationOutline EvaluationOutline { get; set; }
 
-        //TODO: Define ResourceRequirements
+        // TODO: Define ResourceRequirements
         public ResourceRequirementsContainer ResourceRequirements { get; set; }
 
         //TODO: Define CheckListContainer
@@ -21,5 +19,14 @@ namespace Domain.Entities.TrainingDevelopment
 
         public PrerequisiteContainer Prerequisites { get; set; }
         public SeatContainer Seats { get; set; }
+
+        //TODO: Add Derived qualifications
+
+        public void AddResourceRequirement(ResourceRequirement requirement)
+        {
+            //TODO: Move to Application layer. Interactors, etc.
+            //Expected signature: Validate(EntityType, feature). Throws NotSupportedException
+            //featureFlagSettings.Validate(this.GetType(), nameof(ResourceRequirements));
+        }
     }
 }

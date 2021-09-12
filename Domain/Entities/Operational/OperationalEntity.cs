@@ -2,7 +2,7 @@
 
 namespace Domain.Entities.Operational
 {
-    public class OperationalEntity : BaseEntity
+    public abstract class OperationalEntity : BaseEntity
     {
         
     }

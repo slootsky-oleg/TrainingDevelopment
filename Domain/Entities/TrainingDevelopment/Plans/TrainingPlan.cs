@@ -26,5 +26,16 @@ namespace Domain.Entities.TrainingDevelopment.Plans
                 .Concat(activities)
                 .ToList();
         }
+
+        public override void Archive()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Restore()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
