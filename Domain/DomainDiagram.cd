@@ -1,65 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentCollectionEntity&lt;T&gt;" Collapsed="true">
-    <Position X="7" Y="4" Width="2.75" />
+  <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentCollectionEntity&lt;T&gt;">
+    <Position X="7" Y="8.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\TrainingDevelopmentCollectionEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task">
-    <Position X="16.25" Y="4" Width="1.75" />
+    <Position X="16.25" Y="8.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAAACgAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Task.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.TaskCollection" Collapsed="true">
-    <Position X="8.25" Y="6" Width="2.75" />
+  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.TaskCollection">
+    <Position X="8.25" Y="10.25" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAIAAAACgAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\TaskCollection.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Step" Collapsed="true">
-    <Position X="4.75" Y="6" Width="2.75" />
+  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Step">
+    <Position X="4.75" Y="10.25" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAgAAEAAAAAAAAAACgAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Step.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Activities.Activity" Collapsed="true">
-    <Position X="1.25" Y="6" Width="2.75" />
+  <Class Name="Domain.Entities.TrainingDevelopment.Activities.Activity">
+    <Position X="1.25" Y="10.25" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAACAAIAAAACgAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Activities\Activity.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentEntity" Collapsed="true">
-    <Position X="8.75" Y="2.5" Width="2" />
+  <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentEntity">
+    <Position X="8.75" Y="5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAAAAAAAAAgiAgAAAAgAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Entities\TrainingDevelopment\TrainingDevelopmentEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.Operational.OperationalEntity" Collapsed="true">
-    <Position X="18.75" Y="2.5" Width="1.5" />
+  <Class Name="Domain.Entities.Operational.OperationalEntity">
+    <Position X="18.75" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Operational\OperationalEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Plans.TrainingPlan" Collapsed="true">
-    <Position X="11.75" Y="6" Width="3.75" />
+  <Class Name="Domain.Entities.TrainingDevelopment.Plans.TrainingPlan">
+    <Position X="11.75" Y="10.25" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAKAAAAAAAAAAAAAAAAAAAAAAQAAIAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAKAAAAAAACgAAAAAAAAAAAAAQAAIAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Plans\TrainingPlan.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.BaseEntity" Collapsed="true">
+  <Class Name="Domain.Entities.BaseEntity">
     <Position X="10" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAkAAAAAgAAAAQAAAAAAAIgAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAgAgAAAAAAACgAQABAAAAAIgAAAAAAAAAAA=</HashCode>
       <FileName>Entities\BaseEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
