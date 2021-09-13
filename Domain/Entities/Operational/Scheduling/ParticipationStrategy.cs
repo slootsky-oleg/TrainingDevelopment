@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.Operational.Events
+﻿namespace Domain.Entities.Operational.Scheduling
 {
     public enum ParticipationStrategy
     {

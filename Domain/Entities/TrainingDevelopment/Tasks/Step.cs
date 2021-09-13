@@ -13,7 +13,7 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
 
         public override IReadOnlyCollection<Step> GetTrainingItems()
         {
-            //TODO: recursively get all steps. Handle duplicates is steps are sharable
+            //recursively get all steps. Handle duplicates is steps are sharable
             return Steps
                 .Select(s => s.GetTrainingItems())
                 .SelectMany(s => s)

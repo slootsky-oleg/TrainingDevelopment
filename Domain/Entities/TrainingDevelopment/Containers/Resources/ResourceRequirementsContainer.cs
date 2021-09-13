@@ -4,10 +4,8 @@ namespace Domain.Entities.TrainingDevelopment.Containers.Resources
 {
     public class ResourceRequirementsContainer
     {
-        //TODO: define AggregationStrategy
         public AggregationStrategy Strategy { get; set; }
 
-        //TODO: 
         public IReadOnlyCollection<ResourceRequirement> OwnRequirements { get; set; }
 
         public IReadOnlyCollection<ResourceRequirement> GetRequirements()
@@ -16,7 +14,7 @@ namespace Domain.Entities.TrainingDevelopment.Containers.Resources
             throw new System.NotImplementedException();
         }
 
-        //TODO: ResourceRequirementsContainer - Primary and alternative requirements
-        //TODO: ResourceRequirementsContainer - Additional resources
+        //TODO: Primary and alternative requirements
+        //TODO: Additional resources
     }
 }

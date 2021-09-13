@@ -1,6 +1,6 @@
 ﻿using Domain.Values.Ids;
 
-namespace Domain.Entities.Operational.Events
+namespace Domain.Entities.Operational.Scheduling
 {
     public class UnitParticipant
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.Entities.Operational.Events
+namespace Domain.Entities.Operational.Scheduling
 {
     public class DateRange
     {

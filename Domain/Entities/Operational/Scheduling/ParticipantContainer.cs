@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Domain.Entities.Operational.Events
+namespace Domain.Entities.Operational.Scheduling
 {
     public class ParticipantContainer
     {

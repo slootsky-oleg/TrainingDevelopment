@@ -9,7 +9,6 @@ namespace Domain.Entities.TrainingDevelopment.Plans
     {
         public TimeSpan Duration { get; set; }
 
-        //TODO: Define objectives
         public ObjectivesContainer Objectives { get; set; }
         public IReadOnlyCollection<PlannedTraining<TrainingPlan>> Plans { get; set; }
         public IReadOnlyCollection<PlannedTraining<Activity>> Activities { get; set; }
