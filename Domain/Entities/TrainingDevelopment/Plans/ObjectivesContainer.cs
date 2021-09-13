@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.TrainingDevelopment.Plans
 {
-    public class ObjectivesEnvelop
+    public class ObjectivesContainer
     {
     }
 }

@@ -7,7 +7,7 @@
       <FileName>Entities\TrainingDevelopment\TrainingDevelopmentCollectionEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task">
+  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task_Q">
     <Position X="16.25" Y="8.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAACgAABAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -24,7 +24,7 @@
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Step">
     <Position X="4.75" Y="10.25" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAABAgAAEAAAAAAAAAACgAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQBAAAAEAAABAAAAAACgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Step.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -52,7 +52,7 @@
   <Class Name="Domain.Entities.TrainingDevelopment.Plans.TrainingPlan">
     <Position X="11.75" Y="10.25" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAKAAAAAAACgAAAAAAAAAAAAAQAAIAAAAA=</HashCode>
+      <HashCode>AAAAAACAEAAKAAAAAAACgAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Plans\TrainingPlan.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -66,7 +66,7 @@
   <Class Name="Domain.Entities.Operational.Events.Event">
     <Position X="18.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAACAAAACgAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAAACAAAMCgAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Entities\Operational\Events\Event.cs</FileName>
     </TypeIdentifier>
   </Class>

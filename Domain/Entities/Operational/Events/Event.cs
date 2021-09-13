@@ -1,4 +1,5 @@
 ﻿using Domain.Entities.TrainingDevelopment.Containers;
+using Domain.Values.Ids;
 
 namespace Domain.Entities.Operational.Events
 {
@@ -6,7 +7,11 @@ namespace Domain.Entities.Operational.Events
     {
         //TODO: extract to ParticipableEntity
         public DateRange DateRange { get; set; }
+        public LocationId LocationId { get; set; }
         public ParticipantContainer Participants { get; set; }
+
+        //TODO: Is relevant for event? May we move it to the Base entity?
+        public PrerequisiteContainer Prerequisites_Q { get; set; }
 
         //TODO: Define allocated resources
         public ResourceContainer Resources { get; set; }

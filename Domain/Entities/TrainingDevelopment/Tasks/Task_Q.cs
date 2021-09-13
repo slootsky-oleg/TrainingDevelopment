@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace Domain.Entities.TrainingDevelopment.Tasks
 {
+    //Should we define Collective and Individual entities?
     public class Task: TrainingDevelopmentEntity
     {
         public IReadOnlyCollection<Step> Steps { get; set; }
