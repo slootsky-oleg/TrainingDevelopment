@@ -11,8 +11,7 @@ namespace Domain.Entities.TrainingDevelopment
 
         public CheckListContainer CheckList { get; set; }
 
-        public PrerequisiteContainer Prerequisites { get; set; }
-        public SeatContainer Seats { get; set; }
+        public SeatContainer Seats_Q { get; set; }
 
         //TODO: Add Derived qualifications
 
