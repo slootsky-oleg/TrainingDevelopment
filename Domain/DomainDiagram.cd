@@ -1,70 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentCollectionEntity&lt;T&gt;">
-    <Position X="9.25" Y="8.25" Width="2.75" />
+    <Position X="11.5" Y="8.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\TrainingDevelopmentCollectionEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task_Q">
-    <Position X="18.5" Y="8.25" Width="1.75" />
+    <Position X="20.75" Y="8.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAACgAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Task_Q.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.TaskCollection">
-    <Position X="10.5" Y="10.25" Width="2.75" />
+    <Position X="12.75" Y="10.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAAAAIAAAACgAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\TaskCollection.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Step">
-    <Position X="7" Y="10.25" Width="2.75" />
+    <Position X="9.25" Y="10.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAQBAAAAEAAABAAAAAACgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Step.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Activities.Activity">
-    <Position X="3.5" Y="10.25" Width="2.75" />
+    <Position X="5.75" Y="10.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAACAAIAAAACgAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Activities\Activity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentEntity">
-    <Position X="11" Y="5" Width="2" />
+    <Position X="13.25" Y="5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgiAgAAAAgAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Entities\TrainingDevelopment\TrainingDevelopmentEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Plans.TrainingPlan">
-    <Position X="14" Y="10.25" Width="3.75" />
+    <Position X="16.25" Y="10.25" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAACAEAAKAAAAAAACgAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Plans\TrainingPlan.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.BaseEntity">
-    <Position X="9.75" Y="1" Width="2" />
+    <Position X="12" Y="1" Width="2" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAgAgAQAAAgECgAQABAAAAAIAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\BaseEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.Operational.Scheduling.SchedulableEntity">
-    <Position X="1.25" Y="5" Width="1.5" />
+    <Position X="3.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAIAAAAACAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Entities\Operational\Scheduling\SchedulableEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.Operational.Events.Event">
-    <Position X="1.25" Y="7.5" Width="1.5" />
+    <Position X="3.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Operational\Events\Event.cs</FileName>
