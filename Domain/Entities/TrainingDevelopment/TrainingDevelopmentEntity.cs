@@ -3,7 +3,7 @@ using Domain.Entities.TrainingDevelopment.Containers.Resources;
 
 namespace Domain.Entities.TrainingDevelopment
 {
-    public abstract class TrainingDevelopmentEntity : BaseEntity
+    public abstract class TrainingDevelopmentEntity : BaseEntity_Q
     {
         public TargetAudienceContainer TargetAudience { get; set; }
 

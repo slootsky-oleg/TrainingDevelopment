@@ -6,7 +6,6 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
     //Should we define Collective and Individual entities?
     public class Task_Q: TrainingDevelopmentEntity
     {
-        public IReadOnlyCollection<Step> Steps { get; set; }
         public IReadOnlyCollection<RelatedTask> RelatedTasks{ get; set; }
         
         public override void Archive()
@@ -18,5 +17,5 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
         {
             throw new System.NotImplementedException();
         }
-    }
+    }//Should we define Collective and Individual entities?
 }

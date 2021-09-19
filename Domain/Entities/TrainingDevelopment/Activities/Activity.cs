@@ -21,15 +21,5 @@ namespace Domain.Entities.TrainingDevelopment.Activities
                 .Concat(Tasks)
                 .ToList();
         }
-
-        public override void Archive()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Restore()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

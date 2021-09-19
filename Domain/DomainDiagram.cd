@@ -1,55 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentCollectionEntity&lt;T&gt;">
-    <Position X="11.5" Y="8.25" Width="2.75" />
+    <Position X="11.5" Y="8" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\TrainingDevelopmentCollectionEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task_Q">
-    <Position X="20.75" Y="8.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAACgAABAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Tasks\Task_Q.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.TaskCollection">
-    <Position X="12.75" Y="10.25" Width="2.75" />
+    <Position X="12.75" Y="10" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAAAIAAAACgAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\TaskCollection.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Step">
-    <Position X="9.25" Y="10.25" Width="2.75" />
-    <TypeIdentifier>
-      <HashCode>AAQBAAAAEAAABAAAAAACgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Tasks\Step.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Activities.Activity">
-    <Position X="5.75" Y="10.25" Width="2.75" />
+    <Position X="5.75" Y="10" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAACAAIAAAACgAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAACAAIAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Activities\Activity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.TrainingDevelopmentEntity">
     <Position X="13.25" Y="5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgiAgAAAAgAAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgAAgAAAAgAAAAAAAAAAAAAAABIA=</HashCode>
       <FileName>Entities\TrainingDevelopment\TrainingDevelopmentEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Plans.TrainingPlan">
-    <Position X="16.25" Y="10.25" Width="3.75" />
+    <Position X="16.25" Y="10" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAEAAKAAAAAAACgAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <HashCode>AAAAAACAEAAKAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Plans\TrainingPlan.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.BaseEntity">
+  <Class Name="Domain.Entities.BaseEntity_Q">
     <Position X="12" Y="1" Width="2" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAgAgAQAAAgECgAQABAAAAAIAAAAAAAAAAAA=</HashCode>
@@ -68,6 +54,27 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Operational\Events\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task_Q" Collapsed="true">
+    <Position X="20.75" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACgAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Tasks\Task_Q.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Atis.Entities.TrainingDevelopment.AtisStep">
+    <Position X="9.25" Y="10" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAEAAABAAAAAACgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Atis\Entities\TrainingDevelopment\AtisStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Atis.Entities.TrainingDevelopment.AtisTask">
+    <Position X="21" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Atis\Entities\TrainingDevelopment\AtisTask.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -3,7 +3,7 @@
 namespace Domain.Entities.Operational.Scheduling
 {
     //TODO: Find a better name
-    public abstract class SchedulableEntity : BaseEntity 
+    public abstract class SchedulableEntity : BaseEntity_Q
     {
         public DateRange DateRange { get; set; }
         public LocationId LocationId { get; set; }

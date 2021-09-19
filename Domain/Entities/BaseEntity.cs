@@ -5,7 +5,7 @@ using Domain.Values.Ids;
 
 namespace Domain.Entities
 {
-    public abstract class BaseEntity
+    public abstract class BaseEntity_Q
     {
         public GuidId Id { get; set; }
         public ExternalId ExternalId { get; set; }
@@ -25,8 +25,31 @@ namespace Domain.Entities
 
         public ContentContainer_Q Content { get; set; }
 
-        public abstract void Archive();
-        public abstract void Restore();
+        
+        #region deactivation
+        //Sounds like state machine that can be handled only with two methods  - push down / up
+
+        public virtual void Activate_Q()
+        {
+        }
+
+        public virtual void Deprecate_Q()
+        {
+        }
+
+        public virtual void Obsolete_Q()
+        {
+        }
+        
+        public virtual void Archive_Q()
+        {
+        }
+        #endregion
+
+        // //Restore to a specific step or always to a previous. Consider using dedicated methods
+        // public virtual void Restore_Q()
+        // {
+        // }
 
         //TODO: Versioning
     }
