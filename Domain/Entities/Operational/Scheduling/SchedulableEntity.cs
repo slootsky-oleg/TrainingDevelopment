@@ -27,8 +27,10 @@ namespace Domain.Entities.Operational.Scheduling
         public ContentContainer_Q Content { get; set; }
 
         
-        #region deactivation
-        //Sounds like state machine that can be handled only with two methods  - push down / up
+        #region availability
+        
+        //Sounds like state machine that can be handled with only two methods  - push down / up
+        //Active-Deprecated-Obsolete-Archived
 
         public virtual void Activate_Q()
         {

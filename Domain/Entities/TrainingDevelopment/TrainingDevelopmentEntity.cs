@@ -25,9 +25,10 @@ namespace Domain.Entities.TrainingDevelopment
 
         public ContentContainer_Q Content { get; set; }
 
-        
         #region availability
+
         //Sounds like state machine that can be handled with only two methods  - push down / up
+        //Active-Deprecated-Obsolete-Archived
         public virtual void Activate_Q()
         {
         }
@@ -62,7 +63,7 @@ namespace Domain.Entities.TrainingDevelopment
 
         //TODO: Add Derived qualifications
 
-        public void AddResourceRequirement(ResourceRequirement requirement)
+        public virtual void AddResourceRequirement(ResourceRequirement requirement)
         {
             //TODO: Move to Application layer. Interactors, etc.
             //Expected signature: Validate(EntityType, feature). Throws NotSupportedException
