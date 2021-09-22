@@ -35,13 +35,6 @@
       <FileName>Entities\TrainingDevelopment\Plans\TrainingPlan.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.Operational.Events.Event">
-    <Position X="3.5" Y="20.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Entities\Operational\Events\Event.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task_Q" Collapsed="true">
     <Position X="19.25" Y="10.5" Width="1.75" />
     <TypeIdentifier>
@@ -52,7 +45,7 @@
   <Class Name="Domain.Atis.Entities.TrainingDevelopment.AtisStep">
     <Position X="7.75" Y="12.25" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAQBAAAAEAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQBAAAAEAAABAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>Atis\Entities\TrainingDevelopment\AtisStep.cs</FileName>
     </TypeIdentifier>
   </Class>
