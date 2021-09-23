@@ -10,6 +10,7 @@ namespace Domain.Atis.Entities.TrainingDevelopment
         //This may simplify validations (only 5 leader steps)
         public bool IsLeader_Q { get; set; }
         public bool IsCritical_Q { get; set; }
+        //TODO: Conditions: weather, etc
         public IReadOnlyCollection<AtisStep> Steps { get; set; }
 
         public override IReadOnlyCollection<AtisStep> GetTrainingItems()
