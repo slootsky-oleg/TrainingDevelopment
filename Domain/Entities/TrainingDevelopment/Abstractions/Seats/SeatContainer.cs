@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Containers
+﻿namespace Domain.Entities.TrainingDevelopment.Abstractions.Seats
 {
     public class SeatContainer
     {

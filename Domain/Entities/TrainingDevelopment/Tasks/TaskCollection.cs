@@ -1,7 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Domain.Entities.TrainingDevelopment.Containers;
-using Domain.Entities.TrainingDevelopment.Containers.Resources;
+using Domain.Entities.TrainingDevelopment.Abstractions;
+using Domain.Entities.TrainingDevelopment.Abstractions.Evaluation;
+using Domain.Entities.TrainingDevelopment.Abstractions.Prerequisities;
+using Domain.Entities.TrainingDevelopment.Abstractions.RelatedEntities;
+using Domain.Entities.TrainingDevelopment.Abstractions.ResourceRequirements;
+using Domain.Entities.TrainingDevelopment.Abstractions.Seats;
+using Domain.Entities.TrainingDevelopment.Abstractions.TargetAudience;
 
 namespace Domain.Entities.TrainingDevelopment.Tasks
 {

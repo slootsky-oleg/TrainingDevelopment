@@ -1,8 +1,9 @@
-﻿using Domain.Entities.TrainingDevelopment.Containers;
+﻿using Domain.Entities.TrainingDevelopment.Abstractions.Content;
+using Domain.Entities.TrainingDevelopment.Abstractions.CustomFields;
 using Domain.Values;
 using Domain.Values.Ids;
 
-namespace Domain.Entities.TrainingDevelopment
+namespace Domain.Entities.TrainingDevelopment.Abstractions
 {
     public abstract class TrainingDevelopmentEntity : ITrainingDevelopmentEntity, IHasCustomFields, IHasContent
     {

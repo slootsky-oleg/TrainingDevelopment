@@ -1,83 +1,9 @@
-﻿using System.Collections.Generic;
-using Domain.Entities.TrainingDevelopment.Containers;
-using Domain.Entities.TrainingDevelopment.Containers.Resources;
-using Domain.Values;
-using Domain.Values.Ids;
-
-namespace Domain.Entities.TrainingDevelopment
+﻿namespace Domain.Entities.TrainingDevelopment.Abstractions.RelatedEntities
 {
-    public interface ITrainingDevelopmentEntity
-    {
-        GuidId Id { get; set; }
-        ExternalId ExternalId { get; set; }
-        Description Description { get; set; }
-        Name Name { get; set; }
-    }
-
-    public interface IHasPrerequisites
-    {
-        PrerequisiteContainer Prerequisites_Q { get; }
-    }
-
-    public interface IHasResourceRequirements
-    {
-        ResourceRequirementsContainer ResourceRequirements_Q { get; }
-    }
-
-    public interface IHasCustomFields
-    {
-        CustomFieldContainer CustomFields { get; }
-    }
-
-    public interface IHasContent
-    {
-        ContentContainer_Q Content_Q { get; }
-    }
-
-    public interface IHasTargetAudience
-    {
-        TargetAudienceContainer TargetAudience { get; }
-    }
-
-    public interface IHasSeats
-    {
-        SeatContainer Seats_Q { get; }
-    }
-
-    public interface IHasRelatedEntities<T> 
-        where T: ITrainingDevelopmentEntity
-    {
-        public RelatedEntityContainer<T> RelatedEntities_Q { get; }
-    }
-
     public class RelatedEntityContainer<T>: IHasRelatedEntities<T> 
         where T: ITrainingDevelopmentEntity
     {
         public RelatedEntityContainer<T> RelatedEntities_Q { get; }
-    }
-
-    public interface ITrainingCollection<T>
-        where T: ITrainingDevelopmentEntity
-    {
-        public IReadOnlyCollection<T> GetTrainingItems_Q();
-    }
-
-    public interface IHasCheckList
-    {
-        CheckListContainer CheckList { get; }
-    }
-
-    public interface IEvaluable
-    {
-        EvaluationOutline EvaluationOutline_Q { get; }
-    }
-
-    public interface IArchivable
-    {
-        void Activate_Q();
-        void Deprecate_Q();
-        void Obsolete_Q();
-        void Archive_Q();
     }
 
     // public abstract class TrainingDevelopmentEntity_old : ITrainingDevelopmentEntity,

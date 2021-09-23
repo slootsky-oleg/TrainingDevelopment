@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Domain.Entities.TrainingDevelopment.Containers.Resources
+namespace Domain.Entities.TrainingDevelopment.Abstractions.ResourceRequirements
 {
     public class ResourceRequirementsContainer
     {

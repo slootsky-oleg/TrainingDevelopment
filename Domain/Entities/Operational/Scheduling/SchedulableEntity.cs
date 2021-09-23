@@ -1,5 +1,7 @@
-﻿using Domain.Entities.TrainingDevelopment.Containers;
-using Domain.Entities.TrainingDevelopment.Containers.Resources;
+﻿using Domain.Entities.TrainingDevelopment.Abstractions.Content;
+using Domain.Entities.TrainingDevelopment.Abstractions.CustomFields;
+using Domain.Entities.TrainingDevelopment.Abstractions.Prerequisities;
+using Domain.Entities.TrainingDevelopment.Abstractions.ResourceRequirements;
 using Domain.Values;
 using Domain.Values.Ids;
 

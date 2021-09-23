@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Plans
+﻿using Domain.Entities.TrainingDevelopment.Abstractions;
+
+namespace Domain.Entities.TrainingDevelopment.Plans
 {
     public class PlannedTraining<T> where T: ITrainingDevelopmentEntity
     {
