@@ -24,9 +24,9 @@ namespace Domain.Entities.TrainingDevelopment.Plans
     {
         public TimeSpan Duration { get; set; }
 
-        public ObjectivesContainer Objectives { get; set; }
-        public IReadOnlyCollection<PlannedTraining<TrainingPlan>> Plans { get; set; }
-        public IReadOnlyCollection<PlannedTraining<Activity>> Activities { get; set; }
+        public ObjectivesContainer Objectives_Q { get; set; }
+        public IReadOnlyCollection<PlannedTraining<TrainingPlan>> Plans_Q { get; set; }
+        public IReadOnlyCollection<PlannedTraining<Activity>> Activities_Q { get; set; }
 
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }
@@ -56,11 +56,11 @@ namespace Domain.Entities.TrainingDevelopment.Plans
 
         public IReadOnlyCollection<Task_Q> GetTrainingItems_Q()
         {
-            var plans = Plans
+            var plans = Plans_Q
                 .Select(p => p.Training.GetTrainingItems_Q())
                 .SelectMany(p => p);
 
-            var activities = Activities
+            var activities = Activities_Q
                 .Select(a => a.Training.GetTrainingItems_Q())
                 .SelectMany(a => a);
 

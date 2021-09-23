@@ -5,6 +5,6 @@ namespace Domain.Atis.Entities.TrainingDevelopment
 {
     public class AtisTask: Task_Q
     {
-        public IReadOnlyCollection<AtisStep> Steps { get; set; }
+        public IReadOnlyCollection<AtisStep> Steps_Q { get; set; }
     }
 }

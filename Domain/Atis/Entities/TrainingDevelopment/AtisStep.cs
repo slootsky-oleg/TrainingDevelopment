@@ -26,7 +26,7 @@ namespace Domain.Atis.Entities.TrainingDevelopment
         public bool IsCritical_Q { get; set; }
         //TODO: Conditions: weather, etc
 
-        public IReadOnlyCollection<AtisStep> Steps { get; set; }
+        public IReadOnlyCollection<AtisStep> Steps_Q { get; set; }
 
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }
@@ -37,7 +37,7 @@ namespace Domain.Atis.Entities.TrainingDevelopment
         public IReadOnlyCollection<Task_Q> GetTrainingItems_Q()
         {
             //recursively get all steps. Handle duplicates is steps are sharable
-            return Steps
+            return Steps_Q
                 .Select(s => s.GetTrainingItems_Q())
                 .SelectMany(s => s)
                 .ToList();
