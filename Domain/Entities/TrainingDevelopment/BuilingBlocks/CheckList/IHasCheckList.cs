@@ -2,6 +2,6 @@
 {
     public interface IHasCheckList
     {
-        CheckListContainer CheckList { get; }
+        CheckListContainer CheckList_Q { get; }
     }
 }

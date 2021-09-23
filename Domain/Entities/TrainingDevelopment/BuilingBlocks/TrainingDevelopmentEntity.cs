@@ -14,7 +14,7 @@ namespace Domain.Entities.TrainingDevelopment.BuilingBlocks
         public Name Name { get; set; }
 
         //Common for all training dev entities
-        public CustomFieldContainer CustomFields { get; }
+        public CustomFieldContainer CustomFields_Q { get; }
         public ContentContainer_Q Content_Q { get; }
     }
 
