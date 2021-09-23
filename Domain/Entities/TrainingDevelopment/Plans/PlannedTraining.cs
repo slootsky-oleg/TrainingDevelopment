@@ -1,4 +1,4 @@
-﻿using Domain.Entities.TrainingDevelopment.Abstractions;
+﻿using Domain.Entities.TrainingDevelopment.BuilingBlocks;
 
 namespace Domain.Entities.TrainingDevelopment.Plans
 {

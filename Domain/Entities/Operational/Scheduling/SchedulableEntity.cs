@@ -1,7 +1,7 @@
-﻿using Domain.Entities.TrainingDevelopment.Abstractions.Content;
-using Domain.Entities.TrainingDevelopment.Abstractions.CustomFields;
-using Domain.Entities.TrainingDevelopment.Abstractions.Prerequisities;
-using Domain.Entities.TrainingDevelopment.Abstractions.ResourceRequirements;
+﻿using Domain.Entities.TrainingDevelopment.BuilingBlocks.Content;
+using Domain.Entities.TrainingDevelopment.BuilingBlocks.CustomFields;
+using Domain.Entities.TrainingDevelopment.BuilingBlocks.Prerequisities;
+using Domain.Entities.TrainingDevelopment.BuilingBlocks.ResourceRequirements;
 using Domain.Values;
 using Domain.Values.Ids;
 
