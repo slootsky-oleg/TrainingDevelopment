@@ -43,7 +43,7 @@
   <Class Name="Domain.Atis.Entities.TrainingDevelopment.AtisStep">
     <Position X="8.75" Y="5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAQAACIAAAAABQAAAAUAAAAAAAAAAAAAAAABAAAABAA=</HashCode>
+      <HashCode>AAQAACIAAAAABQAEAAUAAAAAAAAAAAAAAAABAAAABAA=</HashCode>
       <FileName>Atis\Entities\TrainingDevelopment\AtisStep.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -53,6 +53,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Atis\Entities\TrainingDevelopment\AtisTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.TrainingDevelopment.EvaluationForms.EvaluationForm_Q">
+    <Position X="16.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\EvaluationForms\EvaluationForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
