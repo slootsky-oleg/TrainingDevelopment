@@ -2,6 +2,7 @@
 using System.Linq;
 using Domain.Entities.TrainingDevelopment;
 using Domain.Entities.TrainingDevelopment.BuilingBlocks;
+using Domain.Entities.TrainingDevelopment.BuilingBlocks.Conditions;
 using Domain.Entities.TrainingDevelopment.BuilingBlocks.Evaluation;
 using Domain.Entities.TrainingDevelopment.BuilingBlocks.Prerequisities;
 using Domain.Entities.TrainingDevelopment.BuilingBlocks.ResourceRequirements;
@@ -14,6 +15,7 @@ namespace Domain.Atis.Entities.TrainingDevelopment
     public class AtisStep : 
         TrainingDevelopmentEntity,
         IEvaluable,
+        IHasConditions,
         IHasPrerequisites,
         IHasResourceRequirements,
         IHasSeats,
@@ -33,6 +35,8 @@ namespace Domain.Atis.Entities.TrainingDevelopment
         public ResourceRequirementsContainer ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
+        public ExecutionConditionContainer ConditionContainerQ { get; }
+
 
         public IReadOnlyCollection<Task_Q> GetTrainingItems_Q()
         {

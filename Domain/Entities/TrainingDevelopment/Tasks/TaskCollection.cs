@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Domain.Entities.TrainingDevelopment.BuilingBlocks;
+using Domain.Entities.TrainingDevelopment.BuilingBlocks.Conditions;
 using Domain.Entities.TrainingDevelopment.BuilingBlocks.Evaluation;
 using Domain.Entities.TrainingDevelopment.BuilingBlocks.Prerequisities;
 using Domain.Entities.TrainingDevelopment.BuilingBlocks.RelatedEntities;
@@ -14,6 +15,7 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
         TrainingDevelopmentEntity,
         IEvaluable,
         IHasPrerequisites,
+        IHasConditions,
         IHasResourceRequirements,
         IHasSeats,
         IHasTargetAudience,
@@ -29,7 +31,9 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
         public RelatedEntityContainer<Task_Q> RelatedEntities_Q { get; }
-        
+        public ExecutionConditionContainer ConditionContainerQ { get; }
+
+
         public void Activate_Q()
         {
             throw new System.NotImplementedException();
