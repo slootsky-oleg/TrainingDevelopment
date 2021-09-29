@@ -31,7 +31,7 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
         public RelatedEntityContainer<Task_Q> RelatedEntities_Q { get; }
-        public ExecutionConditionContainer ConditionContainerQ { get; }
+        public ExecutionConditionContainer Conditions_Q { get; }
 
 
         public void Activate_Q()

@@ -35,7 +35,7 @@ namespace Domain.Atis.Entities.TrainingDevelopment
         public ResourceRequirementsContainer ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
-        public ExecutionConditionContainer ConditionContainerQ { get; }
+        public ExecutionConditionContainer Conditions_Q { get; }
 
 
         public IReadOnlyCollection<Task_Q> GetTrainingItems_Q()

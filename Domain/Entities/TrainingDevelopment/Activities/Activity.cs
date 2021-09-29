@@ -32,7 +32,7 @@ namespace Domain.Entities.TrainingDevelopment.Activities
         public ResourceRequirementsContainer ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
-        public ExecutionConditionContainer ConditionContainerQ { get; }
+        public ExecutionConditionContainer Conditions_Q { get; }
 
 
         public void Activate_Q()

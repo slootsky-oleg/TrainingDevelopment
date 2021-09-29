@@ -25,7 +25,7 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
     {
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }
-        public ExecutionConditionContainer ConditionContainerQ { get; }
+        public ExecutionConditionContainer Conditions_Q { get; }
         public ResourceRequirementsContainer ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
