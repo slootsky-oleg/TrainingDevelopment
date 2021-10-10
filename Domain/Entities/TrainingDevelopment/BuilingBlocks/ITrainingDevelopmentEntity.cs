@@ -5,9 +5,9 @@ namespace Domain.Entities.TrainingDevelopment.BuilingBlocks
 {
     public interface ITrainingDevelopmentEntity
     {
-        GuidId Id { get; set; }
-        ExternalId ExternalId { get; set; }
-        Description Description { get; set; }
-        Name Name { get; set; }
+        GuidId Id { get; }
+        ExternalId ExternalId { get; }
+        Description Description { get; }
+        Name Name { get; }
     }
 }
