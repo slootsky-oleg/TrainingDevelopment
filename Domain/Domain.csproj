@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\TrainingDevelopment\Behaviours\Containers\Resources\" />
+    <Compile Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
+    <EmbeddedResource Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
+    <None Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
   </ItemGroup>
 
 </Project>

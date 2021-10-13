@@ -1,4 +1,4 @@
-﻿using Domain.Entities.TrainingDevelopment.Behaviours;
+﻿using Domain.Entities.TrainingDevelopment.Behaviour;
 
 namespace Domain.Entities.TrainingDevelopment.Plans
 {

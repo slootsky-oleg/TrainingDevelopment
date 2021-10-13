@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Domain.Entities.TrainingDevelopment;
-using Domain.Entities.TrainingDevelopment.Behaviours;
-using Domain.Entities.TrainingDevelopment.Behaviours.Conditions;
-using Domain.Entities.TrainingDevelopment.Behaviours.Evaluation;
-using Domain.Entities.TrainingDevelopment.Behaviours.Prerequisities;
-using Domain.Entities.TrainingDevelopment.Behaviours.ResourceRequirements;
-using Domain.Entities.TrainingDevelopment.Behaviours.Seats;
-using Domain.Entities.TrainingDevelopment.Behaviours.TargetAudience;
+using Domain.Entities.TrainingDevelopment.Behaviour;
+using Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
+using Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
+using Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
+using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+using Domain.Entities.TrainingDevelopment.Behaviour.Seats;
+using Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
 using Domain.Entities.TrainingDevelopment.Tasks;
 
 namespace Domain.Atis.Entities.TrainingDevelopment

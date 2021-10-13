@@ -1,7 +1,7 @@
-﻿using Domain.Entities.TrainingDevelopment.Behaviours.Content;
-using Domain.Entities.TrainingDevelopment.Behaviours.CustomFields;
-using Domain.Entities.TrainingDevelopment.Behaviours.Prerequisities;
-using Domain.Entities.TrainingDevelopment.Behaviours.ResourceRequirements;
+﻿using Domain.Entities.TrainingDevelopment.Behaviour.Content;
+using Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
+using Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
+using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Domain.Values;
 using Domain.Values.Ids;
 
