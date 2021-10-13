@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Reflection.Metadata;
 using Domain.Entities.Operational.Scheduling;
-using Domain.Entities.TrainingDevelopment.BuilingBlocks.ResourceRequirements;
 
 namespace Domain.Entities.Operational.Events
 {

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using Domain.Entities.TrainingDevelopment.Activities;
-using Domain.Entities.TrainingDevelopment.BuilingBlocks;
-using Domain.Entities.TrainingDevelopment.BuilingBlocks.Evaluation;
-using Domain.Entities.TrainingDevelopment.BuilingBlocks.Prerequisities;
-using Domain.Entities.TrainingDevelopment.BuilingBlocks.ResourceRequirements;
-using Domain.Entities.TrainingDevelopment.BuilingBlocks.Seats;
-using Domain.Entities.TrainingDevelopment.BuilingBlocks.TargetAudience;
+using Domain.Entities.TrainingDevelopment.Behaviours;
+using Domain.Entities.TrainingDevelopment.Behaviours.Evaluation;
+using Domain.Entities.TrainingDevelopment.Behaviours.Prerequisities;
+using Domain.Entities.TrainingDevelopment.Behaviours.ResourceRequirements;
+using Domain.Entities.TrainingDevelopment.Behaviours.Seats;
+using Domain.Entities.TrainingDevelopment.Behaviours.TargetAudience;
 using Domain.Entities.TrainingDevelopment.Tasks;
 
 namespace Domain.Entities.TrainingDevelopment.Plans

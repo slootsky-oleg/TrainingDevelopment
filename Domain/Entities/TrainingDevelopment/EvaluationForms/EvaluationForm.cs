@@ -1,4 +1,4 @@
-﻿using Domain.Entities.TrainingDevelopment.BuilingBlocks;
+﻿using Domain.Entities.TrainingDevelopment.Behaviours;
 
 namespace Domain.Entities.TrainingDevelopment.EvaluationForms
 {
