@@ -20,7 +20,7 @@ namespace Domain.Atis.Entities.TrainingDevelopment
         IHasResourceRequirements<ResourceRequirement>,
         IHasSeats,
         IHasTargetAudience,
-        ITrainingCollection<Task_Q>
+        ITrainingCollection<AtisStep>
     {
         //TODO: can be defined as a collection of leader/critical steps on the owner's level (task/step)
         //This may simplify validations (only 5 leader steps)
@@ -38,7 +38,7 @@ namespace Domain.Atis.Entities.TrainingDevelopment
         public ExecutionConditionContainer Conditions_Q { get; }
 
 
-        public IReadOnlyCollection<Task_Q> GetTrainingItems_Q()
+        public IReadOnlyCollection<AtisStep> GetTrainingItems_Q()
         {
             //recursively get all steps. Handle duplicates is steps are sharable
             return Steps_Q

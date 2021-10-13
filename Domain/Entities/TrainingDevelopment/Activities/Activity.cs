@@ -21,10 +21,10 @@ namespace Domain.Entities.TrainingDevelopment.Activities
         IHasSeats,
         IHasTargetAudience,
         IArchivable,
-        ITrainingCollection<Task_Q>
+        ITrainingCollection<Task>
     {
         public TimeSpan Duration { get; set; }
-        public IReadOnlyCollection<Task_Q> Tasks { get; }
+        public IReadOnlyCollection<Task> Tasks { get; }
         public IReadOnlyCollection<TaskCollection> TaskCollections { get; }
 
         public EvaluationOutline EvaluationOutline_Q { get; }
@@ -55,7 +55,7 @@ namespace Domain.Entities.TrainingDevelopment.Activities
             throw new NotImplementedException();
         }
 
-        public IReadOnlyCollection<Task_Q> GetTrainingItems_Q()
+        public IReadOnlyCollection<Task> GetTrainingItems_Q()
         {
             var tasksFromCollections = TaskCollections
                 .Select(s => s.GetTrainingItems_Q())
