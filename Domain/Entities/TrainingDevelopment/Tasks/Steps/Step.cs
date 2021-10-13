@@ -22,11 +22,9 @@ namespace Domain.Entities.TrainingDevelopment.Tasks.Steps
     {
         //TODO: can be defined as a collection of leader/critical steps on the owner's level (task/step)
         //This may simplify validations (only 5 leader steps)
-        public bool IsLeader_Q { get; set; }
-        public bool IsCritical_Q { get; set; }
         //TODO: Conditions: weather, etc
 
-        public IReadOnlyCollection<Step> Steps_Q { get; set; }
+        public IReadOnlyCollection<Step> Steps_Q { get; }
 
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }

@@ -23,7 +23,7 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
         where TResourceRequirement: ResourceRequirement
         where TStep: Step
     {
-        public StepContainer<TStep> Steps { get; set; }
+        public StepContainer<TStep> Steps { get; }
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }
         public ExecutionConditionContainer Conditions_Q { get; }
