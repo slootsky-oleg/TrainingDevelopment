@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Reflection.Metadata;
-using Domain.Entities.Operational.Scheduling;
+﻿using Domain.Entities.Operational.Scheduling;
 
 namespace Domain.Entities.Operational.Events
 {

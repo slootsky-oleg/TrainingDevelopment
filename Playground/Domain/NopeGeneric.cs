@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Playground.Domain.Generics
+namespace Playground.Domain
 {
     public class ExternalRef
     {
