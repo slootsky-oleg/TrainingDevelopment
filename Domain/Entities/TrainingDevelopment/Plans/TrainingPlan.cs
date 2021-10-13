@@ -16,7 +16,7 @@ namespace Domain.Entities.TrainingDevelopment.Plans
         TrainingDevelopmentEntity,
         IEvaluable,
         IHasPrerequisites,
-        IHasResourceRequirements,
+        IHasResourceRequirements<ResourceRequirement>,
         IHasSeats,
         IHasTargetAudience,
         IArchivable,
@@ -30,7 +30,7 @@ namespace Domain.Entities.TrainingDevelopment.Plans
 
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }
-        public ResourceRequirementsContainer ResourceRequirements_Q { get; }
+        public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
         

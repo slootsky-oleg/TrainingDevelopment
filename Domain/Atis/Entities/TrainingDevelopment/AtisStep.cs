@@ -17,7 +17,7 @@ namespace Domain.Atis.Entities.TrainingDevelopment
         IEvaluable,
         IHasConditions,
         IHasPrerequisites,
-        IHasResourceRequirements,
+        IHasResourceRequirements<ResourceRequirement>,
         IHasSeats,
         IHasTargetAudience,
         ITrainingCollection<Task_Q>
@@ -32,7 +32,7 @@ namespace Domain.Atis.Entities.TrainingDevelopment
 
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }
-        public ResourceRequirementsContainer ResourceRequirements_Q { get; }
+        public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
         public ExecutionConditionContainer Conditions_Q { get; }

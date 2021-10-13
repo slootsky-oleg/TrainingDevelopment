@@ -22,7 +22,7 @@ namespace Domain.Entities.Operational.Scheduling
         public PrerequisiteContainer Prerequisites_Q { get; set; }
 
         //Does it belong to the base entity?
-        public ResourceRequirementsContainer ResourceRequirements_Q { get; set; }
+        public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements_Q { get; set; }
 
         public CustomFieldContainer CustomFields { get; set; }
 

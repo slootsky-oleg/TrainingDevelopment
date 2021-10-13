@@ -2,13 +2,14 @@
 
 namespace Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
-    public class ResourceRequirementsContainer
+    public class ResourceRequirementsContainer<T>
+        where T: ResourceRequirement
     {
         public AggregationStrategy Strategy { get; set; }
 
-        public IReadOnlyCollection<ResourceRequirement> OwnRequirements { get; set; }
+        public IReadOnlyCollection<T> OwnRequirements { get; set; }
 
-        public IReadOnlyCollection<ResourceRequirement> GetRequirements()
+        public IReadOnlyCollection<T> GetRequirements()
         {
             //TODO: Implement collecting bottom-up and combined requirements
             throw new System.NotImplementedException();
