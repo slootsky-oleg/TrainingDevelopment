@@ -8,29 +8,33 @@ using Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities;
 using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 using Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
+using Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
-namespace Domain.Entities.TrainingDevelopment.Tasks
+namespace Domain.Entities.TrainingDevelopment.Tasks.Collections
 {
-    public class TaskCollection : 
+    public abstract class AbstractTaskCollection<TTask, TStep, TResourceRequirement> : 
         TrainingDevelopmentEntity,
         IEvaluable,
         IHasPrerequisites,
         IHasConditions,
-        IHasResourceRequirements,
+        IHasResourceRequirements<TResourceRequirement>,
         IHasSeats,
         IHasTargetAudience,
         IArchivable,
-        ITrainingCollection<Task_Q>
+        ITrainingCollection<TTask>
+        where TStep: Step
+        where TTask: AbstractTask<TStep, TResourceRequirement>
+        where TResourceRequirement: ResourceRequirement
     {
-        public IReadOnlyCollection<Task_Q> Tasks { get; }
-        public IReadOnlyCollection<TaskCollection> TaskCollections { get; }
+        public IReadOnlyCollection<TTask> Tasks { get; }
+        public IReadOnlyCollection<AbstractTaskCollection<TTask, TStep, TResourceRequirement>> TaskCollections { get; }
 
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }
-        public ResourceRequirementsContainer ResourceRequirements_Q { get; }
+        public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
-        public RelatedEntityContainer<Task_Q> RelatedEntities_Q { get; }
+        public RelatedEntityContainer<Task> RelatedEntities_Q { get; }
         public ExecutionConditionContainer Conditions_Q { get; }
 
 
@@ -54,7 +58,7 @@ namespace Domain.Entities.TrainingDevelopment.Tasks
             throw new System.NotImplementedException();
         }
 
-        public IReadOnlyCollection<Task_Q> GetTrainingItems_Q()
+        public IReadOnlyCollection<TTask> GetTrainingItems_Q()
         {
             var tasksFromCollections = TaskCollections
                 .Select(s => s.GetTrainingItems_Q())

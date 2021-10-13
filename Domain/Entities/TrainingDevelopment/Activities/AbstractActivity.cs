@@ -1,39 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Domain.Entities.TrainingDevelopment.Activities;
 using Domain.Entities.TrainingDevelopment.Behaviour;
+using Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
 using Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
 using Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
 using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 using Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
 using Domain.Entities.TrainingDevelopment.Tasks;
+using Domain.Entities.TrainingDevelopment.Tasks.Collections;
+using Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
-namespace Domain.Entities.TrainingDevelopment.Plans
+namespace Domain.Entities.TrainingDevelopment.Activities
 {
-    public class TrainingPlan : 
+    public abstract class AbstractActivity<TTask, TStep, TResourceRequirement> : 
         TrainingDevelopmentEntity,
         IEvaluable,
         IHasPrerequisites,
-        IHasResourceRequirements<ResourceRequirement>,
+        IHasConditions,
+        IHasResourceRequirements<TResourceRequirement>,
         IHasSeats,
         IHasTargetAudience,
         IArchivable,
-        ITrainingCollection<Task>
+        ITrainingCollection<TTask>
+        where TStep: Step
+        where TTask: AbstractTask<TStep, TResourceRequirement>
+        where TResourceRequirement: ResourceRequirement
     {
         public TimeSpan Duration { get; set; }
-
-        public ObjectivesContainer Objectives_Q { get; set; }
-        public IReadOnlyCollection<PlannedTraining<TrainingPlan>> Plans_Q { get; set; }
-        public IReadOnlyCollection<PlannedTraining<Activity>> Activities_Q { get; set; }
+        public IReadOnlyCollection<TTask> Tasks { get; }
+        public IReadOnlyCollection<AbstractTaskCollection<TTask, TStep, TResourceRequirement>> TaskCollections { get; }
 
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }
-        public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements_Q { get; }
+        public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
-        
+        public ExecutionConditionContainer Conditions_Q { get; }
+
+
         public void Activate_Q()
         {
             throw new NotImplementedException();
@@ -54,18 +60,14 @@ namespace Domain.Entities.TrainingDevelopment.Plans
             throw new NotImplementedException();
         }
 
-        public IReadOnlyCollection<Task> GetTrainingItems_Q()
+        public IReadOnlyCollection<TTask> GetTrainingItems_Q()
         {
-            var plans = Plans_Q
-                .Select(p => p.Training.GetTrainingItems_Q())
-                .SelectMany(p => p);
+            var tasksFromCollections = TaskCollections
+                .Select(s => s.GetTrainingItems_Q())
+                .SelectMany(s => s);
 
-            var activities = Activities_Q
-                .Select(a => a.Training.GetTrainingItems_Q())
-                .SelectMany(a => a);
-
-            return plans
-                .Concat(activities)
+            return tasksFromCollections
+                .Concat(Tasks)
                 .ToList();
         }
     }

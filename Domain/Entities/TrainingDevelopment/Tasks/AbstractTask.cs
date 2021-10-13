@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Domain.Entities.TrainingDevelopment.Behaviour;
+﻿using Domain.Entities.TrainingDevelopment.Behaviour;
 using Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
 using Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
 using Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
@@ -8,28 +6,31 @@ using Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities;
 using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 using Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
+using Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Domain.Entities.TrainingDevelopment.Tasks
 {
-    //Should we define Collective and Individual entities?
-    public class Task_Q : 
+    public abstract class AbstractTask<TStep, TResourceRequirement> : 
         TrainingDevelopmentEntity,
         IEvaluable,
         IHasPrerequisites,
         IHasConditions,
-        IHasResourceRequirements,
+        IHasResourceRequirements<TResourceRequirement>,
         IHasSeats,
         IHasTargetAudience,
         IArchivable,
-        IHasRelatedEntities<Task_Q>
+        IHasRelatedEntities<AbstractTask<TStep, TResourceRequirement>>
+        where TResourceRequirement: ResourceRequirement
+        where TStep: Step
     {
+        public StepContainer<TStep> Steps { get; set; }
         public EvaluationOutline EvaluationOutline_Q { get; }
         public PrerequisiteContainer Prerequisites_Q { get; }
         public ExecutionConditionContainer Conditions_Q { get; }
-        public ResourceRequirementsContainer ResourceRequirements_Q { get; }
+        public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
-        public RelatedEntityContainer<Task_Q> RelatedEntities_Q { get; }
+        public RelatedEntityContainer<AbstractTask<TStep, TResourceRequirement>> RelatedEntities_Q { get; }
 
 
         public void Activate_Q()

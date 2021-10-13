@@ -2,7 +2,7 @@
 
 namespace Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
-    public class ResourceRequirement
+    public class ResourceRequirement: TrainingBehaviour
     {
         public EntityTypeId ResourceTypeId { get; set; }
 
