@@ -85,15 +85,15 @@
     <Position X="16.25" Y="5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAQoEAAUAAACAAAAAAAAAABAJAAACBAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Tasks\TaskCollection.cs</FileName>
+      <FileName>Entities\TrainingDevelopment\Tasks\Collections\AbstractTaskCollection.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Collections.TaskCollection" Collapsed="true">
-    <Position X="21" Y="2" Width="1.5" />
+  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Collections.TaskCollection">
+    <Position X="16.25" Y="9.75" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Tasks\TaskCollection.cs</FileName>
+      <FileName>Entities\TrainingDevelopment\Tasks\Collections\TaskCollection.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
