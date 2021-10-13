@@ -1,5 +1,7 @@
-﻿using Domain.Entities.TrainingDevelopment.Containers;
-using Domain.Entities.TrainingDevelopment.Containers.Resources;
+﻿using Domain.Entities.TrainingDevelopment.Behaviour.Content;
+using Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
+using Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
+using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Domain.Values;
 using Domain.Values.Ids;
 
@@ -20,7 +22,7 @@ namespace Domain.Entities.Operational.Scheduling
         public PrerequisiteContainer Prerequisites_Q { get; set; }
 
         //Does it belong to the base entity?
-        public ResourceRequirementsContainer ResourceRequirements_Q { get; set; }
+        public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements_Q { get; set; }
 
         public CustomFieldContainer CustomFields { get; set; }
 

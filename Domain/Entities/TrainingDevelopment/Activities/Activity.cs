@@ -1,25 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Domain.Entities.TrainingDevelopment.Tasks;
+using Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Domain.Entities.TrainingDevelopment.Activities
 {
-    public class Activity : TrainingDevelopmentCollectionEntity<Task_Q>
+    public class Activity : AbstractActivity<Task, Step, ResourceRequirement>
     {
-        public TimeSpan Duration { get; set; }
-        public IReadOnlyCollection<Task_Q> Tasks { get; set; }
-        public IReadOnlyCollection<TaskCollection> TaskCollections { get; set; }
 
-        public override IReadOnlyCollection<Task_Q> GetTrainingItems()
-        {
-            var tasksFromCollections = TaskCollections
-                .Select(s => s.GetTrainingItems())
-                .SelectMany(s => s);
-
-            return tasksFromCollections
-                .Concat(Tasks)
-                .ToList();
-        }
     }
 }
