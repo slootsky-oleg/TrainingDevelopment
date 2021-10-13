@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Domain.Entities.TrainingDevelopment.Behaviour.TrainingDevelopmentEntity">
-    <Position X="5.25" Y="2" Width="2" />
+    <Position X="10" Y="2" Width="2" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAgBAAAAAAAEAQAAAAABAIAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Behaviour\TrainingDevelopmentEntity.cs</FileName>
@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.AbstractTask&lt;TStep, TResourceRequirement&gt;">
-    <Position X="3.5" Y="5" Width="3" />
+    <Position X="3.75" Y="5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAQgEAAUAAACAAAAAAAAAABABAAACBAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\AbstractTask.cs</FileName>
@@ -17,21 +17,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task">
-    <Position X="1.75" Y="9.25" Width="2.5" />
+    <Position X="2.25" Y="9.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Task.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Atis.Entities.TrainingDevelopment.AtisTask">
-    <Position X="5" Y="9.25" Width="3" />
+    <Position X="5.5" Y="9.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Atis\Entities\TrainingDevelopment\AtisTask.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Steps.Step">
-    <Position X="8.75" Y="5" Width="2" />
+    <Position X="9.25" Y="5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAQAACIAAAAABQAAAAUAAAAAAAAAAAAAAAABAAACBAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Steps\Step.cs</FileName>
@@ -39,7 +39,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Domain.Atis.Entities.TrainingDevelopment.AtisStep">
-    <Position X="9" Y="9" Width="1.5" />
+    <Position X="9.5" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Atis\Entities\TrainingDevelopment\AtisStep.cs</FileName>
@@ -64,6 +64,36 @@
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Behaviour\TrainingBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.TrainingDevelopment.Activities.AbstractActivity&lt;TTask, TStep, TResourceRequirement&gt;">
+    <Position X="12" Y="5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAACAQoEAAUAAACAAAAAAAAAAAAJAAACBAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Activities\AbstractActivity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Domain.Entities.TrainingDevelopment.Activities.Activity">
+    <Position X="12.25" Y="9.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Activities\Activity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Collections.AbstractTaskCollection&lt;TTask, TStep, TResourceRequirement&gt;">
+    <Position X="16.25" Y="5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAQoEAAUAAACAAAAAAAAAABAJAAACBAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Tasks\TaskCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Collections.TaskCollection" Collapsed="true">
+    <Position X="21" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Tasks\TaskCollection.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
