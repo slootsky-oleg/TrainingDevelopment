@@ -9,6 +9,7 @@ using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 using Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
 using Domain.Entities.TrainingDevelopment.Tasks;
+using Domain.Entities.TrainingDevelopment.Tasks.Collections;
 
 namespace Domain.Entities.TrainingDevelopment.Activities
 {
