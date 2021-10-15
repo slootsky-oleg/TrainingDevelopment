@@ -4,7 +4,7 @@ using Domain.Entities.TrainingDevelopment.Behaviour;
 
 namespace Application.TrainingDevelopment.Common.Queries.Get
 {
-    public interface IGetTrainingDevelopmentEntityInteractor<T>
+    public interface IGetTrainingEntityInteractor<T>
         where T: ITrainingDevelopmentEntity
     {
         Task<T> Execute(Guid id);

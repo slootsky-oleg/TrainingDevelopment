@@ -4,7 +4,7 @@ using Domain.Entities.TrainingDevelopment.Behaviour;
 
 namespace Application.TrainingDevelopment.Common.Commands.Archive
 {
-    public interface IArchiveTrainingDevelopmentEntityInteractor<T>
+    public interface IArchiveTrainingEntityInteractor<T>
         where T: ITrainingDevelopmentEntity
     {
         Task Execute(Guid id);

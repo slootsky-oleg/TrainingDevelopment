@@ -13,7 +13,7 @@ namespace Presentation.Web.Controllers
     {
         [HttpGet("{id:guid}")]
         public virtual async Task<T> Get(
-            [FromServices] IGetTrainingDevelopmentEntityInteractor<T> interactor,
+            [FromServices] IGetTrainingEntityInteractor<T> interactor,
             Guid id)
         {
             return await interactor.Execute(id);
@@ -21,7 +21,7 @@ namespace Presentation.Web.Controllers
 
         [HttpPost("archive")]
         public virtual async Task Archive(
-            [FromServices] IArchiveTrainingDevelopmentEntityInteractor<T> interactor,
+            [FromServices] IArchiveTrainingEntityInteractor<T> interactor,
             Guid id)
         {
             await interactor.Execute(id);

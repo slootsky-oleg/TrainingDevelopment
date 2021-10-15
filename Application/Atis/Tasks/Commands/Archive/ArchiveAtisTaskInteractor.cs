@@ -5,7 +5,7 @@ using Domain.Atis.Entities.TrainingDevelopment;
 
 namespace Application.Atis.Tasks.Commands.Archive
 {
-    public class ArchiveAtisTaskInteractor: IArchiveTrainingDevelopmentEntityInteractor<AtisTask>
+    public class ArchiveAtisTaskInteractor: IArchiveTrainingEntityInteractor<AtisTask>
     {
         public async Task Execute(Guid id)
         {
