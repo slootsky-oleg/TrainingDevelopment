@@ -6,6 +6,11 @@
 
   <ItemGroup>
     <Folder Include="TrainingDevelopment\Commands\NewFolder\" />
+    <Folder Include="TrainingDevelopment\Common\Interactors\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
 </Project>

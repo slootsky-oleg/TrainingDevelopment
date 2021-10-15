@@ -1,3 +1,8 @@
+using Application.Atis.Tasks.Commands.Archive;
+using Application.Atis.Tasks.Queries.Get;
+using Application.TrainingDevelopment.Common.Commands.Archive;
+using Application.TrainingDevelopment.Common.Queries.Get;
+using Domain.Atis.Entities.TrainingDevelopment;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -25,6 +30,9 @@ namespace Presentation.Web
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Presentation.Web", Version = "v1" });
             });
+
+            services.AddScoped<IGetTrainingDevelopmentEntityInteractor<AtisTask>, GetAtisTaskInteractor>();
+            services.AddScoped<IArchiveTrainingDevelopmentEntityInteractor<AtisTask>, ArchiveAtisTaskInteractor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
