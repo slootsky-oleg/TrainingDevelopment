@@ -9,11 +9,11 @@ namespace Presentation.Web.Controllers
 {
     [ApiController]
     public abstract class AbstractTrainingEntityController<T> : ControllerBase
-        where T : ITrainingDevelopmentEntity
+        where T : ITrainingEntity
     {
         [HttpGet("{id:guid}")]
-        public virtual async Task<T> Get(
-            [FromServices] IGetTrainingEntityInteractor<T> interactor,
+        public virtual async Task<TGetEntityResponse> Get<TGetEntityResponse>(
+            [FromServices] IGetTrainingEntityInteractor<T, TGetEntityResponse> interactor,
             Guid id)
         {
             return await interactor.Execute(id);

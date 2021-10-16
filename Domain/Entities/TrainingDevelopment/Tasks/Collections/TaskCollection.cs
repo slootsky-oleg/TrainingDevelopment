@@ -3,7 +3,7 @@ using Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Domain.Entities.TrainingDevelopment.Tasks.Collections
 {
-    public class TaskCollection : AbstractTaskCollection<Task, Step, ResourceRequirement>
+    public class TaskCollection : AbstractTaskCollection<TrainingTask, Step, ResourceRequirement>
     {
 
     }

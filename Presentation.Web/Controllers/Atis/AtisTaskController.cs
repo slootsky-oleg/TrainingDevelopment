@@ -1,9 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
-using Domain.Atis.Entities.TrainingDevelopment;
+﻿using Domain.Atis.Entities.TrainingDevelopment;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Presentation.Web.Controllers
+namespace Presentation.Web.Controllers.Atis
 {
     [Route("atis/tasks")]
     public class AtisTaskController: AbstractTrainingEntityController<AtisTask>

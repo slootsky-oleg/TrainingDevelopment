@@ -15,7 +15,7 @@ using Domain.Entities.TrainingDevelopment.Tasks.Steps;
 namespace Domain.Entities.TrainingDevelopment.Activities
 {
     public abstract class AbstractActivity<TTask, TStep, TResourceRequirement> : 
-        TrainingDevelopmentEntity,
+        TrainingEntity,
         IEvaluable,
         IHasPrerequisites,
         IHasConditions,

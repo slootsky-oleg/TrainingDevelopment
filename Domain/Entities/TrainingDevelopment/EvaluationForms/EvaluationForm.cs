@@ -2,7 +2,7 @@
 
 namespace Domain.Entities.TrainingDevelopment.EvaluationForms
 {
-    public class EvaluationForm_Q : TrainingDevelopmentEntity
+    public class EvaluationForm_Q : TrainingEntity
     {
         
     }

@@ -3,7 +3,7 @@ using Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Domain.Entities.TrainingDevelopment.Tasks
 {
-    public class Task : AbstractTask<Step, ResourceRequirement>
+    public class TrainingTask : AbstractTask<Step, ResourceRequirement>
     {
 
     }

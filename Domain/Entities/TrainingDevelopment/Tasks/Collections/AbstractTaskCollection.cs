@@ -13,7 +13,7 @@ using Domain.Entities.TrainingDevelopment.Tasks.Steps;
 namespace Domain.Entities.TrainingDevelopment.Tasks.Collections
 {
     public abstract class AbstractTaskCollection<TTask, TStep, TResourceRequirement> : 
-        TrainingDevelopmentEntity,
+        TrainingEntity,
         IEvaluable,
         IHasPrerequisites,
         IHasConditions,
@@ -34,7 +34,7 @@ namespace Domain.Entities.TrainingDevelopment.Tasks.Collections
         public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements_Q { get; }
         public SeatContainer Seats_Q { get; }
         public TargetAudienceContainer TargetAudience_Q { get; }
-        public RelatedEntityContainer<Task> RelatedEntities_Q { get; }
+        public RelatedEntityContainer<TrainingTask> RelatedEntities_Q { get; }
         public ExecutionConditionContainer Conditions_Q { get; }
 
 

@@ -4,7 +4,7 @@ using Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Domain.Entities.TrainingDevelopment.Plans
 {
-    public class TrainingPlan : AbstractTrainingPlan<Task, Step, ResourceRequirement>
+    public class TrainingPlan : AbstractTrainingPlan<TrainingTask, Step, ResourceRequirement>
     {
 
     }

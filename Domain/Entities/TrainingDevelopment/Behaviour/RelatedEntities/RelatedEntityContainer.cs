@@ -1,7 +1,7 @@
 ﻿namespace Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities
 {
     public class RelatedEntityContainer<T>: IHasRelatedEntities<T> 
-        where T: ITrainingDevelopmentEntity
+        where T: ITrainingEntity
     {
         public RelatedEntityContainer<T> RelatedEntities_Q { get; }
     }

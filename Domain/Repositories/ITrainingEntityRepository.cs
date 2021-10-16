@@ -6,7 +6,7 @@ using Domain.Entities.TrainingDevelopment.Behaviour;
 namespace Domain.Repositories
 {
     public interface ITrainingEntityRepository<T>
-        where T: ITrainingDevelopmentEntity
+        where T: ITrainingEntity
     {
         Task<T> GetAsync(Guid id);
         Task<IReadOnlyCollection<T>> BatchGetAsync(Guid id);

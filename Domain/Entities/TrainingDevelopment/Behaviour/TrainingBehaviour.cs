@@ -2,6 +2,6 @@
 {
     public abstract class TrainingBehaviour
     {
-        public TrainingDevelopmentEntity Owner { get; }
+        public TrainingEntity Owner { get; }
     }
 }

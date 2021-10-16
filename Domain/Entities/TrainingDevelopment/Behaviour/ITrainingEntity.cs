@@ -3,11 +3,11 @@ using Domain.Values.Ids;
 
 namespace Domain.Entities.TrainingDevelopment.Behaviour
 {
-    public interface ITrainingDevelopmentEntity
+    public interface ITrainingEntity
     {
         GuidId Id { get; }
         ExternalId ExternalId { get; }
-        Description Description { get; }
         Name Name { get; }
+        Description Description { get; }
     }
 }

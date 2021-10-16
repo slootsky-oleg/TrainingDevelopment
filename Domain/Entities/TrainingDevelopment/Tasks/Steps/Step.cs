@@ -11,7 +11,7 @@ using Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
 namespace Domain.Entities.TrainingDevelopment.Tasks.Steps
 {
     public class Step : 
-        TrainingDevelopmentEntity,
+        TrainingEntity,
         IEvaluable,
         IHasConditions,
         IHasPrerequisites,

@@ -6,7 +6,7 @@ using Domain.Values.Ids;
 
 namespace Domain.Entities.TrainingDevelopment.Behaviour
 {
-    public abstract class TrainingDevelopmentEntity : ITrainingDevelopmentEntity, IHasCustomFields, IHasContent, IVersioned
+    public abstract class TrainingEntity : ITrainingEntity, IHasCustomFields, IHasContent, IVersioned
     {
         public GuidId Id { get; }
         public Version Version_Q { get; }
