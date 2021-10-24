@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Domain.Entities.TrainingDevelopment.Behaviour.TrainingDevelopmentEntity">
-    <Position X="12.5" Y="2" Width="2" />
+  <Class Name="Domain.Entities.TrainingDevelopment.Behaviour.TrainingEntity">
+    <Position X="12.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAgBAAAAAAAEAQAAAAABAIAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Behaviour\TrainingDevelopmentEntity.cs</FileName>
+      <FileName>Entities\TrainingDevelopment\Behaviour\TrainingEntity.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -15,13 +15,6 @@
       <FileName>Entities\TrainingDevelopment\Tasks\AbstractTask.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Task">
-    <Position X="2.5" Y="9.25" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Tasks\Task.cs</FileName>
-    </TypeIdentifier>
   </Class>
   <Class Name="Domain.Atis.Entities.TrainingDevelopment.AtisTask">
     <Position X="5.75" Y="9.25" Width="3" />
@@ -75,7 +68,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Activities.Activity">
-    <Position X="12.5" Y="9.75" Width="3" />
+    <Position X="12.25" Y="9.75" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Activities\Activity.cs</FileName>
@@ -90,7 +83,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Collections.TaskCollection">
-    <Position X="16.5" Y="9.75" Width="3.5" />
+    <Position X="16.5" Y="9.75" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Collections\TaskCollection.cs</FileName>
@@ -105,10 +98,17 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Domain.Entities.TrainingDevelopment.Plans.TrainingPlan" Collapsed="true">
-    <Position X="21.25" Y="9.5" Width="3.25" />
+    <Position X="21" Y="9.5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Plans\TrainingPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.TrainingTask" Collapsed="true">
+    <Position X="2.5" Y="9.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Tasks\TrainingTask.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
