@@ -11,21 +11,27 @@ namespace Presentation.Web.Controllers
     public abstract class AbstractTrainingEntityController<T> : ControllerBase
         where T : ITrainingEntity
     {
-        [HttpGet("{id:guid}")]
-        public virtual async Task<TGetEntityResponse> Get<TGetEntityResponse>(
-            [FromServices] IGetTrainingEntityInteractor<T, TGetEntityResponse> interactor,
-            Guid id)
+        [HttpGet]
+        public virtual void Home()
         {
-            return await interactor.Execute(id);
+
         }
 
-        [HttpPost("archive")]
-        public virtual async Task Archive(
-            [FromServices] IArchiveTrainingEntityInteractor<T> interactor,
-            Guid id)
-        {
-            await interactor.Execute(id);
-        }
+        // [HttpGet("{id:guid}")]
+        // public virtual async Task<TGetEntityResponse> Get<TGetEntityResponse>(
+        //     [FromServices] IGetTrainingEntityInteractor<T, TGetEntityResponse> interactor,
+        //     Guid id)
+        // {
+        //     return await interactor.Execute(id);
+        // }
+        //
+        // [HttpPost("archive")]
+        // public virtual async Task Archive(
+        //     [FromServices] IArchiveTrainingEntityInteractor<T> interactor,
+        //     Guid id)
+        // {
+        //     await interactor.Execute(id);
+        // }
 
     }
 }
