@@ -5,8 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Generic\Tasks\Queries\" />
     <Folder Include="TrainingDevelopment\Commands\NewFolder\" />
     <Folder Include="TrainingDevelopment\Common\Interactors\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
