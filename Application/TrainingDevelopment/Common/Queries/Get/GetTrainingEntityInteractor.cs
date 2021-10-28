@@ -1,9 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Domain.Entities.TrainingDevelopment.Behaviour;
-using Domain.Repositories;
-
-namespace Application.TrainingDevelopment.Common.Queries.Get
+﻿namespace Bks.Training.Development.Application.TrainingDevelopment.Common.Queries.Get
 {
     // public class GetTrainingEntityInteractor<T, TResult> : IGetTrainingEntityInteractor<T, TResult>
     //     where T: ITrainingEntity

@@ -1,6 +1,6 @@
-﻿using Domain.Entities.TrainingDevelopment.Behaviour;
+﻿using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour;
 
-namespace Domain.Entities.TrainingDevelopment.EvaluationForms
+namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.EvaluationForms
 {
     public class EvaluationForm_Q : TrainingEntity
     {

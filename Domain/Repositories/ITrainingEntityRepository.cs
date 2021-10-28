@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour;
 
-namespace Domain.Repositories
+namespace Bks.Training.Development.Domain.Repositories
 {
     public interface ITrainingEntityRepository<T>
         where T: ITrainingEntity

@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Behaviour.CheckList
+﻿namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.CheckList
 {
     public class CheckListContainer
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour;
 
-namespace Application.TrainingDevelopment.Common.Queries.Get
+namespace Bks.Training.Development.Application.TrainingDevelopment.Common.Queries.Get
 {
     public interface IGetTrainingEntityInteractor<T, TResponse>
         where T: ITrainingEntity

@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Behaviour.Conditions
+﻿namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Conditions
 {
     public interface IHasConditions
     {

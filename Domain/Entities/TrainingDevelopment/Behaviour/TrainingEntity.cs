@@ -1,10 +1,10 @@
-﻿using Domain.Entities.TrainingDevelopment.Behaviour.Content;
-using Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
-using Domain.Entities.TrainingDevelopment.Behaviour.Versioning;
-using Domain.Values;
-using Domain.Values.Ids;
+﻿using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Content;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Versioning;
+using Bks.Training.Development.Domain.Values;
+using Bks.Training.Development.Domain.Values.Ids;
 
-namespace Domain.Entities.TrainingDevelopment.Behaviour
+namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour
 {
     public abstract class TrainingEntity : ITrainingEntity, IHasCustomFields, IHasContent, IVersioned
     {

@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Domain.Values
+namespace Bks.Training.Development.Domain.Values
 {
     public abstract class ValueObject
     {

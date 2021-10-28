@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Application.TrainingDevelopment.Common.Commands.Archive;
-using Domain.Atis.Entities.TrainingDevelopment;
+using Bks.Training.Development.Application.TrainingDevelopment.Common.Commands.Archive;
+using Bks.Training.Development.Domain.Atis.Entities.TrainingDevelopment;
 
-namespace Application.Atis.Tasks.Commands.Archive
+namespace Bks.Training.Development.Application.Atis.Tasks.Commands.Archive
 {
     public class ArchiveAtisTaskInteractor: IArchiveTrainingEntityInteractor<AtisTask>
     {

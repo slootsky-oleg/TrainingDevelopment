@@ -1,12 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
-using Application.TrainingDevelopment.Common.Commands.Archive;
-using Application.TrainingDevelopment.Common.Queries.Get;
-using Domain.Entities.TrainingDevelopment.Behaviour;
-using MediatR;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Presentation.Web.Controllers
+namespace Bks.Training.Development.Presentation.Web.Controllers
 {
     [ApiController]
     public abstract class AbstractController : ControllerBase

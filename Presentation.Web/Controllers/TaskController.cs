@@ -1,14 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-using Application.Features;
-using Domain.Atis.Entities.TrainingDevelopment;
-using Domain.Entities.TrainingDevelopment.Tasks;
+﻿using Bks.Training.Development.Application.Features;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.FeatureManagement;
 using Microsoft.FeatureManagement.Mvc;
 
-namespace Presentation.Web.Controllers
+namespace Bks.Training.Development.Presentation.Web.Controllers
 {
     [Route("training-development/tasks")]
     [FeatureGate(FeatureFlag.Task)] 

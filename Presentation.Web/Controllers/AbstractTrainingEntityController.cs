@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Threading.Tasks;
-using Application.TrainingDevelopment.Common.Commands.Archive;
-using Application.TrainingDevelopment.Common.Queries.Get;
-using Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.Training.Development.Application.TrainingDevelopment.Common.Queries.Get;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour;
 using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Presentation.Web.Controllers
+namespace Bks.Training.Development.Presentation.Web.Controllers
 {
     public abstract class AbstractTrainingEntityController<T> : AbstractController
         where T : ITrainingEntity

@@ -1,8 +1,8 @@
-﻿using Domain.Atis.Entities.TrainingDevelopment;
+﻿using Bks.Training.Development.Domain.Atis.Entities.TrainingDevelopment;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Presentation.Web.Controllers.Atis
+namespace Bks.Training.Development.Presentation.Web.Controllers.Atis
 {
     [Route("atis/tasks")]
     public class AtisTaskController: AbstractTrainingEntityController<AtisTask>

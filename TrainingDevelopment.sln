@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{A87CCBA8-3B27-4EAB-904E-D17D87A70F2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Training.Development.Domain", "Domain\Bks.Training.Development.Domain.csproj", "{A87CCBA8-3B27-4EAB-904E-D17D87A70F2D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{739E7B8F-AB17-4EEE-AE89-A016FA27BBFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Training.Development.Application", "Application\Bks.Training.Development.Application.csproj", "{739E7B8F-AB17-4EEE-AE89-A016FA27BBFB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground", "Playground\Playground.csproj", "{714F80C1-76B1-4204-8FE3-E8E8E5D41683}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.Web", "Presentation.Web\Presentation.Web.csproj", "{14391304-EB74-4329-A707-4B37AA7AE262}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Training.Development.Presentation.Web", "Presentation.Web\Bks.Training.Development.Presentation.Web.csproj", "{14391304-EB74-4329-A707-4B37AA7AE262}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

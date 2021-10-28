@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Domain.Values.Ids
+namespace Bks.Training.Development.Domain.Values.Ids
 {
     public class Version : ValueObject
     {

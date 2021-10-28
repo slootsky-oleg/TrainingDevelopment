@@ -1,6 +1,6 @@
-﻿using Domain.Values.Ids;
+﻿using Bks.Training.Development.Domain.Values.Ids;
 
-namespace Domain.Entities.TrainingDevelopment.Behaviour.Versioning
+namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Versioning
 {
     public interface IVersioned
     {

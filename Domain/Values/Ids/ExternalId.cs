@@ -1,6 +1,6 @@
-﻿using Domain.Values.Strings;
+﻿using Bks.Training.Development.Domain.Values.Strings;
 
-namespace Domain.Values.Ids
+namespace Bks.Training.Development.Domain.Values.Ids
 {
     public class ExternalId : StringValueObject
     {

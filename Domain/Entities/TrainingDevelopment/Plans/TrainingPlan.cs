@@ -1,8 +1,8 @@
-﻿using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
-using Domain.Entities.TrainingDevelopment.Tasks;
-using Domain.Entities.TrainingDevelopment.Tasks.Steps;
+﻿using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
-namespace Domain.Entities.TrainingDevelopment.Plans
+namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Plans
 {
     public class TrainingPlan : AbstractTrainingPlan<TrainingTask, Step, ResourceRequirement>
     {

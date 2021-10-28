@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.Values.Ids
+namespace Bks.Training.Development.Domain.Values.Ids
 {
     public class SeatId : GuidId
     {

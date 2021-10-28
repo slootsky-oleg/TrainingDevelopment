@@ -1,6 +1,6 @@
-﻿using Domain.Entities.TrainingDevelopment.Behaviour;
+﻿using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour;
 
-namespace Domain.Entities.TrainingDevelopment.Plans
+namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Plans
 {
     public class PlannedTraining<T> where T: ITrainingEntity
     {

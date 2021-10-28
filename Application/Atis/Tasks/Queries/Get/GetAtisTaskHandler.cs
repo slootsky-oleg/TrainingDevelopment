@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Domain.Atis.Entities.TrainingDevelopment;
+using Bks.Training.Development.Domain.Atis.Entities.TrainingDevelopment;
 using MediatR;
 
-namespace Application.Atis.Tasks.Queries.Get
+namespace Bks.Training.Development.Application.Atis.Tasks.Queries.Get
 {
     public class GetAtisTaskHandler : IRequestHandler<GetAtisTaskRequest, GetAtisTaskResponse>
     {

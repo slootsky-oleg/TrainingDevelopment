@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Behaviour.Evaluation
+﻿namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation
 {
     public class EvaluationOutline
     {

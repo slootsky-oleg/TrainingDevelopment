@@ -1,6 +1,6 @@
-﻿using Domain.Values.Ids;
+﻿using Bks.Training.Development.Domain.Values.Ids;
 
-namespace Domain.Entities.Operational.Scheduling
+namespace Bks.Training.Development.Domain.Entities.Operational.Scheduling
 {
     public class IndividualParticipant
     {

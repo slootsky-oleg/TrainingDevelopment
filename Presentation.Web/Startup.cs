@@ -1,9 +1,5 @@
-using Application;
-using Application.Atis.Tasks.Commands.Archive;
-using Application.Atis.Tasks.Queries.Get;
-using Application.TrainingDevelopment.Common.Commands.Archive;
-using Application.TrainingDevelopment.Common.Queries.Get;
-using Domain.Atis.Entities.TrainingDevelopment;
+using Bks.Training.Development.Application;
+using Bks.Training.Development.Presentation.Web.Filters.Swagger;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,9 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.FeatureManagement;
 using Microsoft.OpenApi.Models;
-using Presentation.Web.Filters.Swagger;
 
-namespace Presentation.Web
+namespace Bks.Training.Development.Presentation.Web
 {
     public class Startup
     {

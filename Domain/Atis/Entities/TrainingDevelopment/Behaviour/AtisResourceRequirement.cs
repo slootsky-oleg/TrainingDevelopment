@@ -1,6 +1,6 @@
-﻿using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+﻿using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 
-namespace Domain.Atis.Entities.TrainingDevelopment.Behaviour
+namespace Bks.Training.Development.Domain.Atis.Entities.TrainingDevelopment.Behaviour
 {
     public class AtisResourceRequirement: ResourceRequirement
     {

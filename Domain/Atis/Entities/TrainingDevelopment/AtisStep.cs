@@ -1,6 +1,6 @@
-﻿using Domain.Entities.TrainingDevelopment.Tasks.Steps;
+﻿using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
-namespace Domain.Atis.Entities.TrainingDevelopment
+namespace Bks.Training.Development.Domain.Atis.Entities.TrainingDevelopment
 {
     public class AtisStep : Step
     {

@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Domain.Entities.TrainingDevelopment.Activities;
-using Domain.Entities.TrainingDevelopment.Behaviour;
-using Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
-using Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
-using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
-using Domain.Entities.TrainingDevelopment.Behaviour.Seats;
-using Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
-using Domain.Entities.TrainingDevelopment.Tasks;
-using Domain.Entities.TrainingDevelopment.Tasks.Steps;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Activities;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks;
+using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
-namespace Domain.Entities.TrainingDevelopment.Plans
+namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Plans
 {
     public abstract class AbstractTrainingPlan<TTask, TStep, TResourceRequirement> : 
         TrainingEntity,
