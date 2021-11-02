@@ -7,23 +7,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bks.Training.Development.Presentation.Web.Controllers
 {
-    public abstract class AbstractTrainingEntityController<T> : AbstractController
-        where T : ITrainingEntity
+    public abstract class AbstractTrainingEntityController<TCreateRequest> : AbstractController
     {
         protected AbstractTrainingEntityController(IMediator mediator)
             : base(mediator)
         {
         }
 
-        [HttpGet("{id:guid}")]
-        public virtual async Task<TGetEntityResponse> Get<TGetEntityResponse>(
-            [FromServices] IGetTrainingEntityInteractor<T, TGetEntityResponse> interactor,
-            Guid id)
-        {
-            return await interactor.Execute(id);
-        }
         // [HttpGet("{id:guid}")]
-        // public virtual async Task<TGetEntityResponse> Get<TGetEntityResponse>(
+        // public async Task<TGetResponse> Get<TGetEntityResponse>(
         //     [FromServices] IGetTrainingEntityInteractor<T, TGetEntityResponse> interactor,
         //     Guid id)
         // {

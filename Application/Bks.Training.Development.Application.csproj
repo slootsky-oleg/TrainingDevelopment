@@ -5,9 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Generic\Tasks\Queries\" />
-    <Folder Include="TrainingDevelopment\Commands\NewFolder\" />
-    <Folder Include="TrainingDevelopment\Common\Interactors\" />
+    <Compile Remove="TrainingDevelopment\Commands\**" />
+    <Compile Remove="TrainingDevelopment\Common\Interactors\**" />
+    <EmbeddedResource Remove="TrainingDevelopment\Commands\**" />
+    <EmbeddedResource Remove="TrainingDevelopment\Common\Interactors\**" />
+    <None Remove="TrainingDevelopment\Commands\**" />
+    <None Remove="TrainingDevelopment\Common\Interactors\**" />
   </ItemGroup>
 
   <ItemGroup>
