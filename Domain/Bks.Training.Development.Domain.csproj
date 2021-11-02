@@ -10,8 +10,4 @@
     <None Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Atis\Entities\TrainingDevelopment\Behaviour\" />
-  </ItemGroup>
-
 </Project>

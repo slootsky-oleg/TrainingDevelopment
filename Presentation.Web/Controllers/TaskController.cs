@@ -6,6 +6,7 @@ using Microsoft.FeatureManagement.Mvc;
 
 namespace Bks.Training.Development.Presentation.Web.Controllers
 {
+    [ApiController]
     [Route("training-development/tasks")]
     [FeatureGate(FeatureFlag.Task)] 
     public class TaskController: AbstractTrainingEntityController<TrainingTask>
