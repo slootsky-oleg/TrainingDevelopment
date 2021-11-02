@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Bks.Training.Development.Presentation.Web.Controllers
+namespace Bks.TrainingDevelopment.Presentation.Web.Controllers
 {
     [ApiController]
     public abstract class AbstractController : ControllerBase

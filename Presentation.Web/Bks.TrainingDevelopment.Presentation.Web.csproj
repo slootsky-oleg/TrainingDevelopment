@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application\Bks.Training.Development.Application.csproj" />
-    <ProjectReference Include="..\Domain\Bks.Training.Development.Domain.csproj" />
+    <ProjectReference Include="..\Application\Bks.TrainingDevelopment.Application.csproj" />
+    <ProjectReference Include="..\Domain\Bks.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

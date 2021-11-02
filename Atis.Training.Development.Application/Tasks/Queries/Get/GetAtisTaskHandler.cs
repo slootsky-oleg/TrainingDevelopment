@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Atis.Training.Development.Domain.Entities.TrainingDevelopment;
 using MediatR;
 
-namespace Atis.Training.Development.Application.Tasks.Queries.Get
+namespace Atis.TrainingDevelopment.Application.Tasks.Queries.Get
 {
     public class GetAtisTaskHandler : IRequestHandler<GetAtisTaskRequest, GetAtisTaskResponse>
     {

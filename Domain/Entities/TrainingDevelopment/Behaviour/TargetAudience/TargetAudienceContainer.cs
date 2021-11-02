@@ -1,4 +1,4 @@
-﻿namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience
 {
     public class TargetAudienceContainer
     {

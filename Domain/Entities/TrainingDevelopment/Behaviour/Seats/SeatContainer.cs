@@ -1,4 +1,4 @@
-﻿namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Seats
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Seats
 {
     public class SeatContainer
     {

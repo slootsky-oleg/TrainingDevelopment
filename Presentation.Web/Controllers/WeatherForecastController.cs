@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Bks.Training.Development.Presentation.Web.Controllers
+namespace Bks.TrainingDevelopment.Presentation.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]

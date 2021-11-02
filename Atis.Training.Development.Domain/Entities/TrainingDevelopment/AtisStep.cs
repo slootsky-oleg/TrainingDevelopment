@@ -1,4 +1,4 @@
-﻿using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks.Steps;
+﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Atis.Training.Development.Domain.Entities.TrainingDevelopment
 {

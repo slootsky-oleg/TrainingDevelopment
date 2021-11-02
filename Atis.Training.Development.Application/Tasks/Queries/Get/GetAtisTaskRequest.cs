@@ -1,7 +1,7 @@
 ﻿using System;
 using MediatR;
 
-namespace Atis.Training.Development.Application.Tasks.Queries.Get
+namespace Atis.TrainingDevelopment.Application.Tasks.Queries.Get
 {
     public class GetAtisTaskRequest : IRequest<GetAtisTaskResponse>
     {

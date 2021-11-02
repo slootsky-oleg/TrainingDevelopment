@@ -1,7 +1,7 @@
 ﻿using Atis.Training.Development.Domain.Entities.TrainingDevelopment;
-using Bks.Training.Development.Application.TrainingDevelopment.Common.Queries.Models;
+using Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Queries.Models;
 
-namespace Atis.Training.Development.Application.Tasks.Queries.Get
+namespace Atis.TrainingDevelopment.Application.Tasks.Queries.Get
 {
     public class GetAtisTaskResponse: AbstractTrainingEntityResponse
     {

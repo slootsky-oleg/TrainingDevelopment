@@ -1,6 +1,6 @@
-﻿using Bks.Training.Development.Domain.Values.Ids;
+﻿using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields
 {
     public class CustomFieldContainer
     {

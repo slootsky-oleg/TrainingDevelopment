@@ -1,4 +1,4 @@
-﻿namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Plans
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
 {
     public class ObjectivesContainer
     {

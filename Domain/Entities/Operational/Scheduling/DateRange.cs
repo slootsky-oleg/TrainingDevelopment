@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Training.Development.Domain.Entities.Operational.Scheduling
+namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
 {
     public class DateRange
     {

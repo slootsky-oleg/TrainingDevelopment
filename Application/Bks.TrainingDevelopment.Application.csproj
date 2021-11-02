@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Bks.Training.Development.Domain.csproj" />
+    <ProjectReference Include="..\Domain\Bks.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
     public abstract class TrainingBehaviour
     {

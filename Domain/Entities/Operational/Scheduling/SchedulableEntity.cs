@@ -1,11 +1,11 @@
-﻿using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Content;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
-using Bks.Training.Development.Domain.Values;
-using Bks.Training.Development.Domain.Values.Ids;
+﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Content;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+using Bks.TrainingDevelopment.Domain.Values;
+using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Bks.Training.Development.Domain.Entities.Operational.Scheduling
+namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
 {
     //TODO: Find a better name
     public abstract class SchedulableEntity

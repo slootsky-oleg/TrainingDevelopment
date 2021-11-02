@@ -1,4 +1,4 @@
-﻿namespace Bks.Training.Development.Application.TrainingDevelopment.Common.Commands
+﻿namespace Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Commands
 {
     public class CreateEntityResponse
     {

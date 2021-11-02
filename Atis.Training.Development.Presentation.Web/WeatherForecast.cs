@@ -1,6 +1,6 @@
 using System;
 
-namespace Atis.Training.Development.Presentation.Web
+namespace Atis.TrainingDevelopment.Presentation.Web
 {
     public class WeatherForecast
     {

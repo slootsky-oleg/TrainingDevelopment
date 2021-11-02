@@ -1,7 +1,7 @@
 ﻿using System;
-using Bks.Training.Development.Domain.Values.Ids;
+using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Plans
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
 {
     public class Offset
     {

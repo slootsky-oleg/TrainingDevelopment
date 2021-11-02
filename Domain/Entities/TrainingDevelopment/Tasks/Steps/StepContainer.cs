@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks.Steps
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps
 {
     public class StepContainer<T>
         where T: Step

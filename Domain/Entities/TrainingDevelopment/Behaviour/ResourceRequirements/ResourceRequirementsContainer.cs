@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
     public class ResourceRequirementsContainer<T>
         where T: ResourceRequirement

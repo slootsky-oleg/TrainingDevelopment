@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Training.Development.Domain.Values.Ids
+namespace Bks.TrainingDevelopment.Domain.Values.Ids
 {
     public class EntityTypeId : GuidId
     {

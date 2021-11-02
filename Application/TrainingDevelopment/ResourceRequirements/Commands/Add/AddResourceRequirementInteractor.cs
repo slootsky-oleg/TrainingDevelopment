@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.Training.Development.Application.Features;
+using Bks.TrainingDevelopment.Application.Features;
 
-namespace Bks.Training.Development.Application.TrainingDevelopment.ResourceRequirements.Commands.Add
+namespace Bks.TrainingDevelopment.Application.TrainingDevelopment.ResourceRequirements.Commands.Add
 {
     public class AddResourceRequirementInteractor
     {

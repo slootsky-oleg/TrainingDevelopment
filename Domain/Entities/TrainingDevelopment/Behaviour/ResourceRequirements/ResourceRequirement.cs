@@ -1,6 +1,6 @@
-﻿using Bks.Training.Development.Domain.Values.Ids;
+﻿using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
     public class ResourceRequirement: TrainingBehaviour
     {

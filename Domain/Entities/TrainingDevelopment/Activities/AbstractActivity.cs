@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks.Collections;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks.Steps;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Collections;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
-namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Activities
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Activities
 {
     public abstract class AbstractActivity<TTask, TStep, TResourceRequirement> : 
         TrainingEntity,

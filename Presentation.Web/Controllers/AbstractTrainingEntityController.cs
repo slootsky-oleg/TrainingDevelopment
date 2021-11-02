@@ -1,11 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
-using Bks.Training.Development.Application.TrainingDevelopment.Common.Queries.Get;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
 
-namespace Bks.Training.Development.Presentation.Web.Controllers
+namespace Bks.TrainingDevelopment.Presentation.Web.Controllers
 {
     public abstract class AbstractTrainingEntityController<TCreateRequest> : AbstractController
     {

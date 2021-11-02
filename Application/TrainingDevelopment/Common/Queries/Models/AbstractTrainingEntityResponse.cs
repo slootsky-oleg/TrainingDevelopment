@@ -1,8 +1,8 @@
-﻿using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour;
-using Bks.Training.Development.Domain.Values;
-using Bks.Training.Development.Domain.Values.Ids;
+﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.TrainingDevelopment.Domain.Values;
+using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Bks.Training.Development.Application.TrainingDevelopment.Common.Queries.Models
+namespace Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Queries.Models
 {
     public abstract class AbstractTrainingEntityResponse
     {

@@ -1,4 +1,4 @@
-﻿namespace Bks.Training.Development.Application
+﻿namespace Bks.TrainingDevelopment.Application
 {
     public class ForMediator
     {

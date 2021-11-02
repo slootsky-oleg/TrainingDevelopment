@@ -1,4 +1,4 @@
-﻿namespace Bks.Training.Development.Application.TrainingDevelopment.Common.Queries.Get
+﻿namespace Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Queries.Get
 {
     // public class GetTrainingEntityInteractor<T, TResult> : IGetTrainingEntityInteractor<T, TResult>
     //     where T: ITrainingEntity

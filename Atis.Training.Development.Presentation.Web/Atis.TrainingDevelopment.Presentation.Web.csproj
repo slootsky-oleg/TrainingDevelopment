@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Atis.Training.Development.Domain\Atis.Training.Development.Domain.csproj" />
-    <ProjectReference Include="..\Presentation.Web\Bks.Training.Development.Presentation.Web.csproj" />
+    <ProjectReference Include="..\Atis.Training.Development.Domain\Atis.TrainingDevelopment.Domain.csproj" />
+    <ProjectReference Include="..\Presentation.Web\Bks.TrainingDevelopment.Presentation.Web.csproj" />
   </ItemGroup>
 
 </Project>

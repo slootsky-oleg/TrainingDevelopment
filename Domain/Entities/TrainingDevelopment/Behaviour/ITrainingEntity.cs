@@ -1,7 +1,7 @@
-﻿using Bks.Training.Development.Domain.Values;
-using Bks.Training.Development.Domain.Values.Ids;
+﻿using Bks.TrainingDevelopment.Domain.Values;
+using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Bks.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
     public interface ITrainingEntity
     {

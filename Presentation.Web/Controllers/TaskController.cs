@@ -1,13 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-using Bks.Training.Development.Application.Features;
-using Bks.Training.Development.Application.TrainingDevelopment.Common.Queries.Get;
-using Bks.Training.Development.Domain.Entities.TrainingDevelopment.Tasks;
+﻿using Bks.TrainingDevelopment.Application.Features;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement.Mvc;
 
-namespace Bks.Training.Development.Presentation.Web.Controllers
+namespace Bks.TrainingDevelopment.Presentation.Web.Controllers
 {
     [ApiController]
     [Route("training-development/tasks")]

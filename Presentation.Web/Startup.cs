@@ -1,5 +1,5 @@
-using Bks.Training.Development.Application;
-using Bks.Training.Development.Presentation.Web.Filters.Swagger;
+using Bks.TrainingDevelopment.Application;
+using Bks.TrainingDevelopment.Presentation.Web.Filters.Swagger;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.FeatureManagement;
 using Microsoft.OpenApi.Models;
 
-namespace Bks.Training.Development.Presentation.Web
+namespace Bks.TrainingDevelopment.Presentation.Web
 {
     public class Startup
     {
