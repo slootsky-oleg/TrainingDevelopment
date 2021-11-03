@@ -9,14 +9,14 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
     public abstract class TrainingEntity : ITrainingEntity, IHasCustomFields, IHasContent, IVersioned
     {
         public GuidId Id { get; private set; }
-        public Version Version_Q { get; }
+        public Version Version { get; }
         public ExternalId ExternalId { get; private set;}
         public Description Description { get; }
         public Name Name { get; private set;}
 
         //Common for all training dev entities
-        public CustomFieldContainer CustomFields_Q { get; }
-        public ContentContainer_Q Content_Q { get; }
+        public CustomFieldContainer CustomFields { get; }
+        public ContentContainer Content { get; }
     }
 
 }

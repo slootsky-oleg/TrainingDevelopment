@@ -2,6 +2,6 @@
 {
     public interface IHasSeats
     {
-        SeatContainer Seats_Q { get; }
+        SeatContainer Seats { get; }
     }
 }

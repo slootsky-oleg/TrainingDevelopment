@@ -2,6 +2,6 @@
 {
     public interface IHasPrerequisites
     {
-        PrerequisiteContainer Prerequisites_Q { get; }
+        PrerequisiteContainer Prerequisites { get; }
     }
 }

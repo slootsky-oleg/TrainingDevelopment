@@ -4,6 +4,6 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
 {
     public interface IVersioned
     {
-        public Version Version_Q { get; }
+        public Version Version { get; }
     }
 }

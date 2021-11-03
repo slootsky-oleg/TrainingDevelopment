@@ -7,7 +7,7 @@
         //TODO: Add scheduling constraints
 
         //TODO: Add Evaluation Phase
-        public string EvaluationPhase_Q { get; set; }
+        public string EvaluationPhase { get; set; }
         
         //TODO: Add Evaluation Criteria
         

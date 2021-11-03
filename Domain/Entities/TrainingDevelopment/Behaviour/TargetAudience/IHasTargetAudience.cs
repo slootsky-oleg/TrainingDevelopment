@@ -2,6 +2,6 @@
 {
     public interface IHasTargetAudience
     {
-        TargetAudienceContainer TargetAudience_Q { get; }
+        TargetAudienceContainer TargetAudience { get; }
     }
 }

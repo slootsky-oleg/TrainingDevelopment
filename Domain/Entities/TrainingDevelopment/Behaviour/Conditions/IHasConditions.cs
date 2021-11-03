@@ -2,6 +2,6 @@
 {
     public interface IHasConditions
     {
-        public ExecutionConditionContainer Conditions_Q { get; }
+        public ExecutionConditionContainer Conditions { get; }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.EvaluationForms
 {
-    public class EvaluationForm_Q : TrainingEntity
+    public class EvaluationForm : TrainingEntity
     {
         
     }

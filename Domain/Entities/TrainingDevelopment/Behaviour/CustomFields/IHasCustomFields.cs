@@ -2,6 +2,6 @@
 {
     public interface IHasCustomFields
     {
-        CustomFieldContainer CustomFields_Q { get; }
+        CustomFieldContainer CustomFields { get; }
     }
 }

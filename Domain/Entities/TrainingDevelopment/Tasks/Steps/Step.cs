@@ -24,21 +24,21 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Step
         //This may simplify validations (only 5 leader steps)
         //TODO: Conditions: weather, etc
 
-        public IReadOnlyCollection<Step> Steps_Q { get; }
+        public IReadOnlyCollection<Step> Steps { get; }
 
-        public EvaluationOutline EvaluationOutline_Q { get; }
-        public PrerequisiteContainer Prerequisites_Q { get; }
-        public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements_Q { get; }
-        public SeatContainer Seats_Q { get; }
-        public TargetAudienceContainer TargetAudience_Q { get; }
-        public ExecutionConditionContainer Conditions_Q { get; }
+        public EvaluationOutline EvaluationOutline { get; }
+        public PrerequisiteContainer Prerequisites { get; }
+        public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements { get; }
+        public SeatContainer Seats { get; }
+        public TargetAudienceContainer TargetAudience { get; }
+        public ExecutionConditionContainer Conditions { get; }
 
 
-        public IReadOnlyCollection<Step> GetTrainingItems_Q()
+        public IReadOnlyCollection<Step> GetTrainingItems()
         {
             //recursively get all steps. Handle duplicates is steps are sharable
-            return Steps_Q
-                .Select(s => s.GetTrainingItems_Q())
+            return Steps
+                .Select(s => s.GetTrainingItems())
                 .SelectMany(s => s)
                 .ToList();
         }

@@ -17,7 +17,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Events
 
         //public IReadOnlyCollection<Resource> Resources { get; }
 
-        public override void Archive_Q()
+        public override void Archive()
         {
             throw new System.NotSupportedException("Step can't be archived.");  //Applies to all availability methods
         }

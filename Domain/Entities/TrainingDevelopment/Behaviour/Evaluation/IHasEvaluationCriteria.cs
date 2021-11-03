@@ -2,6 +2,6 @@
 {
     public interface IHasEvaluationCriteria
     {
-        EvaluationOutline EvaluationOutline_Q { get; }
+        EvaluationOutline EvaluationOutline { get; }
     }
 }

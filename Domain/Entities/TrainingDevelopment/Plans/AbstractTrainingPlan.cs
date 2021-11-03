@@ -29,43 +29,43 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
     {
         public TimeSpan Duration { get; private set; }
 
-        public IReadOnlyCollection<PlannedTraining<AbstractTrainingPlan<TTask, TStep, TResourceRequirement>>> Plans_Q { get; }
-        public IReadOnlyCollection<PlannedTraining<AbstractActivity<TTask, TStep, TResourceRequirement>>> Activities_Q { get; }
+        public IReadOnlyCollection<PlannedTraining<AbstractTrainingPlan<TTask, TStep, TResourceRequirement>>> Plans { get; }
+        public IReadOnlyCollection<PlannedTraining<AbstractActivity<TTask, TStep, TResourceRequirement>>> Activities { get; }
 
-        public EvaluationOutline EvaluationOutline_Q { get; }
-        public PrerequisiteContainer Prerequisites_Q { get; }
-        public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements_Q { get; }
-        public SeatContainer Seats_Q { get; }
-        public TargetAudienceContainer TargetAudience_Q { get; }
+        public EvaluationOutline EvaluationOutline { get; }
+        public PrerequisiteContainer Prerequisites { get; }
+        public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements { get; }
+        public SeatContainer Seats { get; }
+        public TargetAudienceContainer TargetAudience { get; }
         
-        public void Activate_Q()
+        public void Activate()
         {
             throw new NotImplementedException();
         }
 
-        public void Deprecate_Q()
+        public void Deprecate()
         {
             throw new NotImplementedException();
         }
 
-        public void Obsolete_Q()
+        public void Obsolete()
         {
             throw new NotImplementedException();
         }
 
-        public void Archive_Q()
+        public void Archive()
         {
             throw new NotImplementedException();
         }
 
-        public IReadOnlyCollection<TTask> GetTrainingItems_Q()
+        public IReadOnlyCollection<TTask> GetTrainingItems()
         {
-            var plans = Plans_Q
-                .Select(p => p.Training.GetTrainingItems_Q())
+            var plans = Plans
+                .Select(p => p.Training.GetTrainingItems())
                 .SelectMany(p => p);
 
-            var activities = Activities_Q
-                .Select(a => a.Training.GetTrainingItems_Q())
+            var activities = Activities
+                .Select(a => a.Training.GetTrainingItems())
                 .SelectMany(a => a);
 
             return plans
