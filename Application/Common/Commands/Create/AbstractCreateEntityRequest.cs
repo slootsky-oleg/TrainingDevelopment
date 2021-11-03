@@ -1,4 +1,4 @@
-﻿namespace Bks.TrainingDevelopment.Application.Common.Commands
+﻿namespace Bks.TrainingDevelopment.Application.Common.Commands.Create
 {
     public abstract class AbstractCreateEntityRequest
     {

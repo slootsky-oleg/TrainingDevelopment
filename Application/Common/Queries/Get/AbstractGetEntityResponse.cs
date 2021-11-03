@@ -1,8 +1,7 @@
 ﻿using System;
 using Bks.TrainingDevelopment.Domain.Entities;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 
-namespace Bks.TrainingDevelopment.Application.Common.Queries
+namespace Bks.TrainingDevelopment.Application.Common.Queries.Get
 {
     public abstract class AbstractGetEntityResponse
     {

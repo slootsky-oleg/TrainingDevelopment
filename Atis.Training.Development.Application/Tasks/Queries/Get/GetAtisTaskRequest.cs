@@ -1,10 +1,10 @@
 ﻿using System;
+using Bks.TrainingDevelopment.Application.Common.Queries.Get;
 using MediatR;
 
 namespace Atis.TrainingDevelopment.Application.Tasks.Queries.Get
 {
-    public class GetAtisTaskRequest : IRequest<GetAtisTaskResponse>
+    public class GetAtisTaskRequest : AbstractGetEntityRequest, IRequest<GetAtisTaskResponse>
     {
-        public Guid Id { get; set; }
     }
 }
