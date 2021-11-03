@@ -20,7 +20,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
         IHasTargetAudience,
         IArchivable,
         IHasRelatedEntities<AbstractTask<TStep, TResourceRequirement>>
-        where TResourceRequirement: ResourceRequirement
+        where TResourceRequirement: ResourceRequirement //TODO: interface that is used by activities/events/
         where TStep: Step
     {
         public StepContainer<TStep> Steps { get; }
