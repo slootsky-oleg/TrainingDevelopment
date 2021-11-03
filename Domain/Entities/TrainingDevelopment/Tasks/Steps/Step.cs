@@ -20,18 +20,18 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Step
         IHasTargetAudience,
         ITrainingCollection<Step>
     {
-        //TODO: can be defined as a collection of leader/critical steps on the owner's level (task/step)
-        //This may simplify validations (only 5 leader steps)
-        //TODO: Conditions: weather, etc
-
-        public IReadOnlyCollection<Step> Steps { get; }
-
         public EvaluationOutline EvaluationOutline { get; }
         public PrerequisiteContainer Prerequisites { get; }
         public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements { get; }
         public SeatContainer Seats { get; }
         public TargetAudienceContainer TargetAudience { get; }
         public ExecutionConditionContainer Conditions { get; }
+
+        //TODO: can be defined as a collection of leader/critical steps on the owner's level (task/step)
+        //This may simplify validations (only 5 leader steps)
+        //TODO: Conditions: weather, etc
+
+        public IReadOnlyCollection<Step> Steps { get; }
 
 
         public IReadOnlyCollection<Step> GetTrainingItems()
