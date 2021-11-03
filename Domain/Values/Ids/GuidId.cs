@@ -21,5 +21,10 @@ namespace Bks.TrainingDevelopment.Domain.Values.Ids
         {
             yield return guid;
         }
+
+        public static implicit operator Guid(GuidId id)
+        {
+            return id.guid;
+        }
     }
 }

@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atis.TrainingDevelopment.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atis.TrainingDevelopment.Presentation.Web", "Atis.Training.Development.Presentation.Web\Atis.TrainingDevelopment.Presentation.Web.csproj", "{DF980D33-C853-4AB9-8403-CCCA482FFC03}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{FC8FAB14-9071-4DDB-A065-B02D77599FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Packages", "Bks.Packages\Bks.Packages.csproj", "{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +57,10 @@ Global
 		{DF980D33-C853-4AB9-8403-CCCA482FFC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF980D33-C853-4AB9-8403-CCCA482FFC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF980D33-C853-4AB9-8403-CCCA482FFC03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +69,7 @@ Global
 		{8B22475B-1E0E-4967-A4B1-704297988792} = {F77175EB-5E1B-48CF-9F25-FC7B29A7BCEB}
 		{7673C475-4193-4DDC-ACA4-8B8F50859248} = {F77175EB-5E1B-48CF-9F25-FC7B29A7BCEB}
 		{DF980D33-C853-4AB9-8403-CCCA482FFC03} = {F77175EB-5E1B-48CF-9F25-FC7B29A7BCEB}
+		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A803B16-B341-4FA0-BCF9-E8890F453720}
