@@ -14,7 +14,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Coll
 {
     public abstract class AbstractTaskCollection<TTask, TStep, TResourceRequirement> : 
         TrainingEntity,
-        IEvaluable,
+        IHasEvaluationCriteria,
         IHasPrerequisites,
         IHasConditions,
         IHasResourceRequirements<TResourceRequirement>,

@@ -16,7 +16,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Activities
 {
     public abstract class AbstractActivity<TTask, TStep, TResourceRequirement> : 
         TrainingEntity,
-        IEvaluable,
+        IHasEvaluationCriteria,
         IHasPrerequisites,
         IHasConditions,
         IHasResourceRequirements<TResourceRequirement>,

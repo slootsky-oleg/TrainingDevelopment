@@ -1,114 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Domain.Entities.TrainingDevelopment.Behaviour.TrainingEntity">
-    <Position X="12.75" Y="2" Width="1.5" />
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TrainingEntity">
+    <Position X="11" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAgBAAAAAAAEAQAAAAABAIAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Behaviour\TrainingEntity.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.AbstractTask&lt;TStep, TResourceRequirement&gt;">
-    <Position X="4" Y="5" Width="3" />
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.AbstractTask&lt;TStep, TResourceRequirement&gt;">
+    <Position X="2.25" Y="5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAQgEAAUAAACAAAAAAAAAABABAAACBAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\AbstractTask.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Domain.Atis.Entities.TrainingDevelopment.AtisTask">
-    <Position X="5.75" Y="9.25" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Atis\Entities\TrainingDevelopment\AtisTask.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Steps.Step">
-    <Position X="9.5" Y="5" Width="2" />
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps.Step">
+    <Position X="6" Y="5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAACIAAAAAAQAAAAUAAAAAAAAAAAAAAAABAAACBAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Steps\Step.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Domain.Atis.Entities.TrainingDevelopment.AtisStep">
-    <Position X="9.75" Y="8.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Atis\Entities\TrainingDevelopment\AtisStep.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements.ResourceRequirement">
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements.ResourceRequirement">
     <Position X="1.5" Y="12.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAgAAAAIA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Behaviour\ResourceRequirements\ResourceRequirement.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Atis.Entities.TrainingDevelopment.Behaviour.AtisResourceRequirement">
-    <Position X="1.5" Y="15.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Atis\Entities\TrainingDevelopment\Behaviour\AtisResourceRequirement.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Behaviour.TrainingBehaviour">
-    <Position X="1.75" Y="11" Width="1.5" />
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TrainingBehaviour">
+    <Position X="1.5" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Behaviour\TrainingBehaviour.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Activities.AbstractActivity&lt;TTask, TStep, TResourceRequirement&gt;">
-    <Position X="12.25" Y="5" Width="3.5" />
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Activities.AbstractActivity&lt;TTask, TStep, TResourceRequirement&gt;">
+    <Position X="8.75" Y="5" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAACAQoEAAUAAACAAAAAAAAAAAAJAAACBAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Activities\AbstractActivity.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Activities.Activity">
-    <Position X="12.25" Y="9.75" Width="3.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Activities\Activity.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Collections.AbstractTaskCollection&lt;TTask, TStep, TResourceRequirement&gt;">
-    <Position X="16.5" Y="5" Width="3.75" />
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Collections.AbstractTaskCollection&lt;TTask, TStep, TResourceRequirement&gt;">
+    <Position X="13" Y="5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAQoEAAUAAACAAAAAAAAAABAJAAACBAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\Collections\AbstractTaskCollection.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.Collections.TaskCollection">
-    <Position X="16.5" Y="9.75" Width="3.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Tasks\Collections\TaskCollection.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Plans.AbstractTrainingPlan&lt;TTask, TStep, TResourceRequirement&gt;">
-    <Position X="21" Y="5" Width="3.75" />
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans.AbstractTrainingPlan&lt;TTask, TStep, TResourceRequirement&gt;">
+    <Position X="17.5" Y="5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAACAAEAACAQgEAAUAAACAAAAAAAAAAAABAAAABAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Plans\AbstractTrainingPlan.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Plans.TrainingPlan" Collapsed="true">
-    <Position X="21" Y="9.5" Width="3.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Plans\TrainingPlan.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Domain.Entities.TrainingDevelopment.Tasks.TrainingTask" Collapsed="true">
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.TrainingTask">
     <Position X="2.5" Y="9.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\TrainingDevelopment\Tasks\TrainingTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Activities.Activity">
+    <Position X="8.75" Y="9.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Activities\Activity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Collections.TaskCollection">
+    <Position X="13" Y="9.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Tasks\Collections\TaskCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans.TrainingPlan">
+    <Position X="17.5" Y="9.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrainingDevelopment\Plans\TrainingPlan.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

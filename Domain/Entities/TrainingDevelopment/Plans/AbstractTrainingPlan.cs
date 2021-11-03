@@ -15,7 +15,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
 {
     public abstract class AbstractTrainingPlan<TTask, TStep, TResourceRequirement> : 
         TrainingEntity,
-        IEvaluable,
+        IHasEvaluationCriteria,
         IHasPrerequisites,
         IHasResourceRequirements<TResourceRequirement>,
         IHasSeats,

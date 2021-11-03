@@ -12,7 +12,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Step
 {
     public class Step : 
         TrainingEntity,
-        IEvaluable,
+        IHasEvaluationCriteria,
         IHasConditions,
         IHasPrerequisites,
         IHasResourceRequirements<ResourceRequirement>,
