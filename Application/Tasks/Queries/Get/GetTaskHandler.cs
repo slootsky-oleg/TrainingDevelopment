@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Commands;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
 using Bks.TrainingDevelopment.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Values.Ids;
@@ -17,7 +16,7 @@ namespace Bks.TrainingDevelopment.Application.Tasks.Queries.Get
             var task = new TrainingTask();
             
             var hack = task.AsDynamic();
-            hack.Id = request.Id;
+            hack.Id = GuidId.Of(request.Id);
             hack.Name = Name.Of($"New task [{DateTime.Now}]");
 
             return new GetTaskResponse(task);

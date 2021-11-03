@@ -26,12 +26,11 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions
         return await Mediator.Send(request);
     }
 
-    [HttpGet("{id:guid}")]
-    public async Task<TGetResponse> Get(Guid id)
-        //public async Task<TGetResponse> Get([FromRoute] TGetRequest request)
+    [HttpGet("{id}")]
+    //public async Task<TGetResponse> Get(Guid id)
+    public async Task<TGetResponse> Get([FromRoute] TGetRequest request)
     {
-        return await Task.FromResult<TGetResponse>(null);
-        //return await Mediator.Send(request);
+        return await Mediator.Send(request);
     }
 
     // [HttpPost("archive")]

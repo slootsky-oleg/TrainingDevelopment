@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions
+namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions.Tasks
 {
     public class AbstractTaskController<
             TCreateRequest, TCreateResponse,

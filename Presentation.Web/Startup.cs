@@ -30,6 +30,7 @@ namespace Bks.TrainingDevelopment.Presentation.Web
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Presentation.Web", Version = "v1" });
                 c.DocumentFilter<FeatureGateDocumentFilter>();
+                c.DescribeAllParametersInCamelCase();
             });
 
             services.AddMediatR(typeof(ForMediator));
