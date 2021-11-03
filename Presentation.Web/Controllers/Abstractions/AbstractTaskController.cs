@@ -1,5 +1,4 @@
-﻿using Bks.Packages.Cqrs;
-using MediatR;
+﻿using MediatR;
 
 namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions
 {
@@ -13,7 +12,7 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions
         where TGetRequest : IRequest<TGetResponse>
 
     {
-        public AbstractTaskController(IRequestMediator mediator) : base(mediator)
+        public AbstractTaskController(IMediator mediator) : base(mediator)
         {
         }
     }

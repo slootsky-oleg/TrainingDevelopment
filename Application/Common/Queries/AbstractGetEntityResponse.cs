@@ -1,4 +1,5 @@
 ﻿using System;
+using Bks.TrainingDevelopment.Domain.Entities;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 
 namespace Bks.TrainingDevelopment.Application.Common.Queries
@@ -10,7 +11,7 @@ namespace Bks.TrainingDevelopment.Application.Common.Queries
         public string Name { get; }
         public string Description { get; }
 
-        protected AbstractGetEntityResponse(ITrainingEntity entity)
+        protected AbstractGetEntityResponse(IEntity entity)
         {
             Id = entity.Id;
             ExternalId = entity.ExternalId;

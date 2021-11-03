@@ -2,8 +2,8 @@
 
 namespace Bks.Packages.Cqrs
 {
-    public interface IRequestMediator : IMediator
-    {
-        
-    }
+    // public interface IRequestMediator : IMediator
+    // {
+    //     
+    // }
 }

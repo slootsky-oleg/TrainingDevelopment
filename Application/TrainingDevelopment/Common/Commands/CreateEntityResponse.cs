@@ -1,12 +1,15 @@
-﻿namespace Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Commands
+﻿using System;
+using Bks.TrainingDevelopment.Domain.Entities;
+
+namespace Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Commands
 {
     public class CreateEntityResponse
     {
-        public int Id { get; }
+        public Guid Id { get; }
 
-        public CreateEntityResponse(int id)
+        public CreateEntityResponse(IEntity entity)
         {
-            Id = id;
+            Id = entity.Id;
         }
     }
 }

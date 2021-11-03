@@ -17,6 +17,17 @@ namespace Bks.TrainingDevelopment.Domain.Values.Ids
             this.guid = guid;
         }
 
+        public static GuidId Of(Guid guid)
+        {
+            return new GuidId(guid);
+        }
+
+        public static GuidId New()
+        {
+            var guid = new Guid();
+            return new GuidId(guid);
+        }
+
         protected override IEnumerable<object> GetEqualityComponents()
         {
             yield return guid;

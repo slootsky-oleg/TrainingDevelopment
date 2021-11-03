@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Bks.Packages.Cqrs;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,7 +11,7 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions
         where TCreateRequest : IRequest<TCreateResponse>
         where TGetRequest : IRequest<TGetResponse>
     {
-        protected AbstractTrainingEntityController(IRequestMediator mediator)
+        protected AbstractTrainingEntityController(IMediator mediator)
             : base(mediator)
         {
         }
