@@ -8,11 +8,11 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
     public abstract class TrainingEntity : ITrainingEntity, IHasCustomFields, IHasContent, IVersioned
     {
-        public GuidId Id { get; }
+        public GuidId Id { get; private set; }
         public Version Version_Q { get; }
-        public ExternalId ExternalId { get; }
+        public ExternalId ExternalId { get; private set;}
         public Description Description { get; }
-        public Name Name { get; }
+        public Name Name { get; private set;}
 
         //Common for all training dev entities
         public CustomFieldContainer CustomFields_Q { get; }

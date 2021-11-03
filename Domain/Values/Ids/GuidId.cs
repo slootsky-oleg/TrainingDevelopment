@@ -24,7 +24,7 @@ namespace Bks.TrainingDevelopment.Domain.Values.Ids
 
         public static GuidId New()
         {
-            var guid = new Guid();
+            var guid = Guid.NewGuid();
             return new GuidId(guid);
         }
 
