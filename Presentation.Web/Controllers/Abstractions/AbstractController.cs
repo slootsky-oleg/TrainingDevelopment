@@ -1,5 +1,4 @@
 ﻿using Bks.Packages.Cqrs;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions
