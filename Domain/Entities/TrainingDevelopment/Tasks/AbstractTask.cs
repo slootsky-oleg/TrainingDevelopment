@@ -10,7 +10,7 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
 {
-    public abstract class AbstractTask<TStep, TResourceRequirement> : 
+    public abstract class AbstractTask<TStep, TResourceRequirement> :
         TrainingEntity,
         IHasEvaluationCriteria,
         IHasPrerequisites,
@@ -20,8 +20,8 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
         IHasTargetAudience,
         IArchivable,
         IHasRelatedEntities<AbstractTask<TStep, TResourceRequirement>>
-        where TResourceRequirement: ResourceRequirement //TODO: interface that is used by activities/events/
-        where TStep: Step
+        where TResourceRequirement : ResourceRequirement //TODO: interface that is used by activities/events/
+        where TStep : Step
     {
         public StepContainer<TStep> Steps { get; }
         public EvaluationOutline EvaluationOutline { get; }

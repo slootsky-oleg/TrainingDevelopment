@@ -4,6 +4,5 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Evaluation
 {
     public class EvaluationForm : TrainingEntity
     {
-        
     }
 }

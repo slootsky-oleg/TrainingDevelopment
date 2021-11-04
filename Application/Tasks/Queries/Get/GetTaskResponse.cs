@@ -1,5 +1,4 @@
-﻿using Bks.TrainingDevelopment.Application.Common.Queries;
-using Bks.TrainingDevelopment.Application.Common.Queries.Get;
+﻿using Bks.TrainingDevelopment.Application.Common.Entities.Queries.Get;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
 
 namespace Bks.TrainingDevelopment.Application.Tasks.Queries.Get

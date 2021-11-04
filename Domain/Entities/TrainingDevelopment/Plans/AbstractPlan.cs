@@ -13,7 +13,7 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
 {
-    public abstract class AbstractPlan<TTask, TStep, TResourceRequirement> : 
+    public abstract class AbstractPlan<TTask, TStep, TResourceRequirement> :
         TrainingEntity,
         IHasEvaluationCriteria,
         IHasPrerequisites,
@@ -22,22 +22,26 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
         IHasTargetAudience,
         IArchivable,
         ITrainingCollection<TTask>
-        where TStep: Step
-        where TTask: AbstractTask<TStep, TResourceRequirement>
-        where TResourceRequirement: ResourceRequirement
+        where TStep : Step
+        where TTask : AbstractTask<TStep, TResourceRequirement>
+        where TResourceRequirement : ResourceRequirement
 
     {
         public TimeSpan Duration { get; private set; }
 
         public IReadOnlyCollection<PlannedTraining<AbstractPlan<TTask, TStep, TResourceRequirement>>> Plans { get; }
-        public IReadOnlyCollection<PlannedTraining<AbstractActivity<TTask, TStep, TResourceRequirement>>> Activities { get; }
+
+        public IReadOnlyCollection<PlannedTraining<AbstractActivity<TTask, TStep, TResourceRequirement>>> Activities
+        {
+            get;
+        }
 
         public EvaluationOutline EvaluationOutline { get; }
         public PrerequisiteContainer Prerequisites { get; }
         public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements { get; }
         public SeatContainer Seats { get; }
         public TargetAudienceContainer TargetAudience { get; }
-        
+
         public void Archive()
         {
             throw new NotImplementedException();

@@ -1,7 +1,7 @@
 ﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities
 {
-    public class RelatedEntityContainer<T>: IHasRelatedEntities<T> 
-        where T: ITrainingEntity
+    public class RelatedEntityContainer<T> : IHasRelatedEntities<T>
+        where T : ITrainingEntity
     {
         public RelatedEntityContainer<T> RelatedEntities { get; }
     }

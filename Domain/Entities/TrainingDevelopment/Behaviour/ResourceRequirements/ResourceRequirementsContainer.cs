@@ -3,7 +3,7 @@
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
     public class ResourceRequirementsContainer<T>
-        where T: ResourceRequirement
+        where T : ResourceRequirement
     {
         public AggregationStrategy Strategy { get; set; }
 

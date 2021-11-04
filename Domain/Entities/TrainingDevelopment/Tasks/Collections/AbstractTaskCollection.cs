@@ -12,7 +12,7 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Collections
 {
-    public abstract class AbstractTaskCollection<TTask, TStep, TResourceRequirement> : 
+    public abstract class AbstractTaskCollection<TTask, TStep, TResourceRequirement> :
         TrainingEntity,
         IHasEvaluationCriteria,
         IHasPrerequisites,
@@ -22,9 +22,9 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Coll
         IHasTargetAudience,
         IArchivable,
         ITrainingCollection<TTask>
-        where TStep: Step
-        where TTask: AbstractTask<TStep, TResourceRequirement>
-        where TResourceRequirement: ResourceRequirement
+        where TStep : Step
+        where TTask : AbstractTask<TStep, TResourceRequirement>
+        where TResourceRequirement : ResourceRequirement
     {
         public IReadOnlyCollection<TTask> Tasks { get; }
         public IReadOnlyCollection<AbstractTaskCollection<TTask, TStep, TResourceRequirement>> TaskCollections { get; }

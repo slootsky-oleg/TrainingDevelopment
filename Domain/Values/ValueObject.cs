@@ -17,7 +17,7 @@ namespace Bks.TrainingDevelopment.Domain.Values
             if (GetType() != obj.GetType())
                 return false;
 
-            var valueObject = (ValueObject) obj;
+            var valueObject = (ValueObject)obj;
 
             var equalityComponents = valueObject.GetEqualityComponents();
             return GetEqualityComponents().SequenceEqual(equalityComponents);

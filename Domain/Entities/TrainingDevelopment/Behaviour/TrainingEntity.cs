@@ -10,13 +10,12 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
     {
         public GuidId Id { get; private set; }
         public Version Version { get; }
-        public ExternalId ExternalId { get; private set;}
+        public ExternalId ExternalId { get; private set; }
         public Description Description { get; }
-        public Name Name { get; private set;}
+        public Name Name { get; private set; }
 
         //Common for all training dev entities
         public CustomFieldContainer CustomFields { get; }
         public ContentContainer Content { get; }
     }
-
 }

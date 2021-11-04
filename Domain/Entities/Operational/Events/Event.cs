@@ -3,7 +3,7 @@
 namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Events
 {
     //var event = repo.get(id);
-    
+
     //event.resources.AddMany(request.resource)
     //event.resources.AddMany(request.allocations)
 
@@ -19,7 +19,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Events
 
         public override void Archive()
         {
-            throw new System.NotSupportedException("Step can't be archived.");  //Applies to all availability methods
+            throw new System.NotSupportedException("Step can't be archived."); //Applies to all availability methods
         }
     }
 }

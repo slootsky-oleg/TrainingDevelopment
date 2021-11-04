@@ -13,7 +13,7 @@ namespace Bks.TrainingDevelopment.Domain.Values.Ids
             {
                 throw new ArgumentException("Version must be a positive number.", nameof(version));
             }
-            
+
             this.value = version;
         }
 

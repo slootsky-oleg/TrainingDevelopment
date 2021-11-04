@@ -8,11 +8,11 @@
 
         //TODO: Add Evaluation Phase
         public string EvaluationPhase { get; set; }
-        
+
         //TODO: Add Evaluation Criteria
-        
+
         //TODO: Add Evaluation method
-        
+
         //TODO: Add Evaluation forms []
     }
 }

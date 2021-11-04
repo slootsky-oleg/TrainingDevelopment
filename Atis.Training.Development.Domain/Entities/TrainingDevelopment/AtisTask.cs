@@ -3,7 +3,7 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
 
 namespace Atis.Training.Development.Domain.Entities.TrainingDevelopment
 {
-    public class AtisTask: AbstractTask<AtisStep, AtisResourceRequirement>
+    public class AtisTask : AbstractTask<AtisStep, AtisResourceRequirement>
     {
     }
 }

@@ -5,7 +5,7 @@ using Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Commands.Ar
 
 namespace Atis.TrainingDevelopment.Application.Tasks.Commands.Archive
 {
-    public class ArchiveAtisTaskInteractor: IArchiveTrainingEntityInteractor<AtisTask>
+    public class ArchiveAtisTaskInteractor : IArchiveTrainingEntityInteractor<AtisTask>
     {
         public async Task Execute(Guid id)
         {

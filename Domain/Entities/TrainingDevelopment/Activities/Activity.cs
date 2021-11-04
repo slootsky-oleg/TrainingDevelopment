@@ -6,6 +6,5 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Activities
 {
     public class Activity : AbstractActivity<TrainingTask, Step, ResourceRequirement>
     {
-
     }
 }

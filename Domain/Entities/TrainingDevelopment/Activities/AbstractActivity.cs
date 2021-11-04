@@ -14,7 +14,7 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Activities
 {
-    public abstract class AbstractActivity<TTask, TStep, TResourceRequirement> : 
+    public abstract class AbstractActivity<TTask, TStep, TResourceRequirement> :
         TrainingEntity,
         IHasEvaluationCriteria,
         IHasPrerequisites,
@@ -24,9 +24,9 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Activities
         IHasTargetAudience,
         IArchivable,
         ITrainingCollection<TTask>
-        where TStep: Step
-        where TTask: AbstractTask<TStep, TResourceRequirement>
-        where TResourceRequirement: ResourceRequirement
+        where TStep : Step
+        where TTask : AbstractTask<TStep, TResourceRequirement>
+        where TResourceRequirement : ResourceRequirement
     {
         public TimeSpan Duration { get; set; }
         public IReadOnlyCollection<TTask> Tasks { get; }

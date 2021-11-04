@@ -15,7 +15,7 @@ namespace Bks.TrainingDevelopment.Application.Tasks.Commands.Create
         public async Task<CreateEntityResponse> Handle(CreateTaskRequest request, CancellationToken cancellationToken)
         {
             var task = new TrainingTask();
-            
+
             var hack = task.AsDynamic();
             hack.Id = GuidId.New();
             hack.Name = Name.Of($"New task [{DateTime.Now}]");

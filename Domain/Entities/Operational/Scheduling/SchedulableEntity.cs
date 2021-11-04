@@ -14,7 +14,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
         public ExternalId ExternalId { get; set; }
         public Description Description { get; set; }
         public Name Name { get; set; }
-        
+
         //Consider uniting with custom fields (SetId inside the custom field container)
         public EntityTypeId TypeId { get; set; }
 
@@ -28,9 +28,9 @@ namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
 
         public ContentContainer Content { get; set; }
 
-        
+
         #region availability
-        
+
         //Sounds like state machine that can be handled with only two methods  - push down / up
         //Active-Deprecated-Obsolete-Archived
 
@@ -45,10 +45,11 @@ namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
         public virtual void Obsolete()
         {
         }
-        
+
         public virtual void Archive()
         {
         }
+
         #endregion
 
         // //Restore to a specific step or always to a previous. Consider using dedicated methods

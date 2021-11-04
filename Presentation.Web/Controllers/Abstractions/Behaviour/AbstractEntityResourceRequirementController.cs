@@ -25,7 +25,7 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions.Beha
             return await Mediator.Send(request);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{requirementId}")]
         public async Task<TGetResponse> Get([FromRoute] TGetRequest request)
         {
             return await Mediator.Send(request);

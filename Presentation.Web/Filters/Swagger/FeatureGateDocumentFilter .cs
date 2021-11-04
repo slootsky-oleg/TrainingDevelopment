@@ -18,7 +18,7 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Filters.Swagger
         }
 
         public void Apply(OpenApiDocument swaggerDoc, DocumentFilterContext context)
-        {      
+        {
             foreach (var description in context.ApiDescriptions)
             {
                 var filterMetaData = GetFilterMetaData(description);

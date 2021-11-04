@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.TrainingDevelopment.Application.Common.Queries.Get
+namespace Bks.TrainingDevelopment.Application.Common.Entities.Queries.Get
 {
     public abstract class AbstractGetEntityRequest
     {

@@ -5,6 +5,5 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Coll
 {
     public class TaskCollection : AbstractTaskCollection<TrainingTask, Step, ResourceRequirement>
     {
-
     }
 }

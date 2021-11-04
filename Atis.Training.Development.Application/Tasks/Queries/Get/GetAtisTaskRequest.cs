@@ -1,5 +1,4 @@
-﻿using System;
-using Bks.TrainingDevelopment.Application.Common.Queries.Get;
+﻿using Bks.TrainingDevelopment.Application.Common.Entities.Queries.Get;
 using MediatR;
 
 namespace Atis.TrainingDevelopment.Application.Tasks.Queries.Get

@@ -13,7 +13,7 @@ namespace Bks.TrainingDevelopment.Domain.Values.Ids
             {
                 throw new ArgumentException("Guid cannot be empty", nameof(guid));
             }
-            
+
             this.guid = guid;
         }
 

@@ -18,7 +18,7 @@ namespace Bks.TrainingDevelopment.Application.TrainingDevelopment.ResourceRequir
             /*ResourceRequirement requirement*/)
         {
             entityFeatureConfig.ValidateFeature<T>("ResourceRequirements");
-            
+
             //var repository = repositoryResolver.Resolve<T>();
             //var entity = repository.Get(id);
 

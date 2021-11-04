@@ -3,11 +3,10 @@ using Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Queries.Mod
 
 namespace Atis.TrainingDevelopment.Application.Tasks.Queries.Get
 {
-    public class GetAtisTaskResponse: AbstractTrainingEntityResponse
+    public class GetAtisTaskResponse : AbstractTrainingEntityResponse
     {
         public GetAtisTaskResponse(AtisTask entity) : base(entity)
         {
-
         }
     }
 }

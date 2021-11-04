@@ -10,7 +10,7 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Targ
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps
 {
-    public class Step : 
+    public class Step :
         TrainingEntity,
         IHasEvaluationCriteria,
         IHasConditions,

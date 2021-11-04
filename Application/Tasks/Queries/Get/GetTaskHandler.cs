@@ -14,7 +14,7 @@ namespace Bks.TrainingDevelopment.Application.Tasks.Queries.Get
         public async Task<GetTaskResponse> Handle(GetTaskRequest request, CancellationToken cancellationToken)
         {
             var task = new TrainingTask();
-            
+
             var hack = task.AsDynamic();
             hack.Id = GuidId.Of(request.Id);
             hack.Name = Name.Of($"New task [{DateTime.Now}]");
