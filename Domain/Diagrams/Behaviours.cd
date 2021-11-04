@@ -42,11 +42,11 @@
       <FileName>Entities\TrainingDevelopment\Behaviour\Content\IHasContent.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Versioning.IVersioned">
+  <Interface Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Versioning.IVersionable">
     <Position X="0.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\TrainingDevelopment\Behaviour\Versioning\IVersioned.cs</FileName>
+      <FileName>Entities\TrainingDevelopment\Behaviour\Versioning\IVersionable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience.IHasTargetAudience">

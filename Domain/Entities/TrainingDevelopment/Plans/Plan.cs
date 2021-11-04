@@ -4,7 +4,7 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
 {
-    public class TrainingPlan : AbstractTrainingPlan<TrainingTask, Step, ResourceRequirement>
+    public class Plan : AbstractPlan<TrainingTask, Step, ResourceRequirement>
     {
 
     }

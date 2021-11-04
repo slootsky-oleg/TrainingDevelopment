@@ -32,22 +32,6 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
         public TargetAudienceContainer TargetAudience { get; }
         public RelatedEntityContainer<AbstractTask<TStep, TResourceRequirement>> RelatedEntities { get; }
 
-
-        public void Activate()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Deprecate()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Obsolete()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public void Archive()
         {
             throw new System.NotImplementedException();

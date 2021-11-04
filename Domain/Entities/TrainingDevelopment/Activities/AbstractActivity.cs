@@ -39,22 +39,6 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Activities
         public TargetAudienceContainer TargetAudience { get; }
         public ExecutionConditionContainer Conditions { get; }
 
-
-        public void Activate()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Deprecate()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Obsolete()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Archive()
         {
             throw new NotImplementedException();

@@ -37,22 +37,6 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Coll
         public RelatedEntityContainer<TrainingTask> RelatedEntities { get; }
         public ExecutionConditionContainer Conditions { get; }
 
-
-        public void Activate()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Deprecate()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Obsolete()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public void Archive()
         {
             throw new System.NotImplementedException();

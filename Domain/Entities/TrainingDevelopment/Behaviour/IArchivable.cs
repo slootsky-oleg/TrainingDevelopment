@@ -2,9 +2,9 @@
 {
     public interface IArchivable
     {
-        void Activate();
-        void Deprecate();
-        void Obsolete();
+        // void Activate();
+        // void Deprecate();
+        // void Obsolete();
         void Archive();
     }
 }

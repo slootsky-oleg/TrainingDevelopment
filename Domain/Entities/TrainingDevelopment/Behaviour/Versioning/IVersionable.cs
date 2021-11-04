@@ -2,7 +2,7 @@
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Versioning
 {
-    public interface IVersioned
+    public interface IVersionable
     {
         public Version Version { get; }
     }

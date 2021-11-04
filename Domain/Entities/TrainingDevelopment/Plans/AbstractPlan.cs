@@ -13,7 +13,7 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
 {
-    public abstract class AbstractTrainingPlan<TTask, TStep, TResourceRequirement> : 
+    public abstract class AbstractPlan<TTask, TStep, TResourceRequirement> : 
         TrainingEntity,
         IHasEvaluationCriteria,
         IHasPrerequisites,
@@ -29,7 +29,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
     {
         public TimeSpan Duration { get; private set; }
 
-        public IReadOnlyCollection<PlannedTraining<AbstractTrainingPlan<TTask, TStep, TResourceRequirement>>> Plans { get; }
+        public IReadOnlyCollection<PlannedTraining<AbstractPlan<TTask, TStep, TResourceRequirement>>> Plans { get; }
         public IReadOnlyCollection<PlannedTraining<AbstractActivity<TTask, TStep, TResourceRequirement>>> Activities { get; }
 
         public EvaluationOutline EvaluationOutline { get; }
@@ -38,21 +38,6 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
         public SeatContainer Seats { get; }
         public TargetAudienceContainer TargetAudience { get; }
         
-        public void Activate()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Deprecate()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Obsolete()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Archive()
         {
             throw new NotImplementedException();

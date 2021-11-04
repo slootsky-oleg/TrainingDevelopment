@@ -1,11 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions
+namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions.Behaviour
 {
-    public abstract class AbstractTrainingEntityController<
+    public abstract class AbstractEntityResourceRequirementController<
             TCreateRequest, TCreateResponse,
             TGetRequest, TGetResponse>
         : AbstractController
@@ -14,7 +13,7 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions
         where TGetResponse : class
 
     {
-        protected AbstractTrainingEntityController(IMediator mediator)
+        protected AbstractEntityResourceRequirementController(IMediator mediator)
             : base(mediator)
         {
         }
