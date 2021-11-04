@@ -9,4 +9,8 @@
     <ProjectReference Include="..\Atis.Training.Development.Domain\Atis.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Tasks\Commands\Archive\" />
+  </ItemGroup>
+
 </Project>

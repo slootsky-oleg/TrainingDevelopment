@@ -23,12 +23,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Entities\Behavior\Commands\" />
     <Folder Include="Common\Entities\Behavior\Queries\" />
     <Folder Include="Common\Entities\Behavior\ResourceRequirements\Commands\Add\" />
     <Folder Include="Common\Entities\Behavior\ResourceRequirements\Queries\" />
     <Folder Include="Tasks\ResourceRequirements\Commands\Add\" />
     <Folder Include="Tasks\ResourceRequirements\Queries\" />
+    <Folder Include="TrainingDevelopment\Common\Commands\" />
   </ItemGroup>
 
 </Project>

@@ -4,28 +4,28 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions.Behaviour
 {
-    public abstract class AbstractEntityResourceRequirementController<
-            TCreateRequest, TCreateResponse,
+    public abstract class AbstractBehaviorController<
+            TAddRequest, TAddResponse,
             TGetRequest, TGetResponse>
         : AbstractController
-        where TCreateRequest : IRequest<TCreateResponse>
+        where TAddRequest : IRequest<TAddResponse>
         where TGetRequest : IRequest<TGetResponse>
         where TGetResponse : class
 
     {
-        protected AbstractEntityResourceRequirementController(IMediator mediator)
+        protected AbstractBehaviorController(IMediator mediator)
             : base(mediator)
         {
         }
 
 
         [HttpPost]
-        public async Task<TCreateResponse> Create(TCreateRequest request)
+        public async Task<TAddResponse> Create(TAddRequest request)
         {
             return await Mediator.Send(request);
         }
 
-        [HttpGet("{requirementId}")]
+        [HttpGet("{behaviorId}")]
         public async Task<TGetResponse> Get([FromRoute] TGetRequest request)
         {
             return await Mediator.Send(request);
