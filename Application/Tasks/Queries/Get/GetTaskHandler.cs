@@ -16,7 +16,7 @@ namespace Bks.TrainingDevelopment.Application.Tasks.Queries.Get
             var task = new TrainingTask();
 
             var hack = task.AsDynamic();
-            hack.Id = GuidId.Of(request.Id);
+            hack.Id = GuidId.Of(request.EntityId);
             hack.Name = Name.Of($"New task [{DateTime.Now}]");
 
             return new GetTaskResponse(task);

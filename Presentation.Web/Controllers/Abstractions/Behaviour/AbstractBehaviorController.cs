@@ -18,14 +18,13 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions.Beha
         {
         }
 
-
         [HttpPost]
         public async Task<TAddResponse> Create(TAddRequest request)
         {
             return await Mediator.Send(request);
         }
 
-        [HttpGet("{behaviorId}")]
+        [HttpGet("{behaviorId:guid}")]
         public async Task<TGetResponse> Get([FromRoute] TGetRequest request)
         {
             return await Mediator.Send(request);
