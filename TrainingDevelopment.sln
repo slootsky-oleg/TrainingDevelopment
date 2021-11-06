@@ -13,15 +13,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.TrainingDevelopment.Pre
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Atis", "Atis", "{F77175EB-5E1B-48CF-9F25-FC7B29A7BCEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atis.TrainingDevelopment.Domain", "Atis.Training.Development.Domain\Atis.TrainingDevelopment.Domain.csproj", "{8B22475B-1E0E-4967-A4B1-704297988792}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atis.TrainingDevelopment.Domain", "Atis.Training.Development.Domain\Atis.TrainingDevelopment.Domain.csproj", "{8B22475B-1E0E-4967-A4B1-704297988792}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atis.TrainingDevelopment.Application", "Atis.Training.Development.Application\Atis.TrainingDevelopment.Application.csproj", "{7673C475-4193-4DDC-ACA4-8B8F50859248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atis.TrainingDevelopment.Application", "Atis.Training.Development.Application\Atis.TrainingDevelopment.Application.csproj", "{7673C475-4193-4DDC-ACA4-8B8F50859248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atis.TrainingDevelopment.Presentation.Web", "Atis.Training.Development.Presentation.Web\Atis.TrainingDevelopment.Presentation.Web.csproj", "{DF980D33-C853-4AB9-8403-CCCA482FFC03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atis.TrainingDevelopment.Presentation.Web", "Atis.Training.Development.Presentation.Web\Atis.TrainingDevelopment.Presentation.Web.csproj", "{DF980D33-C853-4AB9-8403-CCCA482FFC03}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{FC8FAB14-9071-4DDB-A065-B02D77599FCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Packages", "Bks.Packages\Bks.Packages.csproj", "{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Packages", "Bks.Packages\Bks.Packages.csproj", "{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagrams", "Diagrams\Diagrams.csproj", "{0E6A8DBE-8039-4660-8A59-0966440C1372}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E6A8DBE-8039-4660-8A59-0966440C1372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E6A8DBE-8039-4660-8A59-0966440C1372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E6A8DBE-8039-4660-8A59-0966440C1372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E6A8DBE-8039-4660-8A59-0966440C1372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
