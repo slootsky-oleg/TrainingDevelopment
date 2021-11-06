@@ -2,9 +2,8 @@
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
-    public interface ITrainingBehaviour
+    public interface ITrainingBehavior
     {
         GuidId Id { get; }
-        TrainingEntity Owner { get; }
     }
 }

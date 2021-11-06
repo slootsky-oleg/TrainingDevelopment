@@ -10,4 +10,9 @@
     <None Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Diagrams\" />
+    <Folder Include="Entities\TrainingDevelopment\EvaluationForms\" />
+  </ItemGroup>
+
 </Project>

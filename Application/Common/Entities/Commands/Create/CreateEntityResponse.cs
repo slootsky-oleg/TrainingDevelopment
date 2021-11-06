@@ -7,7 +7,7 @@ namespace Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create
     {
         public Guid Id { get; }
 
-        public CreateEntityResponse(IEntity entity)
+        public CreateEntityResponse(Entity entity)
         {
             Id = entity.Id;
         }

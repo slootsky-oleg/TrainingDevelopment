@@ -7,7 +7,7 @@ namespace Bks.TrainingDevelopment.Application.Common.Entities.Behavior.Commands.
     {
         public Guid Id { get; }
 
-        protected AbstractAddBehaviorResponse(ITrainingBehaviour behaviour)
+        protected AbstractAddBehaviorResponse(ITrainingBehavior behaviour)
         {
             Id = behaviour.Id;
         }

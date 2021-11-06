@@ -11,22 +11,9 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Targ
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps
 {
     public class Step :
-        TrainingEntity,
-        IHasEvaluationCriteria,
-        IHasConditions,
-        IHasPrerequisites,
-        IHasResourceRequirements<ResourceRequirement>,
-        IHasSeats,
-        IHasTargetAudience,
+        TrainingEntity<ResourceRequirement>,
         ITrainingCollection<Step>
     {
-        public EvaluationOutline EvaluationOutline { get; }
-        public PrerequisiteContainer Prerequisites { get; }
-        public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements { get; }
-        public SeatContainer Seats { get; }
-        public TargetAudienceContainer TargetAudience { get; }
-        public ExecutionConditionContainer Conditions { get; }
-
         //TODO: can be defined as a collection of leader/critical steps on the owner's level (task/step)
         //This may simplify validations (only 5 leader steps)
         //TODO: Conditions: weather, etc
