@@ -1,6 +1,5 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Commands.Add;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Bks.TrainingDevelopment.Domain.Values.Ids;
 using MediatR;

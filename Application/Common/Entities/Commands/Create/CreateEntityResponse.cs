@@ -1,7 +1,7 @@
 ﻿using System;
 using Bks.TrainingDevelopment.Domain.Entities;
 
-namespace Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Commands
+namespace Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create
 {
     public class CreateEntityResponse
     {

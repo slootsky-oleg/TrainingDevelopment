@@ -1,7 +1,7 @@
-﻿using Bks.TrainingDevelopment.Application.Features;
+﻿using Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create;
+using Bks.TrainingDevelopment.Application.Features;
 using Bks.TrainingDevelopment.Application.Tasks.Commands.Create;
 using Bks.TrainingDevelopment.Application.Tasks.Queries.Get;
-using Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Commands;
 using Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

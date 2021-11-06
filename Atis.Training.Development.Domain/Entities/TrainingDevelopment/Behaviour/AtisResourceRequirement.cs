@@ -1,6 +1,6 @@
 ﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 
-namespace Atis.Training.Development.Domain.Entities.TrainingDevelopment.Behaviour
+namespace Atis.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
     public class AtisResourceRequirement : ResourceRequirement
     {

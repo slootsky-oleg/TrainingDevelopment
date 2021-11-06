@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Bks.TrainingDevelopment.Application.TrainingDevelopment.Common.Commands;
+using Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
 using Bks.TrainingDevelopment.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Values.Ids;
