@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Behaviour
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
     public enum AggregationStrategy
     {

@@ -1,13 +1,13 @@
-﻿using Domain.Values.Ids;
+﻿using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
-    public class ResourceRequirement: TrainingBehaviour
+    public class ResourceRequirement : TrainingBehaviour
     {
         public EntityTypeId ResourceTypeId { get; set; }
 
         public int? Quantity { get; set; }
-        
+
         //1 laptop per 2 participants
         public int Ratio { get; set; }
 

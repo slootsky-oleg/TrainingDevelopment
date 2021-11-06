@@ -1,8 +1,8 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
     public interface IHasResourceRequirements<T>
-        where T: ResourceRequirement
+        where T : ResourceRequirement
     {
-        ResourceRequirementsContainer<T> ResourceRequirements_Q { get; }
+        ResourceRequirementsContainer<T> ResourceRequirements { get; }
     }
 }

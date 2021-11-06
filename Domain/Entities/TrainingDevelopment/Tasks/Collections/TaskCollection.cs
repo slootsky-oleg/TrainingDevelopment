@@ -1,10 +1,9 @@
-﻿using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
-using Domain.Entities.TrainingDevelopment.Tasks.Steps;
+﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
-namespace Domain.Entities.TrainingDevelopment.Tasks.Collections
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Collections
 {
-    public class TaskCollection : AbstractTaskCollection<Task, Step, ResourceRequirement>
+    public class TaskCollection : AbstractTaskCollection<TrainingTask, Step, ResourceRequirement>
     {
-
     }
 }

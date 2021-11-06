@@ -1,7 +1,10 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Behaviour
+﻿using Bks.TrainingDevelopment.Domain.Values.Ids;
+
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
-    public abstract class TrainingBehaviour
+    public abstract class TrainingBehaviour : ITrainingBehaviour
     {
-        public TrainingDevelopmentEntity Owner { get; }
+        public GuidId Id { get; private set; }
+        public TrainingEntity Owner { get; }
     }
 }

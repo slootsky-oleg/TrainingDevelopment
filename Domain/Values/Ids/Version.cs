@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Domain.Values.Ids
+namespace Bks.TrainingDevelopment.Domain.Values.Ids
 {
     public class Version : ValueObject
     {
@@ -13,7 +13,7 @@ namespace Domain.Values.Ids
             {
                 throw new ArgumentException("Version must be a positive number.", nameof(version));
             }
-            
+
             this.value = version;
         }
 

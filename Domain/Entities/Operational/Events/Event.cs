@@ -1,9 +1,9 @@
-﻿using Domain.Entities.Operational.Scheduling;
+﻿using Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling;
 
-namespace Domain.Entities.Operational.Events
+namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Events
 {
     //var event = repo.get(id);
-    
+
     //event.resources.AddMany(request.resource)
     //event.resources.AddMany(request.allocations)
 
@@ -17,9 +17,9 @@ namespace Domain.Entities.Operational.Events
 
         //public IReadOnlyCollection<Resource> Resources { get; }
 
-        public override void Archive_Q()
+        public override void Archive()
         {
-            throw new System.NotSupportedException("Step can't be archived.");  //Applies to all availability methods
+            throw new System.NotSupportedException("Step can't be archived."); //Applies to all availability methods
         }
     }
 }

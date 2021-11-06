@@ -1,6 +1,6 @@
 using System;
 
-namespace Presentation.Web
+namespace Bks.TrainingDevelopment.Presentation.Web
 {
     public class WeatherForecast
     {

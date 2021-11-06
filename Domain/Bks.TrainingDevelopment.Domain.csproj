@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
+    <EmbeddedResource Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
+    <None Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
+  </ItemGroup>
+
+</Project>

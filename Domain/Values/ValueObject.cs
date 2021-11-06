@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Domain.Values
+namespace Bks.TrainingDevelopment.Domain.Values
 {
     public abstract class ValueObject
     {
@@ -17,7 +17,7 @@ namespace Domain.Values
             if (GetType() != obj.GetType())
                 return false;
 
-            var valueObject = (ValueObject) obj;
+            var valueObject = (ValueObject)obj;
 
             var equalityComponents = valueObject.GetEqualityComponents();
             return GetEqualityComponents().SequenceEqual(equalityComponents);

@@ -1,4 +1,4 @@
-﻿namespace Application.Features
+﻿namespace Bks.TrainingDevelopment.Application.Features
 {
     public interface IEntityFeatureConfig
     {

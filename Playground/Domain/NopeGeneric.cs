@@ -17,7 +17,7 @@ namespace Playground.Domain
     }
 
     public class AbstractTask<TStep>
-        where TStep: Step
+        where TStep : Step
     {
         public List<TStep> Steps { get; }
 
@@ -33,13 +33,11 @@ namespace Playground.Domain
     }
 
 
-
     // public class OotbTask : AbstractTask<Step>
     // {
     //
     // }
 
-    
 
     //ATIS==============================================
     public class AtisStep : Step
@@ -50,8 +48,5 @@ namespace Playground.Domain
 
     public class AtisTask : AbstractTask<AtisStep>
     {
-
     }
-
-    
 }

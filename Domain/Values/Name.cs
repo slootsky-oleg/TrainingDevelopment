@@ -1,6 +1,6 @@
-﻿using Domain.Values.Strings;
+﻿using Bks.TrainingDevelopment.Domain.Values.Strings;
 
-namespace Domain.Values
+namespace Bks.TrainingDevelopment.Domain.Values
 {
     public class Name : StringValueObject
     {

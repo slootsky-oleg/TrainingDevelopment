@@ -1,7 +1,7 @@
-﻿using Domain.Values;
-using Domain.Values.Ids;
+﻿using Bks.TrainingDevelopment.Domain.Values;
+using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Domain.Entities.TrainingDevelopment.Tasks
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
 {
     public class TaskRelationCategory
     {

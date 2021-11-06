@@ -1,10 +1,10 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Behaviour
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
     public interface IArchivable
     {
-        void Activate_Q();
-        void Deprecate_Q();
-        void Obsolete_Q();
-        void Archive_Q();
+        // void Activate();
+        // void Deprecate();
+        // void Obsolete();
+        void Archive();
     }
 }

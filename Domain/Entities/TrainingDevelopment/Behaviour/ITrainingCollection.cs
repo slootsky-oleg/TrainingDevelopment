@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace Domain.Entities.TrainingDevelopment.Behaviour
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
     public interface ITrainingCollection<T>
-        where T: ITrainingDevelopmentEntity
+        where T : ITrainingEntity
     {
-        public IReadOnlyCollection<T> GetTrainingItems_Q();
+        public IReadOnlyCollection<T> GetTrainingItems();
     }
 }

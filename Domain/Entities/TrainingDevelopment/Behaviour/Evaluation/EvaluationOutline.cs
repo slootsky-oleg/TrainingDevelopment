@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.TrainingDevelopment.Behaviour.Evaluation
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation
 {
     public class EvaluationOutline
     {
@@ -7,12 +7,12 @@
         //TODO: Add scheduling constraints
 
         //TODO: Add Evaluation Phase
-        public string EvaluationPhase_Q { get; set; }
-        
+        public string EvaluationPhase { get; set; }
+
         //TODO: Add Evaluation Criteria
-        
+
         //TODO: Add Evaluation method
-        
+
         //TODO: Add Evaluation forms []
     }
 }

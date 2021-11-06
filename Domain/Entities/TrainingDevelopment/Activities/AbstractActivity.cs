@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Domain.Entities.TrainingDevelopment.Behaviour;
-using Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
-using Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
-using Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
-using Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
-using Domain.Entities.TrainingDevelopment.Behaviour.Seats;
-using Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
-using Domain.Entities.TrainingDevelopment.Tasks;
-using Domain.Entities.TrainingDevelopment.Tasks.Collections;
-using Domain.Entities.TrainingDevelopment.Tasks.Steps;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Collections;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
-namespace Domain.Entities.TrainingDevelopment.Activities
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Activities
 {
-    public abstract class AbstractActivity<TTask, TStep, TResourceRequirement> : 
-        TrainingDevelopmentEntity,
-        IEvaluable,
+    public abstract class AbstractActivity<TTask, TStep, TResourceRequirement> :
+        TrainingEntity,
+        IHasEvaluationCriteria,
         IHasPrerequisites,
         IHasConditions,
         IHasResourceRequirements<TResourceRequirement>,
@@ -24,46 +24,30 @@ namespace Domain.Entities.TrainingDevelopment.Activities
         IHasTargetAudience,
         IArchivable,
         ITrainingCollection<TTask>
-        where TStep: Step
-        where TTask: AbstractTask<TStep, TResourceRequirement>
-        where TResourceRequirement: ResourceRequirement
+        where TStep : Step
+        where TTask : AbstractTask<TStep, TResourceRequirement>
+        where TResourceRequirement : ResourceRequirement
     {
         public TimeSpan Duration { get; set; }
         public IReadOnlyCollection<TTask> Tasks { get; }
         public IReadOnlyCollection<AbstractTaskCollection<TTask, TStep, TResourceRequirement>> TaskCollections { get; }
 
-        public EvaluationOutline EvaluationOutline_Q { get; }
-        public PrerequisiteContainer Prerequisites_Q { get; }
-        public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements_Q { get; }
-        public SeatContainer Seats_Q { get; }
-        public TargetAudienceContainer TargetAudience_Q { get; }
-        public ExecutionConditionContainer Conditions_Q { get; }
+        public EvaluationOutline EvaluationOutline { get; }
+        public PrerequisiteContainer Prerequisites { get; }
+        public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements { get; }
+        public SeatContainer Seats { get; }
+        public TargetAudienceContainer TargetAudience { get; }
+        public ExecutionConditionContainer Conditions { get; }
 
-
-        public void Activate_Q()
+        public void Archive()
         {
             throw new NotImplementedException();
         }
 
-        public void Deprecate_Q()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Obsolete_Q()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Archive_Q()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IReadOnlyCollection<TTask> GetTrainingItems_Q()
+        public IReadOnlyCollection<TTask> GetTrainingItems()
         {
             var tasksFromCollections = TaskCollections
-                .Select(s => s.GetTrainingItems_Q())
+                .Select(s => s.GetTrainingItems())
                 .SelectMany(s => s);
 
             return tasksFromCollections

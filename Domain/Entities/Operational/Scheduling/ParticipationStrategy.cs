@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.Operational.Scheduling
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
 {
     public enum ParticipationStrategy
     {

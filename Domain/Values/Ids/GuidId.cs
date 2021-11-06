@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Domain.Values.Ids
+namespace Bks.TrainingDevelopment.Domain.Values.Ids
 {
     public class GuidId : ValueObject
     {
@@ -13,13 +13,29 @@ namespace Domain.Values.Ids
             {
                 throw new ArgumentException("Guid cannot be empty", nameof(guid));
             }
-            
+
             this.guid = guid;
+        }
+
+        public static GuidId Of(Guid guid)
+        {
+            return new GuidId(guid);
+        }
+
+        public static GuidId New()
+        {
+            var guid = Guid.NewGuid();
+            return new GuidId(guid);
         }
 
         protected override IEnumerable<object> GetEqualityComponents()
         {
             yield return guid;
+        }
+
+        public static implicit operator Guid(GuidId id)
+        {
+            return id.guid;
         }
     }
 }
