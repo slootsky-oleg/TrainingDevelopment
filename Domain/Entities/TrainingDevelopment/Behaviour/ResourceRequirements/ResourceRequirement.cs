@@ -4,9 +4,9 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
 {
     public class ResourceRequirement : TrainingBehaviour
     {
-        public EntityTypeId ResourceTypeId { get; set; }
+        public EntityTypeId ResourceTypeId { get; }
 
-        public int? Quantity { get; set; }
+        public int? Quantity { get; }
 
         //1 laptop per 2 participants
         public int Ratio { get; set; }

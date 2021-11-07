@@ -1,19 +1,15 @@
-﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
+﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Content;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Versioning;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
-using Bks.TrainingDevelopment.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment
 {
     public abstract class TrainingEntity<TResourceRequirement> : 
         Entity,

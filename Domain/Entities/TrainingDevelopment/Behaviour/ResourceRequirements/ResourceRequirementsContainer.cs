@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements.Settings;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
     public class ResourceRequirementsContainer<T>
         where T : ResourceRequirement
     {
-        public AggregationStrategy Strategy { get; set; }
-
-        public IReadOnlyCollection<T> OwnRequirements { get; set; }
+        public AggregationStrategy Strategy { get; }
+        public IResourceRequirementSettings Settings { get; set; }
+        public IReadOnlyCollection<T> OwnRequirements { get; }
 
         public IReadOnlyCollection<T> GetRequirements()
         {

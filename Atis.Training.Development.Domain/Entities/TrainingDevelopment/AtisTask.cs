@@ -1,4 +1,5 @@
 ﻿using Atis.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
