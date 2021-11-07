@@ -22,7 +22,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
         public PrerequisiteContainer Prerequisites { get; set; }
 
         //Does it belong to the base entity?
-        public ResourceRequirementsContainer<ResourceRequirement> ResourceRequirements { get; set; }
+        public ResourceRequirementContainer<ResourceRequirement> ResourceRequirements { get; set; }
 
         public CustomFieldContainer CustomFields { get; set; }
 

@@ -22,7 +22,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment
         IHasConditions,
         IHasResourceRequirements<TResourceRequirement>,
         IHasTargetAudience,
-        IArchivable
+        IHasStatus
         where TResourceRequirement : ResourceRequirement //TODO: interface that is used by activities/events/
     {
         public Version Version { get; }
@@ -32,7 +32,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment
         public EvaluationOutline EvaluationOutline { get; }
         public PrerequisiteContainer Prerequisites { get; }
         public ExecutionConditionContainer Conditions { get; }
-        public ResourceRequirementsContainer<TResourceRequirement> ResourceRequirements { get; }
+        public ResourceRequirementContainer<TResourceRequirement> ResourceRequirements { get; }
         public TargetAudienceContainer TargetAudience { get; }
 
         public void Archive()

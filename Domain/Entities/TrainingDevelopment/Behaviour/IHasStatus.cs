@@ -1,6 +1,6 @@
 ﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
-    public interface IArchivable
+    public interface IHasStatus
     {
         // void Activate();
         // void Deprecate();
