@@ -5,21 +5,21 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Reso
 using Bks.TrainingDevelopment.Domain.Repositories.TrainingDevelopment.Tasks;
 using Bks.TrainingDevelopment.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Values.Ids;
-using MediatR;
-using ReflectionMagic;
 
 namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Commands.Add
 {
-    public class AddTaskResourceRequirementHandler : IRequestHandler<AddTaskResourceRequirementRequest, AddTaskResourceRequirementResponse>
+    public class AddTaskResourceRequirementInteractor
     {
         private readonly ITaskRepository repository;
 
-        public AddTaskResourceRequirementHandler(ITaskRepository repository)
+        public AddTaskResourceRequirementInteractor(ITaskRepository repository)
         {
             this.repository = repository;
         }
 
-        public async Task<AddTaskResourceRequirementResponse> Handle(AddTaskResourceRequirementRequest request, CancellationToken cancellationToken)
+        public async Task<AddTaskResourceRequirementResponse> Execute(
+            Guid taskId,
+            AddTaskResourceRequirementRequest request)
         {
             var task = await repository.GetAsync(request.EntityId)
                        ?? throw new Exception("Not found");

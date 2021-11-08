@@ -1,15 +1,14 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Bks.TrainingDevelopment.Domain.Values.Ids;
-using MediatR;
-using ReflectionMagic;
 
 namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Queries.Get
 {
-    public class GetTaskResourceRequirementHandler : IRequestHandler<GetTaskResourceRequirementRequest, GetTaskResourceRequirementResponse>
+    public class GetTaskResourceRequirementInteractor
     {
-        public async Task<GetTaskResourceRequirementResponse> Handle(GetTaskResourceRequirementRequest request, CancellationToken cancellationToken)
+        public async Task<GetTaskResourceRequirementResponse> Execute(Guid taskId, Guid requirementId)
         {
             return null;
             // var requirement = new ResourceRequirement();

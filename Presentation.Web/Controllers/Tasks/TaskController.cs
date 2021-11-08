@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create;
 using Bks.TrainingDevelopment.Application.Features;
 using Bks.TrainingDevelopment.Application.Tasks.Commands.Create;
@@ -20,15 +21,19 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Tasks
         }
         
         [HttpPost]
-        public async Task<CreateEntityResponse> Create(CreateTaskRequest request)
+        public async Task<CreateEntityResponse> Create(
+            [FromServices] CreateTaskInteractor interactor,
+            CreateTaskRequest request)
         {
-            return await Mediator.Send(request);
+            return await interactor.Execute(request);
         }
 
         [HttpGet("{taskId:guid}")]
-        public async Task<GetTaskResponse> Get([FromRoute] GetTaskRequest request)
+        public async Task<GetTaskResponse> Get(
+            [FromServices] GetTaskInteractor interactor,
+            [FromRoute] Guid taskId)
         {
-            return await Mediator.Send(request);
+            return await interactor.Execute(taskId);
         }
     }
 }

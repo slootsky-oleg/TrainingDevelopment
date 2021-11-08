@@ -14,11 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="9.0.0" />
-    <PackageReference Include="ReflectionMagic" Version="4.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Domain\Bks.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
 
@@ -26,7 +21,6 @@
     <Folder Include="Common\Entities\Behavior\Queries\Get\" />
     <Folder Include="Common\Entities\Behavior\ResourceRequirements\Commands\Add\" />
     <Folder Include="Common\Entities\Behavior\ResourceRequirements\Queries\Get\" />
-    <Folder Include="Tasks\ResourceRequirements\Commands\Add\" />
     <Folder Include="TrainingDevelopment\Common\Commands\" />
   </ItemGroup>
 

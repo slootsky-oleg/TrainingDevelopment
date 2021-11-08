@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Bks.TrainingDevelopment.Application.Features;
 using Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Commands.Add;
 using Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Queries.Get;
@@ -19,15 +20,22 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Tasks
         }
 
         [HttpPost]
-        public async Task<AddTaskResourceRequirementResponse> Add(AddTaskResourceRequirementRequest request)
+        public async Task<AddTaskResourceRequirementResponse> Add(
+            [FromServices] AddTaskResourceRequirementInteractor interactor,
+            Guid taskId,
+            AddTaskResourceRequirementRequest request)
         {
-            return await Mediator.Send(request);
+            return await interactor.Execute(taskId, request);
         }
 
         [HttpGet("{requirement:guid}")]
-        public async Task<GetTaskResourceRequirementResponse> Get([FromRoute] GetTaskResourceRequirementRequest request)
+        public async Task<GetTaskResourceRequirementResponse> Get(
+            [FromServices] GetTaskResourceRequirementInteractor interactor,
+            [FromRoute] Guid taskId,
+            [FromRoute] Guid requirementId
+            )
         {
-            return await Mediator.Send(request);
+            return await interactor.Execute(taskId, requirementId);
         }
     }
 }
