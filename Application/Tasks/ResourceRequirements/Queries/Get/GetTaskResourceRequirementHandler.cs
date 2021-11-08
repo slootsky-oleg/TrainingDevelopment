@@ -11,11 +11,12 @@ namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Queries
     {
         public async Task<GetTaskResourceRequirementResponse> Handle(GetTaskResourceRequirementRequest request, CancellationToken cancellationToken)
         {
-            var requirement = new ResourceRequirement();
-            var hack = requirement.AsDynamic();
-            hack.Id = GuidId.New();
-
-            return new GetTaskResourceRequirementResponse(requirement);
+            return null;
+            // var requirement = new ResourceRequirement();
+            // var hack = requirement.AsDynamic();
+            // hack.Id = GuidId.New();
+            //
+            // return new GetTaskResourceRequirementResponse(requirement);
         }
     }
 }

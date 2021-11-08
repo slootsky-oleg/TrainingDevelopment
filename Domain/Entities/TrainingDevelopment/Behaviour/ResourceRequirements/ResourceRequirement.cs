@@ -4,12 +4,18 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
 {
     public class ResourceRequirement : TrainingBehaviour
     {
-        public EntityTypeId ResourceTypeId { get; set; }
+        public GuidId ResourceTypeId { get; }
 
-        public int? Quantity { get; set; }
+        public int? Quantity { get; }
+
+        public ResourceRequirement(GuidId resourceTypeId, int? quantity)
+        {
+            ResourceTypeId = resourceTypeId;
+            Quantity = quantity;
+        }
 
         //1 laptop per 2 participants
-        public int Ratio { get; set; }
+        //public int Ratio { get; set; }
 
         //TODO: Metadata properties
 
