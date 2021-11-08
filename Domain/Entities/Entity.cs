@@ -15,5 +15,11 @@ namespace Bks.TrainingDevelopment.Domain.Entities
         public virtual void ValidateCanBeModified()
         {
         }
+
+        //TODO: Make abstract
+        public virtual void AuditModification(AuditRecord audit)
+        {
+
+        }
     }
 }

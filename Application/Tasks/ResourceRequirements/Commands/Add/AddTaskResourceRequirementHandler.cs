@@ -1,6 +1,9 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+using Bks.TrainingDevelopment.Domain.Repositories.TrainingDevelopment.Tasks;
+using Bks.TrainingDevelopment.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Values.Ids;
 using MediatR;
 using ReflectionMagic;
@@ -9,22 +12,28 @@ namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Command
 {
     public class AddTaskResourceRequirementHandler : IRequestHandler<AddTaskResourceRequirementRequest, AddTaskResourceRequirementResponse>
     {
+        private readonly ITaskRepository repository;
+
+        public AddTaskResourceRequirementHandler(ITaskRepository repository)
+        {
+            this.repository = repository;
+        }
+
         public async Task<AddTaskResourceRequirementResponse> Handle(AddTaskResourceRequirementRequest request, CancellationToken cancellationToken)
         {
-            /*var task = taskLookup.GetOrThrow(request.Id)
+            var task = await repository.GetAsync(request.EntityId);
+            if (task == null) throw new Exception("Not found");
+
+            var typeId = GuidId.Of(request.TypeId);
+            var requirement = new ResourceRequirement(typeId, request.Quantity);
+
+            //resolve from context. Use generic Request<T> or context provider
+            var userId = GuidId.New();
+            var audit = new AuditRecord(userId, DateTime.Now);
+            task.ResourceRequirements.Add(audit, requirement);
             
-            var addCommand = new AddResourceRequirementCommand(...);
+            //await repository.CommitAsync();
 
-            var requirement = task.ResourceRequirements.Add(addCommand);
-
-            await repository.CommitAsync();
-
-            return new AddTaskResourceRequirementResponse(requirement)
-            */
-
-            var requirement = new ResourceRequirement();
-            var hack = requirement.AsDynamic();
-            hack.Id = GuidId.New();
 
             return new AddTaskResourceRequirementResponse(requirement);
         }

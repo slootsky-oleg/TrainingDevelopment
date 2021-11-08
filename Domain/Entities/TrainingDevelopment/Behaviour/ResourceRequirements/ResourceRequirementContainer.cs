@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements.Settings;
+using Bks.TrainingDevelopment.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Values.Ids;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
@@ -33,7 +34,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
             throw new System.NotImplementedException();
         }
 
-        public void Add(TRequirement requirement)
+        public void Add(AuditRecord audit, TRequirement requirement)
         {
             ValidateCanBeModified();
 
@@ -43,6 +44,20 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
             }
 
             ownRequirements.Add(requirement);
+
+            owner.AuditModification(audit);
+        }
+
+        public void Remove(AuditRecord audit, TRequirement requirement)
+        {
+            ValidateCanBeModified();
+
+            if (!ownRequirements.Remove(requirement))
+            {
+                throw new Exception("Not found");
+            }
+
+            owner.AuditModification(audit);
         }
 
         private void ValidateCanBeModified()
