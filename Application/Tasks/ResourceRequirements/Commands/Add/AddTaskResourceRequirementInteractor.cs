@@ -28,8 +28,7 @@ namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Command
             var requirement = new ResourceRequirement(typeId, request.Quantity);
 
             //resolve from context. Use generic Request<T> or context provider
-            var userId = GuidId.New();
-            var audit = new AuditRecord(userId, DateTime.Now);
+            var audit = new AuditRecord(1);
             task.ResourceRequirements.Add(audit, requirement);
             
             //await repository.CommitAsync();

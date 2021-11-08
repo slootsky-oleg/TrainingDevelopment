@@ -6,13 +6,18 @@ namespace Bks.TrainingDevelopment.Domain.Values
 {
     public class AuditRecord : ValueObject
     {
-        public GuidId UserId { get; }
+        public int UserId { get; }
         public DateTime Timestamp { get; }
 
-        public AuditRecord(GuidId userId, DateTime timestamp)
+        public AuditRecord(int userId, DateTime timestamp)
         {
-            UserId = userId ?? throw new ArgumentNullException(nameof(userId));
+            UserId = userId;
             Timestamp = timestamp;
+        }
+
+        public AuditRecord(int userId)
+            : this(userId, DateTime.Now)
+        {
         }
 
         protected override IEnumerable<object> GetEqualityComponents()

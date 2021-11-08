@@ -5,7 +5,6 @@ using Bks.TrainingDevelopment.Application.Features;
 using Bks.TrainingDevelopment.Application.Tasks.Commands.Create;
 using Bks.TrainingDevelopment.Application.Tasks.Queries.Get;
 using Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement.Mvc;
 
@@ -16,15 +15,12 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Tasks
     [FeatureGate(FeatureFlag.Task)]
     public class TaskController : AbstractController
     {
-        public TaskController(IMediator mediator) : base(mediator)
-        {
-        }
-        
         [HttpPost]
         public async Task<CreateEntityResponse> Create(
             [FromServices] CreateTaskInteractor interactor,
             CreateTaskRequest request)
         {
+            var audit = GetAuditRecord();
             return await interactor.Execute(request);
         }
 
