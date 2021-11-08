@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\Abstractions\Behaviour\" />
     <Folder Include="ServiceRegistration\" />
   </ItemGroup>
 

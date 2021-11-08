@@ -1,4 +1,5 @@
-﻿using Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create;
+﻿using System.Threading.Tasks;
+using Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create;
 using Bks.TrainingDevelopment.Application.Features;
 using Bks.TrainingDevelopment.Application.Tasks.Commands.Create;
 using Bks.TrainingDevelopment.Application.Tasks.Queries.Get;
@@ -12,12 +13,22 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Tasks
     [ApiController]
     [Route("training-development/tasks")]
     [FeatureGate(FeatureFlag.Task)]
-    public class TaskController : AbstractTrainingEntityController<
-        CreateTaskRequest, CreateEntityResponse,
-        GetTaskRequest, GetTaskResponse>
+    public class TaskController : AbstractController
     {
         public TaskController(IMediator mediator) : base(mediator)
         {
+        }
+        
+        [HttpPost]
+        public async Task<CreateEntityResponse> Create(CreateTaskRequest request)
+        {
+            return await Mediator.Send(request);
+        }
+
+        [HttpGet("{taskId:guid}")]
+        public async Task<GetTaskResponse> Get([FromRoute] GetTaskRequest request)
+        {
+            return await Mediator.Send(request);
         }
     }
 }
