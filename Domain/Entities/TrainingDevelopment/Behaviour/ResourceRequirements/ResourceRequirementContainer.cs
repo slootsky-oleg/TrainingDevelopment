@@ -8,7 +8,7 @@ using Bks.TrainingDevelopment.Domain.Values.Ids;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
-    public class ResourceRequirementContainer<TRequirement>
+    public class ResourceRequirementContainer<TRequirement> : IResourceRequirementContainer<TRequirement>
         where TRequirement : ResourceRequirement
     {
         private readonly Entity owner;
@@ -19,7 +19,8 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
 
         public IReadOnlyCollection<TRequirement> OwnRequirements => ownRequirements.ToList();
 
-        public ResourceRequirementContainer(Entity owner, AggregationStrategy strategy, IResourceRequirementSettings settings)
+        public ResourceRequirementContainer(Entity owner, AggregationStrategy strategy,
+            IResourceRequirementSettings settings)
         {
             this.owner = owner ?? throw new ArgumentNullException(nameof(owner));
             this.ownRequirements = new List<TRequirement>();
@@ -27,7 +28,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
             Strategy = strategy;
             Settings = settings ?? throw new ArgumentNullException(nameof(settings));
         }
-        
+
         public IReadOnlyCollection<TRequirement> GetAll()
         {
             //TODO: Implement collecting bottom-up and combined requirements

@@ -3,6 +3,6 @@
     public interface IHasResourceRequirements<TRequirement>
         where TRequirement : ResourceRequirement
     {
-        ResourceRequirementContainer<TRequirement> ResourceRequirements { get; }
+        IResourceRequirementContainer<TRequirement> ResourceRequirements { get; }
     }
 }

@@ -6,18 +6,25 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Rela
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
 {
-    public class TrainingTask :
-        TrainingEntity<ResourceRequirement>,
-        IHasRelatedEntities<TrainingTask>
+    public class TrainingTask : 
+        Entity,
+        IHasResourceRequirements<ResourceRequirement>
+        
+        //IHasRelatedEntities<TrainingTask>
+        // IHasCustomFields, 
+        // IHasContent, 
+        // IVersionable,
+        // IHasEvaluationCriteria,
+        // IHasPrerequisites,
+        // IHasConditions,
+        // IHasTargetAudience,
+        // IHasStatus
     {
-        public StepContainer<Step> Steps { get; }
-
-        public RelatedEntityContainer<TrainingTask> RelatedEntities { get; }
-
+        public IResourceRequirementContainer<ResourceRequirement> ResourceRequirements { get; }
+        
         public void Archive()
         {
             throw new System.NotImplementedException();
