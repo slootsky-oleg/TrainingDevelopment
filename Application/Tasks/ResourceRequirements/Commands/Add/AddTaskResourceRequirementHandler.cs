@@ -21,8 +21,8 @@ namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Command
 
         public async Task<AddTaskResourceRequirementResponse> Handle(AddTaskResourceRequirementRequest request, CancellationToken cancellationToken)
         {
-            var task = await repository.GetAsync(request.EntityId);
-            if (task == null) throw new Exception("Not found");
+            var task = await repository.GetAsync(request.EntityId)
+                       ?? throw new Exception("Not found");
 
             var typeId = GuidId.Of(request.TypeId);
             var requirement = new ResourceRequirement(typeId, request.Quantity);
