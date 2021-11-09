@@ -6,7 +6,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
     public interface IResourceRequirementContainer<T> where T : ResourceRequirement
     {
         IReadOnlyCollection<T> GetAll();
-        void Add(AuditRecord audit, T requirement);
-        void Remove(AuditRecord audit, T requirement);
+        void Add(T requirement);
+        void Remove(T requirement);
     }
 }

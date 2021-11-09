@@ -8,22 +8,18 @@
 // using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 // using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 // using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
-// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Steps;
 //
 // namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks.Collections
 // {
 //     public class TaskCollection :
-//         TrainingEntity<ResourceRequirement>,
+//         Entity,
+//         ITrainingEntity<ResourceRequirement>,
 //         ITrainingCollection<TrainingTask>
 //     {
 //         public IReadOnlyCollection<TrainingTask> Tasks { get; }
 //         public IReadOnlyCollection<TaskCollection> TaskCollections { get; }
 //
-//
-//         public void Archive()
-//         {
-//             throw new System.NotImplementedException();
-//         }
+//         public IResourceRequirementContainer<ResourceRequirement> ResourceRequirements { get; }
 //
 //         public IReadOnlyCollection<TrainingTask> GetTrainingItems()
 //         {
@@ -34,6 +30,11 @@
 //             return tasksFromCollections
 //                 .Concat(Tasks)
 //                 .ToList();
+//         }
+//
+//         public void Archive()
+//         {
+//             throw new System.NotImplementedException();
 //         }
 //     }
 // }

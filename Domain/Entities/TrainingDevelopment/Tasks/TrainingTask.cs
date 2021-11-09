@@ -1,4 +1,7 @@
-﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
@@ -6,12 +9,13 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Rela
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
+using Bks.TrainingDevelopment.Domain.Values;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
 {
     public class TrainingTask : 
         Entity,
-        IHasResourceRequirements<ResourceRequirement>
+        ITrainingEntity<ResourceRequirement>
         
         //IHasRelatedEntities<TrainingTask>
         // IHasCustomFields, 
@@ -23,11 +27,53 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
         // IHasTargetAudience,
         // IHasStatus
     {
-        public IResourceRequirementContainer<ResourceRequirement> ResourceRequirements { get; }
+        private ResourceRequirementContainer<ResourceRequirement> resourceRequirements;
+
+        //TODO: better name
+        public AggregationStrategy AggregationStrategy { get; }
+
+        private bool CanStoreBehaviors => AggregationStrategy != AggregationStrategy.BottomUp;
         
         public void Archive()
         {
             throw new System.NotImplementedException();
+        }
+
+        public IReadOnlyCollection<ResourceRequirement> ResourceRequirements => resourceRequirements.GetAll();
+        
+        public void Add(AuditRecord audit, ResourceRequirement requirement)
+        {
+            ValidateCanOwnAggregatableBehaviors();
+            ValidateAndAudit(audit, () => resourceRequirements.Add(requirement));
+        }
+
+        public void Remove(AuditRecord audit, ResourceRequirement requirement)
+        {
+            ValidateAndAudit(audit, () => resourceRequirements.Remove(requirement));
+        }
+
+        private void ValidateAndAudit(AuditRecord audit, Action action)
+        {
+            ValidateCanBeModified();
+            AuditModification(audit);
+
+            action.Invoke();
+        }
+
+        private T ValidateAndAudit<T>(AuditRecord audit, Func<T> action)
+        {
+            ValidateCanBeModified();
+            AuditModification(audit);
+
+            return action.Invoke();
+        }
+
+        private void ValidateCanOwnAggregatableBehaviors()
+        {
+            if (AggregationStrategy == AggregationStrategy.BottomUp)
+            {
+                throw new NotSupportedException("");
+            }
         }
     }
 }

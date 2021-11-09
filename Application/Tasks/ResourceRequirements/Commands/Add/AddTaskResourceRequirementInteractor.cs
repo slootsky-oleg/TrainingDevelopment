@@ -29,7 +29,7 @@ namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Command
 
             //resolve from context. Use generic Request<T> or context provider
             var audit = new AuditRecord(1);
-            task.ResourceRequirements.Add(audit, requirement);
+            //task.ResourceRequirements.Add(audit, requirement);
             
             //await repository.CommitAsync();
 
