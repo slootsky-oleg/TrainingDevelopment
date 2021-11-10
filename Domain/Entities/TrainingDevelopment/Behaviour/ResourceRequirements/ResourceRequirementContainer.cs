@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -8,40 +9,61 @@ using Bks.TrainingDevelopment.Domain.Values.Ids;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
-    public class ResourceRequirementContainer<TRequirement> : IResourceRequirementContainer<TRequirement>
-        where TRequirement : ResourceRequirement
+    public class ResourceRequirementContainer<T> : IResourceRequirementContainer<T>
+        where T : ResourceRequirement
     {
-        private readonly List<TRequirement> requirements;
+        private readonly List<T> items;
 
-        public AggregationStrategy Strategy { get; }
+        public int Count => items.Count;
+        public bool IsReadOnly => false;
+
+        public event EventHandler<AuditRecord> OnChange;
+
         public IResourceRequirementSettings Settings { get; }
 
         public ResourceRequirementContainer(
-            AggregationStrategy strategy,
             IResourceRequirementSettings settings)
         {
-            requirements = new List<TRequirement>();
+            items = new List<T>();
 
-            Strategy = strategy;
             Settings = settings ?? throw new ArgumentNullException(nameof(settings));
         }
 
-        public IReadOnlyCollection<TRequirement> GetAll() => requirements.ToList();
-
-        public void Add(TRequirement requirement)
-        {
-            //validate uniqueness
-            requirements.Add(requirement);
-        }
-
-        public void Remove(TRequirement requirement)
-        {
-            if (!requirements.Remove(requirement))
-            {
-                throw new Exception("Not found");
-            }
-        }
-
         //TODO: Primary and alternative requirements
+        public IEnumerator<T> GetEnumerator()
+        {
+            return items.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        public void Add(T item)
+        {
+            //validate is unique if required
+            items.Add(item);
+        }
+
+        public void Clear()
+        {
+            items.Clear();
+        }
+
+        public bool Contains(T item)
+        {
+            return items.Contains(item);
+        }
+
+        public void CopyTo(T[] array, int arrayIndex)
+        {
+            items.CopyTo(array, arrayIndex);
+        }
+
+        public bool Remove(T item)
+        {
+            return items.Remove(item);
+        }
     }
 }

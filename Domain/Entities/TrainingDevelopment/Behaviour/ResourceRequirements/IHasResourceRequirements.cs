@@ -11,7 +11,5 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
         public IReadOnlyCollection<T> ResourceRequirements { get; }
         void Add(AuditRecord audit, T requirement);
         void Remove(AuditRecord audit, T requirement);
-
-        //update - track changes
     }
 }

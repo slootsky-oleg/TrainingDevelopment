@@ -39,7 +39,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
             throw new System.NotImplementedException();
         }
 
-        public IReadOnlyCollection<ResourceRequirement> ResourceRequirements => resourceRequirements.GetAll();
+        public IReadOnlyCollection<ResourceRequirement> ResourceRequirements => resourceRequirements.ToList();
         
         public void Add(AuditRecord audit, ResourceRequirement requirement)
         {
@@ -51,6 +51,12 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
         {
             ValidateAndAudit(audit, () => resourceRequirements.Remove(requirement));
         }
+
+        // public void Update<TCommand>(TCommand command)
+        // {
+        //     resourceRequirements.Update(command);
+        //     throw new NotImplementedException();
+        // }
 
         private void ValidateAndAudit(AuditRecord audit, Action action)
         {

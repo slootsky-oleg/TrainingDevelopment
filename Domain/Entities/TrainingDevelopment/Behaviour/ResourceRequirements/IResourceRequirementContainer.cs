@@ -1,12 +1,11 @@
-﻿using System.Collections.Generic;
-using Bks.TrainingDevelopment.Domain.Values;
-
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
-    public interface IResourceRequirementContainer<T> where T : ResourceRequirement
+    public interface IResourceRequirementContainer<T> : IBehaviorContainer<T>
+        where T : ResourceRequirement
     {
-        IReadOnlyCollection<T> GetAll();
-        void Add(T requirement);
-        void Remove(T requirement);
+        //IReadOnlyCollection<T> GetAll();
+        // void Add(T requirement);
+        // void Remove(T requirement);
+        // void Update<TCommand>(TCommand command);
     }
 }
