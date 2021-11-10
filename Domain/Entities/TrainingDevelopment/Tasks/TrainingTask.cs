@@ -27,7 +27,19 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
         // IHasTargetAudience,
         // IHasStatus
     {
-        private ResourceRequirementContainer<ResourceRequirement> resourceRequirements;
+        private readonly ResourceRequirementContainer<ResourceRequirement> resourceRequirements;
+
+        public TrainingTask()
+        {
+            this.resourceRequirements = new ResourceRequirementContainer<ResourceRequirement>(null);
+            this.resourceRequirements.OnChange += BehaviorChangeHandler;
+        }
+
+        private void BehaviorChangeHandler(object sender, AuditRecord audit)
+        {
+            ValidateCanBeModified();
+            AuditModification(audit);
+        }
 
         //TODO: better name
         public AggregationStrategy AggregationStrategy { get; }

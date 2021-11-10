@@ -25,6 +25,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
             IResourceRequirementSettings settings)
         {
             items = new List<T>();
+            OnChange = delegate { };
 
             Settings = settings ?? throw new ArgumentNullException(nameof(settings));
         }
@@ -43,6 +44,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
         public void Add(T item)
         {
             //validate is unique if required
+            OnChange += (sender, audit) => OnChange(sender, audit);
             items.Add(item);
         }
 
@@ -63,6 +65,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
 
         public bool Remove(T item)
         {
+            OnChange -= (sender, audit) => OnChange(sender, audit);
             return items.Remove(item);
         }
     }

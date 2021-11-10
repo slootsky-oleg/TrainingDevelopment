@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using Bks.TrainingDevelopment.Domain.Values;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
     public interface IBehaviorContainer<T> : ICollection<T>
-        where T : ITrainingBehavior
+        where T : IBehaviorItem
     {
         event EventHandler<AuditRecord> OnChange;
     }
