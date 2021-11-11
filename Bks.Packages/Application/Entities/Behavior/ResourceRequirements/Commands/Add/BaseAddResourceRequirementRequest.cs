@@ -2,7 +2,7 @@
 
 namespace Bks.Packages.Application.Entities.Behavior.ResourceRequirements.Commands.Add
 {
-    public abstract class AbstractAddResourceRequirementRequest
+    public abstract class BaseAddResourceRequirementRequest
     {
         public Guid TypeId { get; set; }
 

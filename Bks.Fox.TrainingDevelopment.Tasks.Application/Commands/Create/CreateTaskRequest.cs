@@ -2,7 +2,7 @@
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
 {
-    public class CreateTaskRequest : AbstractCreateEntityRequest
+    public class CreateTaskRequest : CreateEntityRequest
     {
     }
 }

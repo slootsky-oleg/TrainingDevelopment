@@ -1,6 +1,6 @@
 ﻿namespace Bks.Packages.Application.Entities.Commands.Create
 {
-    public abstract class AbstractCreateEntityRequest
+    public abstract class CreateEntityRequest
     {
         public string ExternalId { get; set; }
         public string Name { get; set; }

@@ -4,11 +4,11 @@ using Bks.Packages.Domain.Entities.Behaviors.Abstractions;
 
 namespace Bks.Packages.Application.Entities.Behavior.Commands.Add
 {
-    public class AbstractAddBehaviorResponse
+    public abstract class AddBehaviorResponse
     {
         public Guid Id { get; }
 
-        protected AbstractAddBehaviorResponse(IBehaviorItem behaviour)
+        protected AddBehaviorResponse(IBehaviorItem behaviour)
         {
             Id = behaviour.Id;
         }
