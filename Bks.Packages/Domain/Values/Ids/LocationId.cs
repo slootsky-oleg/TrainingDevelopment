@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.TrainingDevelopment.Domain.Values.Ids
+namespace Bks.Packages.Domain.Values.Ids
 {
     public class LocationId : GuidId
     {

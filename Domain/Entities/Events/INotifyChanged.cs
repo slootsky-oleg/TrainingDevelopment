@@ -1,5 +1,4 @@
 ﻿using System;
-using Bks.TrainingDevelopment.Domain.Values;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.Events
 {

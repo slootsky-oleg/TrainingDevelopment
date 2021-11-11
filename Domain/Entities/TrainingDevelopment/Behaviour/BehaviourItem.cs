@@ -1,7 +1,7 @@
 ﻿using System;
+using Bks.Packages.Domain.Values;
+using Bks.Packages.Domain.Values.Ids;
 using Bks.TrainingDevelopment.Domain.Entities.Events;
-using Bks.TrainingDevelopment.Domain.Values;
-using Bks.TrainingDevelopment.Domain.Values.Ids;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {

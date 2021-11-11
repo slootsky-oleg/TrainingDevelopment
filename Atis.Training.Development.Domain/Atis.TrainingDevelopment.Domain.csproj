@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
     <ProjectReference Include="..\Domain\Bks.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
 

@@ -1,7 +1,7 @@
 ﻿using System;
-using Bks.TrainingDevelopment.Domain.Values.Strings;
+using Bks.Packages.Domain.Values.Strings;
 
-namespace Bks.TrainingDevelopment.Domain.Values
+namespace Bks.Packages.Domain.Values
 {
     public class Description : StringValueObject
     {

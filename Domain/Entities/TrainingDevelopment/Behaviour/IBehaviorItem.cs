@@ -1,5 +1,5 @@
-﻿using Bks.TrainingDevelopment.Domain.Entities.Events;
-using Bks.TrainingDevelopment.Domain.Values.Ids;
+﻿using Bks.Packages.Domain.Values.Ids;
+using Bks.TrainingDevelopment.Domain.Entities.Events;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {

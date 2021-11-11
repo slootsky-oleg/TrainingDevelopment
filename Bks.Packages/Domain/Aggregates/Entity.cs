@@ -1,8 +1,7 @@
-﻿using System.Security.Cryptography;
-using Bks.TrainingDevelopment.Domain.Values;
-using Bks.TrainingDevelopment.Domain.Values.Ids;
+﻿using Bks.Packages.Domain.Values;
+using Bks.Packages.Domain.Values.Ids;
 
-namespace Bks.TrainingDevelopment.Domain.Entities
+namespace Bks.Packages.Domain.Aggregates
 {
     public abstract class Entity
     {

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Bks.Packages.Domain.Aggregates;
+using Bks.Packages.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
@@ -9,7 +11,6 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Rela
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
-using Bks.TrainingDevelopment.Domain.Values;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
 {

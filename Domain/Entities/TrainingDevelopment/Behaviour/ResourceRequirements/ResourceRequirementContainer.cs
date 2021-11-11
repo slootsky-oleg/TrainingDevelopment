@@ -3,9 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using Bks.Packages.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements.Settings;
-using Bks.TrainingDevelopment.Domain.Values;
-using Bks.TrainingDevelopment.Domain.Values.Ids;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {

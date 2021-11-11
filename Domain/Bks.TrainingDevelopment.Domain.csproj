@@ -13,6 +13,12 @@
   <ItemGroup>
     <Folder Include="Diagrams\" />
     <Folder Include="Entities\TrainingDevelopment\EvaluationForms\" />
+    <Folder Include="Values\Ids\" />
+    <Folder Include="Values\Strings\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
   </ItemGroup>
 
 </Project>

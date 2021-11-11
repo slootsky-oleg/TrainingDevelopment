@@ -1,5 +1,5 @@
-﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
-using Bks.TrainingDevelopment.Domain.Values.Ids;
+﻿using Bks.Packages.Domain.Values.Ids;
+using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 
 namespace Atis.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {

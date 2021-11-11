@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Bks.Packages.Domain.Aggregates;
 using Bks.TrainingDevelopment.Domain.Entities;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;

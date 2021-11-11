@@ -1,4 +1,6 @@
-﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities
+﻿using Bks.Packages.Domain.Aggregates;
+
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities
 {
     public interface IHasRelatedEntities<T>
         where T : Entity

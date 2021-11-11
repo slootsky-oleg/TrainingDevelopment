@@ -1,4 +1,4 @@
-﻿using Bks.TrainingDevelopment.Domain.Values;
+﻿using Bks.Packages.Domain.Values;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 

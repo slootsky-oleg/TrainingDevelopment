@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Bks.TrainingDevelopment.Domain.Values.Ids
+namespace Bks.Packages.Domain.Values.Ids
 {
     public class GuidId : ValueObject
     {

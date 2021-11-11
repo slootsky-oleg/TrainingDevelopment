@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Bks.TrainingDevelopment.Domain.Values;
+using Bks.Packages.Domain.Values;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {

@@ -1,4 +1,5 @@
 ﻿using System;
+using Bks.Packages.Domain.Aggregates;
 using Bks.TrainingDevelopment.Domain.Entities;
 
 namespace Bks.TrainingDevelopment.Application.Common.Entities.Queries.Get

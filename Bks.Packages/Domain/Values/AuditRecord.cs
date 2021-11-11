@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Bks.TrainingDevelopment.Domain.Values.Ids;
 
-namespace Bks.TrainingDevelopment.Domain.Values
+namespace Bks.Packages.Domain.Values
 {
     public class AuditRecord : ValueObject
     {
