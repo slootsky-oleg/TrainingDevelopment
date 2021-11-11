@@ -6,9 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Application\Bks.TrainingDevelopment.Application.csproj" />
-    <ProjectReference Include="..\Atis.Training.Development.Application\Atis.TrainingDevelopment.Application.csproj" />
     <ProjectReference Include="..\Atis.Training.Development.Domain\Atis.TrainingDevelopment.Domain.csproj" />
-    <ProjectReference Include="..\Atis.Training.Development.Presentation.Web\Atis.TrainingDevelopment.Presentation.Web.csproj" />
     <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
     <ProjectReference Include="..\Domain\Bks.TrainingDevelopment.Domain.csproj" />
     <ProjectReference Include="..\Presentation.Web\Bks.TrainingDevelopment.Presentation.Web.csproj" />

@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Linq;
-using System.Reflection.Metadata;
+using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements.Settings;
 using Bks.Packages.Domain.Entities.Notifications.Audit;
-using Bks.Packages.Domain.Values;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements.Settings;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
 {
     public class ResourceRequirementContainer<T> : IResourceRequirementContainer<T>
         where T : ResourceRequirement

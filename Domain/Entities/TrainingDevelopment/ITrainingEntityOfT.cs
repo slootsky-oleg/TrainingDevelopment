@@ -1,4 +1,4 @@
-﻿using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
+﻿using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment
 {

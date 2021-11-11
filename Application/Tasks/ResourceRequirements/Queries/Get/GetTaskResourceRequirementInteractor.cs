@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 
 namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Queries.Get
 {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Bks.Packages.Domain.Values;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
 {
     public interface IHasResourceRequirements<T>
         where T : ResourceRequirement

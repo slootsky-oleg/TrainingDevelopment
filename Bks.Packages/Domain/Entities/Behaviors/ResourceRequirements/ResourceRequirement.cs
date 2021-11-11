@@ -1,8 +1,7 @@
-﻿using Bks.Packages.Domain.Entities.Behaviors;
-using Bks.Packages.Domain.Values;
+﻿using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
 {
     public class ResourceRequirement : BehaviourItem
     {

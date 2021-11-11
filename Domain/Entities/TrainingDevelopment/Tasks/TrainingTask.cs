@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Bks.Packages.Domain.Entities;
+using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
 using Bks.Packages.Domain.Entities.Notifications.Audit;
 using Bks.Packages.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
@@ -9,7 +10,6 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Cond
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Seats;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
 
