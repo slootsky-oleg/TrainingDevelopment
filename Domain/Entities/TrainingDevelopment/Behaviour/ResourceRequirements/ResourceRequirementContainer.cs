@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -8,66 +9,64 @@ using Bks.TrainingDevelopment.Domain.Values.Ids;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
-    public class ResourceRequirementContainer<TRequirement>
-        where TRequirement : ResourceRequirement
+    public class ResourceRequirementContainer<T> : IResourceRequirementContainer<T>
+        where T : ResourceRequirement
     {
-        private readonly Entity owner;
-        private readonly List<TRequirement> ownRequirements;
+        private readonly List<T> items;
 
-        public AggregationStrategy Strategy { get; }
+        public int Count => items.Count;
+        public bool IsReadOnly => false;
+
+        public event EventHandler<AuditRecord> OnChange;
+
         public IResourceRequirementSettings Settings { get; }
 
-        public IReadOnlyCollection<TRequirement> OwnRequirements => ownRequirements.ToList();
-
-        public ResourceRequirementContainer(Entity owner, AggregationStrategy strategy, IResourceRequirementSettings settings)
+        public ResourceRequirementContainer(
+            IResourceRequirementSettings settings)
         {
-            this.owner = owner ?? throw new ArgumentNullException(nameof(owner));
-            this.ownRequirements = new List<TRequirement>();
+            items = new List<T>();
+            OnChange = delegate { };
 
-            Strategy = strategy;
             Settings = settings ?? throw new ArgumentNullException(nameof(settings));
         }
-        
-        public IReadOnlyCollection<TRequirement> GetAll()
-        {
-            //TODO: Implement collecting bottom-up and combined requirements
-            throw new System.NotImplementedException();
-        }
-
-        public void Add(AuditRecord audit, TRequirement requirement)
-        {
-            ValidateCanBeModified();
-
-            if (Strategy == AggregationStrategy.BottomUp)
-            {
-                throw new NotSupportedException("");
-            }
-
-            ownRequirements.Add(requirement);
-
-            owner.AuditModification(audit);
-        }
-
-        public void Remove(AuditRecord audit, TRequirement requirement)
-        {
-            ValidateCanBeModified();
-
-            if (!ownRequirements.Remove(requirement))
-            {
-                throw new Exception("Not found");
-            }
-
-            owner.AuditModification(audit);
-        }
-
-        private void ValidateCanBeModified()
-        {
-            //check container rules;
-
-            owner.ValidateCanBeModified();
-        }
-
 
         //TODO: Primary and alternative requirements
+        public IEnumerator<T> GetEnumerator()
+        {
+            return items.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        public void Add(T item)
+        {
+            //validate is unique if required
+            OnChange += (sender, audit) => OnChange(sender, audit);
+            items.Add(item);
+        }
+
+        public void Clear()
+        {
+            items.Clear();
+        }
+
+        public bool Contains(T item)
+        {
+            return items.Contains(item);
+        }
+
+        public void CopyTo(T[] array, int arrayIndex)
+        {
+            items.CopyTo(array, arrayIndex);
+        }
+
+        public bool Remove(T item)
+        {
+            OnChange -= (sender, audit) => OnChange(sender, audit);
+            return items.Remove(item);
+        }
     }
 }

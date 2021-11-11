@@ -1,6 +1,5 @@
 using Bks.TrainingDevelopment.Application;
 using Bks.TrainingDevelopment.Presentation.Web.Filters.Swagger;
-using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -32,8 +31,6 @@ namespace Bks.TrainingDevelopment.Presentation.Web
                 c.DocumentFilter<FeatureGateDocumentFilter>();
                 c.DescribeAllParametersInCamelCase();
             });
-
-            services.AddMediatR(typeof(ForMediator));
 
             // services.AddScoped(typeof(IGetTrainingEntityInteractor<>), typeof(GetTrainingEntityInteractor<>));
             //

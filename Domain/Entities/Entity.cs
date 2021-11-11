@@ -6,20 +6,35 @@ namespace Bks.TrainingDevelopment.Domain.Entities
 {
     public abstract class Entity
     {
-        public GuidId Id { get; }
-        public ExternalId ExternalId { get; }
-        public Name Name { get; }
-        public Description Description { get; }
+        public GuidId Id { get; private set; }
+        public ExternalId ExternalId { get; private set; }
+        public Name Name { get; private set;}
+        public Description Description { get; private set;}
 
-        //TODO: Make abstract
-        public virtual void ValidateCanBeModified()
+        protected Entity(Name name)
         {
+            Name = name;
         }
 
-        //TODO: Make abstract
-        public virtual void AuditModification(AuditRecord audit)
+        public void SetExternalId(AuditRecord audit, ExternalId externalId)
         {
-
+            ExternalId = externalId;
+            AuditModification(audit);
         }
+
+        public void SetName(AuditRecord audit, Name name)
+        {
+            Name = name;
+            AuditModification(audit);
+        }
+
+        public void SetDescription(AuditRecord audit, Description description)
+        {
+            Description = description;
+            AuditModification(audit);
+        }
+
+        public abstract void ValidateCanBeModified();
+        public abstract void AuditModification(AuditRecord audit);
     }
 }
