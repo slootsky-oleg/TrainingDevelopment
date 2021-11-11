@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Bks.TrainingDevelopment.Presentation.Web
+namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web
 {
     public class Program
     {

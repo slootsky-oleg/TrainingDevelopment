@@ -19,9 +19,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Common\Entities\Behavior\Commands\Add\" />
     <Folder Include="Common\Entities\Behavior\Queries\Get\" />
     <Folder Include="Common\Entities\Behavior\ResourceRequirements\Commands\Add\" />
     <Folder Include="Common\Entities\Behavior\ResourceRequirements\Queries\Get\" />
+    <Folder Include="Common\Entities\Commands\Create\" />
+    <Folder Include="Common\Entities\Queries\Get\" />
+    <Folder Include="Features\" />
+    <Folder Include="Tasks\Commands\Create\" />
+    <Folder Include="Tasks\Queries\Get\" />
+    <Folder Include="Tasks\ResourceRequirements\Commands\Add\" />
+    <Folder Include="Tasks\ResourceRequirements\Queries\Get\" />
     <Folder Include="TrainingDevelopment\Common\Commands\" />
   </ItemGroup>
 

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.TrainingDevelopment.Application.Features;
-using Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Commands.Add;
-using Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Queries.Get;
-using Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions;
+using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Commands.Add;
+using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Queries.Get;
+using Bks.Packages.Application.Features;
+using Bks.Packages.Presentation.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement.Mvc;
 
-namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Tasks
+namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Controllers.Tasks
 {
     [ApiController]
     [Route("training-development/tasks/{taskId:guid}/resource-requirements")]

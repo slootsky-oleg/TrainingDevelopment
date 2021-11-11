@@ -1,5 +1,4 @@
-using Bks.TrainingDevelopment.Application;
-using Bks.TrainingDevelopment.Presentation.Web.Filters.Swagger;
+using Bks.Packages.Presentation.Filters.Swagger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -8,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.FeatureManagement;
 using Microsoft.OpenApi.Models;
 
-namespace Bks.TrainingDevelopment.Presentation.Web
+namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web
 {
     public class Startup
     {

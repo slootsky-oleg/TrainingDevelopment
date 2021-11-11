@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create;
-using Bks.TrainingDevelopment.Application.Features;
-using Bks.TrainingDevelopment.Application.Tasks.Commands.Create;
-using Bks.TrainingDevelopment.Application.Tasks.Queries.Get;
-using Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions;
+using Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create;
+using Bks.Fox.TrainingDevelopment.Tasks.Application.Queries.Get;
+using Bks.Packages.Application.Entities.Commands.Create;
+using Bks.Packages.Application.Features;
+using Bks.Packages.Presentation.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement.Mvc;
 
-namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Tasks
+namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Controllers.Tasks
 {
     [ApiController]
     [Route("training-development/tasks")]
