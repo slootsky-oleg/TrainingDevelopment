@@ -1,4 +1,5 @@
-﻿using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements.Settings;
+﻿using Bks.Packages.Domain.Entities.Behaviors.Abstractions;
+using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements.Settings;
 
 namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
 {

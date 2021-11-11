@@ -3,7 +3,7 @@ using Bks.Packages.Domain.Entities.Notifications.Audit;
 using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
 
-namespace Bks.Packages.Domain.Entities.Behaviors
+namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
 {
     public abstract class BehaviourItem : IBehaviorItem
     {
