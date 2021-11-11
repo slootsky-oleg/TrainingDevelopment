@@ -1,4 +1,4 @@
-﻿using Bks.Packages.Domain.Aggregates;
+﻿using Bks.Packages.Domain.Entities;
 
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities
 {

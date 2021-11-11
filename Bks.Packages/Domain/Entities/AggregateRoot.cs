@@ -1,7 +1,7 @@
 ﻿using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
 
-namespace Bks.Packages.Domain.Aggregates
+namespace Bks.Packages.Domain.Entities
 {
     public abstract class AggregateRoot
     {

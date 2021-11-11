@@ -1,9 +1,9 @@
 ﻿using System;
+using Bks.Packages.Domain.Entities.Notifications.Audit;
 using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
-using Bks.TrainingDevelopment.Domain.Entities.Events;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
+namespace Bks.Packages.Domain.Entities.Behaviors
 {
     public abstract class BehaviourItem : IBehaviorItem
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-using Bks.Packages.Domain.Aggregates;
+using Bks.Packages.Domain.Entities;
 using Bks.TrainingDevelopment.Domain.Entities;
 
 namespace Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create

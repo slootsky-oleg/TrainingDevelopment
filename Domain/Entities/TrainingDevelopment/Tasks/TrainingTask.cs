@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Bks.Packages.Domain.Aggregates;
+using Bks.Packages.Domain.Entities;
 using Bks.Packages.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
