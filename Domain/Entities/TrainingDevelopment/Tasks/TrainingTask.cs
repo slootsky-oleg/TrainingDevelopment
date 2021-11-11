@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Bks.Packages.Domain.Entities;
+using Bks.Packages.Domain.Entities.Notifications.Audit;
 using Bks.Packages.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
@@ -33,12 +34,14 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
         public TrainingTask(Name name) : base(name)
         {
             this.resourceRequirements = new ResourceRequirementContainer<ResourceRequirement>(null);
-            this.resourceRequirements.OnChange += BehaviorChangeHandler;
+            this.resourceRequirements.Changed += BehaviorChangeHandler;
         }
 
-        private void BehaviorChangeHandler(object sender, AuditRecord audit)
+        private void BehaviorChangeHandler(object sender, AuditEventArgs @event)
         {
             ValidateCanBeModified();
+
+            var audit = new AuditRecord(@event.UserId, @event.Timestamp);
             AuditModification(audit);
         }
 
@@ -64,12 +67,6 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
         {
             ValidateAndAudit(audit, () => resourceRequirements.Remove(requirement));
         }
-
-        // public void Update<TCommand>(TCommand command)
-        // {
-        //     resourceRequirements.Update(command);
-        //     throw new NotImplementedException();
-        // }
 
         private void ValidateAndAudit(AuditRecord audit, Action action)
         {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Bks.Packages.Domain.Values;
@@ -35,5 +36,24 @@ namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Command
 
             return new AddTaskResourceRequirementResponse(requirement);
         }
+        
+        
+        // public async Task<AddTaskResourceRequirementResponse> Update(
+        //     AuditRecord audit,
+        //     Guid taskId,
+        //     GuidId reqId)
+        // {
+        //     var task = await repository.GetAsync(taskId)
+        //                ?? throw new Exception("Not found");
+        //
+        //     var requirement = task.ResourceRequirements.SingleOrDefault(x => x.Id == reqId);
+        //
+        //     requirement.SetQuantity(quantity: 6);
+        //     
+        //     //await repository.CommitAsync();
+        //
+        //
+        //     return new AddTaskResourceRequirementResponse(requirement);
+        // }
     }
 }

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using System.Reflection.Metadata;
+using Bks.Packages.Domain.Entities.Notifications.Audit;
 using Bks.Packages.Domain.Values;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements.Settings;
 
@@ -16,7 +18,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
         public int Count => items.Count;
         public bool IsReadOnly => false;
 
-        public event EventHandler<AuditRecord> OnChange;
+        public event EventHandler<AuditEventArgs> Changed;
 
         public IResourceRequirementSettings Settings { get; }
 
@@ -24,10 +26,16 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
             IResourceRequirementSettings settings)
         {
             items = new List<T>();
-            OnChange = delegate { };
+            Changed = delegate { };
 
             Settings = settings ?? throw new ArgumentNullException(nameof(settings));
         }
+
+        private void ItemChangeHandler(object sender, AuditEventArgs @event)
+        {
+            Changed(sender, @event);
+        }
+
 
         //TODO: Primary and alternative requirements
         public IEnumerator<T> GetEnumerator()
@@ -42,10 +50,18 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
 
         public void Add(T item)
         {
-            //validate is unique if required
-            OnChange += (sender, audit) => OnChange(sender, audit);
+            item.Changed += ItemChangeHandler;
             items.Add(item);
         }
+
+        // public void Add(AuditRecord audit, T item)
+        // {
+        //     //validate is unique if required
+        //     items.Add(item);
+        //
+        //     var @event = new AuditEventArgs(audit);
+        //     Changed(item, @event);
+        // }
 
         public void Clear()
         {
@@ -64,7 +80,8 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
 
         public bool Remove(T item)
         {
-            OnChange -= (sender, audit) => OnChange(sender, audit);
+            item.Changed -= ItemChangeHandler;
+            //Changed -= (sender, audit) => Changed(sender, audit);
             return items.Remove(item);
         }
     }
