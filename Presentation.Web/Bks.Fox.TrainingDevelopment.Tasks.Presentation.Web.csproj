@@ -14,9 +14,4 @@
     <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
     <ProjectReference Include="..\Domain\Bks.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\Abstractions\Behaviour\" />
-  </ItemGroup>
-
 </Project>

@@ -1,4 +1,4 @@
-using Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Filters.Swagger;
+using Bks.Packages.Presentation.Filters.Swagger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

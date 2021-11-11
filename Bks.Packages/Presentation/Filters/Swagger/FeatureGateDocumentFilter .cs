@@ -6,7 +6,7 @@ using Microsoft.FeatureManagement.Mvc;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Filters.Swagger
+namespace Bks.Packages.Presentation.Filters.Swagger
 {
     public class FeatureGateDocumentFilter : IDocumentFilter
     {
