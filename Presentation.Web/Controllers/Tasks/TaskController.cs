@@ -21,7 +21,7 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Tasks
             CreateTaskRequest request)
         {
             var audit = GetAuditRecord();
-            return await interactor.Execute(request);
+            return await interactor.Execute(audit, request);
         }
 
         [HttpGet("{taskId:guid}")]

@@ -29,7 +29,7 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
     {
         private readonly ResourceRequirementContainer<ResourceRequirement> resourceRequirements;
 
-        public TrainingTask()
+        public TrainingTask(Name name) : base(name)
         {
             this.resourceRequirements = new ResourceRequirementContainer<ResourceRequirement>(null);
             this.resourceRequirements.OnChange += BehaviorChangeHandler;
@@ -92,6 +92,16 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
             {
                 throw new NotSupportedException("");
             }
+        }
+
+        public override void ValidateCanBeModified()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void AuditModification(AuditRecord audit)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -20,6 +20,12 @@ namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.
             OnChanged(audit);
         }
 
+        public void SetQuantity(AuditRecord audit, int? quantity)
+        {
+            Quantity = quantity;
+            OnChanged(audit);
+        }
+
 
         //1 laptop per 2 participants
         //public int Ratio { get; set; }

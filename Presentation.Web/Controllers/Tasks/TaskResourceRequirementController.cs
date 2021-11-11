@@ -20,7 +20,8 @@ namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Tasks
             Guid taskId,
             AddTaskResourceRequirementRequest request)
         {
-            return await interactor.Execute(taskId, request);
+            var audit = GetAuditRecord();
+            return await interactor.Execute(audit, taskId, request);
         }
 
         [HttpGet("{requirement:guid}")]

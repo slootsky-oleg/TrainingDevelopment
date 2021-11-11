@@ -18,18 +18,17 @@ namespace Bks.TrainingDevelopment.Application.Tasks.ResourceRequirements.Command
         }
 
         public async Task<AddTaskResourceRequirementResponse> Execute(
+            AuditRecord audit,
             Guid taskId,
             AddTaskResourceRequirementRequest request)
         {
-            var task = await repository.GetAsync(request.EntityId)
+            var task = await repository.GetAsync(taskId)
                        ?? throw new Exception("Not found");
 
             var typeId = GuidId.Of(request.TypeId);
             var requirement = new ResourceRequirement(typeId, request.Quantity);
 
-            //resolve from context. Use generic Request<T> or context provider
-            var audit = new AuditRecord(1);
-            //task.ResourceRequirements.Add(audit, requirement);
+            task.Add(audit, requirement);
             
             //await repository.CommitAsync();
 
