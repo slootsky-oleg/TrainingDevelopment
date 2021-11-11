@@ -1,8 +1,7 @@
 ﻿using Bks.Packages.Domain.Values;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.SignalR;
 
-namespace Bks.TrainingDevelopment.Presentation.Web.Controllers.Abstractions
+namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Controllers.Abstractions
 {
     [ApiController]
     public abstract class AbstractController : ControllerBase
