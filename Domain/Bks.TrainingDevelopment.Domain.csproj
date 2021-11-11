@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Diagrams\" />
     <Folder Include="Entities\TrainingDevelopment\Behaviour\ResourceRequirements\Settings\Alternatives\" />
     <Folder Include="Entities\TrainingDevelopment\EvaluationForms\" />
     <Folder Include="Repositories\TrainingDevelopment\Tasks\" />
