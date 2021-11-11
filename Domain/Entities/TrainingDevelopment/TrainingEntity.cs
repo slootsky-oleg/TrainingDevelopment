@@ -25,7 +25,7 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
     // IHasTargetAudience,
     // IHasStatus
     {
-        private readonly ResourceRequirementContainer<TResourceRequirement> resourceRequirements;
+        protected readonly ResourceRequirementContainer<TResourceRequirement> resourceRequirements;
 
         //TODO: better name
         public AggregationStrategy AggregationStrategy { get; }
@@ -35,18 +35,10 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
         protected TrainingEntity(AuditRecord audit, Name name)
             : base(audit, name)
         {
-            this.resourceRequirements = new ResourceRequirementContainer<TResourceRequirement>(null);
-            this.resourceRequirements.Changed += BehaviorChangeHandler;
+            this.resourceRequirements = new ResourceRequirementContainer<TResourceRequirement>();
+            SubscribeToChanges(resourceRequirements);
         }
 
-        protected virtual void BehaviorChangeHandler(object sender, AuditEventArgs @event)
-        {
-            ValidateCanBeModified();
-
-            var audit = @event.ToAuditRecord();
-            AuditModification(audit);
-        }
-        
         public void Archive()
         {
             throw new System.NotImplementedException();
@@ -77,6 +69,19 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
             AuditModification(audit);
 
             return action.Invoke();
+        }
+
+        private void SubscribeToChanges(INotifyChanged source)
+        {
+            source.Changed += BehaviorChangeHandler;
+        }
+
+        private void BehaviorChangeHandler(object sender, AuditEventArgs @event)
+        {
+            ValidateCanBeModified();
+
+            var audit = @event.ToAuditRecord();
+            AuditModification(audit);
         }
 
         // private void ValidateCanOwnAggregatableBehaviors()
