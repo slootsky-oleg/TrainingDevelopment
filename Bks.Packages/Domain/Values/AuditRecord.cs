@@ -11,7 +11,7 @@ namespace Bks.Packages.Domain.Values
 
         public AuditRecord(UserId userId, DateTime timestamp)
         {
-            UserId = userId;
+            UserId = userId ?? throw new ArgumentNullException(nameof(userId));
             Timestamp = timestamp;
         }
 
