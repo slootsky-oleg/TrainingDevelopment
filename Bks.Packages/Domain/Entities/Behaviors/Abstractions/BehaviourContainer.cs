@@ -38,14 +38,9 @@ namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
             return GetEnumerator();
         }
 
-        public void Add(T item)
+        public virtual void Add(T item)
         {
             if (item == null) throw new ArgumentNullException(nameof(item));
-
-            // if (Settings.RequireUnique && Items.Contains(item))
-            // {
-            //     throw new NotUniqueException()
-            // }
 
             item.Changed += ItemChangeHandler;
             Items.Add(item);
@@ -67,7 +62,7 @@ namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
             Items.CopyTo(array, arrayIndex);
         }
 
-        public bool Remove(T item)
+        public virtual bool Remove(T item)
         {
             if (item == null) throw new ArgumentNullException(nameof(item));
 

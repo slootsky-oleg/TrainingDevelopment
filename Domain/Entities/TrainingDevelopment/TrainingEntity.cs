@@ -35,7 +35,8 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
         protected TrainingEntity(AuditRecord audit, Name name)
             : base(audit, name)
         {
-            this.resourceRequirements = new ResourceRequirementContainer<TResourceRequirement>();
+            //TODO: how to inject settings?
+            this.resourceRequirements = new ResourceRequirementContainer<TResourceRequirement>(settings: null);
             SubscribeToChanges(resourceRequirements);
         }
 

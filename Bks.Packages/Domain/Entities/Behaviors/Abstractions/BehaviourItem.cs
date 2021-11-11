@@ -5,7 +5,7 @@ using Bks.Packages.Domain.Values.Ids;
 
 namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
 {
-    public abstract class BehaviourItem : IBehaviorItem
+    public abstract class BehaviourItem : ValueObject, IBehaviorItem
     {
         public event EventHandler<AuditEventArgs> Changed;
 
