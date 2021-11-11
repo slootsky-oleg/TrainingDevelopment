@@ -3,14 +3,14 @@ using Bks.Packages.Domain.Values.Ids;
 
 namespace Bks.Packages.Domain.Aggregates
 {
-    public abstract class Entity
+    public abstract class AggregateRoot
     {
         public GuidId Id { get; private set; }
         public ExternalId ExternalId { get; private set; }
         public Name Name { get; private set;}
         public Description Description { get; private set;}
 
-        protected Entity(Name name)
+        protected AggregateRoot(Name name)
         {
             Name = name;
         }

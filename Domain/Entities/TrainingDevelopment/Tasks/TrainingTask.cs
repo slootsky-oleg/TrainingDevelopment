@@ -15,7 +15,7 @@ using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Targ
 namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
 {
     public class TrainingTask : 
-        Entity,
+        AggregateRoot,
         ITrainingEntity<ResourceRequirement>
         
         //IHasRelatedEntities<TrainingTask>

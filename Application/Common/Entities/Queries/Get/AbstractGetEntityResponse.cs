@@ -11,7 +11,7 @@ namespace Bks.TrainingDevelopment.Application.Common.Entities.Queries.Get
         public string Name { get; }
         public string Description { get; }
 
-        protected AbstractGetEntityResponse(Entity entity)
+        protected AbstractGetEntityResponse(AggregateRoot entity)
         {
             Id = entity.Id;
             ExternalId = entity.ExternalId;
