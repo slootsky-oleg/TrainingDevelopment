@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Bks.Packages.Domain.Entities.Notifications.Audit;
-using Bks.Packages.Domain.Values;
 
-namespace Bks.Packages.Domain.Entities.Behaviors
+namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
 {
     public interface IBehaviorContainer<T> : ICollection<T>
         where T : IBehaviorItem

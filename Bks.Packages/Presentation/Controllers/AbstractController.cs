@@ -1,4 +1,5 @@
 ﻿using Bks.Packages.Domain.Values;
+using Bks.Packages.Domain.Values.Ids;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bks.Packages.Presentation.Controllers
@@ -12,14 +13,9 @@ namespace Bks.Packages.Presentation.Controllers
                 .Identity
                 .Name;
 
-            var userId = ToInt(user);
+            var userId = UserId.Of(user);
 
             return new AuditRecord(userId);
-        }
-
-        private static int ToInt(string stringValue)
-        {
-            return int.Parse(stringValue);
         }
     }
 }

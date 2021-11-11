@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.TrainingDevelopment.Domain", "Domain\Bks.TrainingDevelopment.Domain.csproj", "{A87CCBA8-3B27-4EAB-904E-D17D87A70F2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Domain", "Domain\Bks.Fox.TrainingDevelopment.Domain.csproj", "{A87CCBA8-3B27-4EAB-904E-D17D87A70F2D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web", "Presentation.Web\Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.csproj", "{14391304-EB74-4329-A707-4B37AA7AE262}"
 EndProject
@@ -25,9 +25,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskCollections", "TaskColl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDo", "ToDo", "{67583F61-2206-44F8-A017-7D13044054BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.TrainingDevelopment.Tasks.Domain", "Bks.Fox.TrainingDevelopment.Tasks.Domain\Bks.Fox.TrainingDevelopment.Tasks.Domain.csproj", "{CD296C77-1630-49AA-AA98-7122132C3B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Tasks.Domain", "Bks.Fox.TrainingDevelopment.Tasks.Domain\Bks.Fox.TrainingDevelopment.Tasks.Domain.csproj", "{CD296C77-1630-49AA-AA98-7122132C3B62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.TrainingDevelopment.Tasks.Application", "Bks.Fox.TrainingDevelopment.Tasks.Application\Bks.Fox.TrainingDevelopment.Tasks.Application.csproj", "{74216181-A2B8-4A49-96DF-E53C1DFA5491}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Tasks.Application", "Bks.Fox.TrainingDevelopment.Tasks.Application\Bks.Fox.TrainingDevelopment.Tasks.Application.csproj", "{74216181-A2B8-4A49-96DF-E53C1DFA5491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,7 +68,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A87CCBA8-3B27-4EAB-904E-D17D87A70F2D} = {67583F61-2206-44F8-A017-7D13044054BB}
+		{A87CCBA8-3B27-4EAB-904E-D17D87A70F2D} = {5E610032-3B97-4AD4-B64C-A309A7CEFC81}
 		{14391304-EB74-4329-A707-4B37AA7AE262} = {725AF6BD-ADD9-4E68-A3C5-6EBC88E64EC3}
 		{8B22475B-1E0E-4967-A4B1-704297988792} = {F77175EB-5E1B-48CF-9F25-FC7B29A7BCEB}
 		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}

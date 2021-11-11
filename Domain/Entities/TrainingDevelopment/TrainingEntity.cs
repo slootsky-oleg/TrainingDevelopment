@@ -1,43 +1,96 @@
-﻿// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
-// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions;
-// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Content;
-// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
-// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation;
-// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
-// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements;
-// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.TargetAudience;
-// using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Versioning;
-// using Bks.TrainingDevelopment.Domain.Values.Ids;
-//
-// namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment
-// {
-//     public abstract class TrainingEntity<TResourceRequirement> : 
-//         Entity,
-//         ITrainingEntity,
-//         IHasCustomFields, 
-//         IHasContent, 
-//         IVersionable,
-//         IHasEvaluationCriteria,
-//         IHasPrerequisites,
-//         IHasConditions,
-//         IHasResourceRequirements<TResourceRequirement>,
-//         IHasTargetAudience,
-//         IHasStatus
-//         where TResourceRequirement : ResourceRequirement //TODO: interface that is used by activities/events/
-//     {
-//         public Version Version { get; }
-//         public CustomFieldContainer CustomFields { get; }
-//         public ContentContainer Content { get; }
-//
-//         public EvaluationOutline EvaluationOutline { get; }
-//         public PrerequisiteContainer Prerequisites { get; }
-//         public ExecutionConditionContainer Conditions { get; }
-//         public ResourceRequirementContainer<TResourceRequirement> ResourceRequirements { get; }
-//         public TargetAudienceContainer TargetAudience { get; }
-//
-//         public void Archive()
-//         {
-//             throw new System.NotImplementedException();
-//         }
-//     }
-// }
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
+using Bks.Packages.Domain.Entities;
+using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
+using Bks.Packages.Domain.Entities.Notifications.Audit;
+using Bks.Packages.Domain.Values;
+
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
+{
+    public abstract class TrainingEntity<TResourceRequirement> : 
+        AggregateRoot,
+        ITrainingEntity<TResourceRequirement>
+
+        where TResourceRequirement : ResourceRequirement
+        
+    //IHasRelatedEntities<TrainingTask>
+    // IHasCustomFields, 
+    // IHasContent, 
+    // IVersionable,
+    // IHasEvaluationCriteria,
+    // IHasPrerequisites,
+    // IHasConditions,
+    // IHasTargetAudience,
+    // IHasStatus
+    {
+        protected readonly ResourceRequirementContainer<TResourceRequirement> resourceRequirements;
+
+        //TODO: better name
+        public AggregationStrategy AggregationStrategy { get; }
+        public IReadOnlyCollection<TResourceRequirement> ResourceRequirements => resourceRequirements.ToList();
+
+
+        protected TrainingEntity(AuditRecord audit, Name name)
+            : base(audit, name)
+        {
+            //TODO: how to inject settings?
+            this.resourceRequirements = new ResourceRequirementContainer<TResourceRequirement>(settings: null);
+            SubscribeToChanges(resourceRequirements);
+        }
+
+        public void Archive()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void AddResourceRequirement(AuditRecord audit, TResourceRequirement requirement)
+        {
+            //Validate has requirements
+            ValidateAndAudit(audit, () => resourceRequirements.Add(requirement));
+        }
+
+        public void RemoveResourceRequirement(AuditRecord audit, TResourceRequirement requirement)
+        {
+            ValidateAndAudit(audit, () => resourceRequirements.Remove(requirement));
+        }
+
+        private void ValidateAndAudit(AuditRecord audit, Action action)
+        {
+            ValidateCanBeModified();
+            AuditModification(audit);
+
+            action.Invoke();
+        }
+
+        private T ValidateAndAudit<T>(AuditRecord audit, Func<T> action)
+        {
+            ValidateCanBeModified();
+            AuditModification(audit);
+
+            return action.Invoke();
+        }
+
+        private void SubscribeToChanges(INotifyChanged source)
+        {
+            source.Changed += BehaviorChangeHandler;
+        }
+
+        private void BehaviorChangeHandler(object sender, AuditEventArgs @event)
+        {
+            ValidateCanBeModified();
+
+            var audit = @event.ToAuditRecord();
+            AuditModification(audit);
+        }
+
+        // private void ValidateCanOwnAggregatableBehaviors()
+        // {
+        //     if (AggregationStrategy == AggregationStrategy.BottomUp)
+        //     {
+        //         throw new NotSupportedException("");
+        //     }
+        // }
+    }
+}

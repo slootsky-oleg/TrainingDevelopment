@@ -1,4 +1,4 @@
-﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CheckList
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CheckList
 {
     public interface IHasCheckList
     {

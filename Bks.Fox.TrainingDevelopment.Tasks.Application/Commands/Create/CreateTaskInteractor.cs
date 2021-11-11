@@ -3,7 +3,6 @@ using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
 using Bks.Packages.Application.Entities.Commands.Create;
 using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
 {
@@ -15,7 +14,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
             var externalId = ExternalId.Of(request.ExternalId);
             var description = Description.Of(request.Description);
 
-            var task = new TrainingTask(name);
+            var task = new TrainingTask(audit, name);
             task.SetExternalId(audit, externalId);
             task.SetName(audit, name);
             task.SetDescription(audit, description);

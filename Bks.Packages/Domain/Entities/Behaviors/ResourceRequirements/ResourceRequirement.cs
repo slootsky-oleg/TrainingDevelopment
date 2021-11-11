@@ -1,4 +1,6 @@
-﻿using Bks.Packages.Domain.Values;
+﻿using System.Collections.Generic;
+using Bks.Packages.Domain.Entities.Behaviors.Abstractions;
+using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
 
 namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
@@ -39,5 +41,9 @@ namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
         //TODO: Is mandatory
 
         //TODO: Required qualifications
+        protected override IEnumerable<object> GetEqualityComponents()
+        {
+            yield return ResourceTypeId;
+        }
     }
 }

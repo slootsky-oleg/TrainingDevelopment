@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.Operational.Scheduling
 {
     public class ParticipantContainer
     {

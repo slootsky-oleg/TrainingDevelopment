@@ -1,4 +1,4 @@
-﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Content
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Content
 {
     public class ContentContainer
     {

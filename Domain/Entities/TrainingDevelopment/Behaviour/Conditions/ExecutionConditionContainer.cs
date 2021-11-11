@@ -1,4 +1,4 @@
-﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Conditions
 {
     public class ExecutionConditionContainer
     {

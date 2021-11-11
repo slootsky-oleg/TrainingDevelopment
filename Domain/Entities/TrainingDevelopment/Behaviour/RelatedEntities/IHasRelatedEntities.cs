@@ -1,6 +1,6 @@
 ﻿using Bks.Packages.Domain.Entities;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities
 {
     public interface IHasRelatedEntities<T>
         where T : AggregateRoot

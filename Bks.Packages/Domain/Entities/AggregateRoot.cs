@@ -1,4 +1,5 @@
-﻿using Bks.Packages.Domain.Values;
+﻿using System;
+using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
 
 namespace Bks.Packages.Domain.Entities
@@ -10,9 +11,16 @@ namespace Bks.Packages.Domain.Entities
         public Name Name { get; private set;}
         public Description Description { get; private set;}
 
-        protected AggregateRoot(Name name)
+        public UserId CreatedBy { get; }
+        public DateTime CreatedOn { get; }
+        public UserId ModifiedBy { get; private set; }
+        public DateTime ModifiedOn { get; private set; }
+
+        protected AggregateRoot(AuditRecord audit, Name name)
         {
             Name = name;
+            CreatedBy = audit.UserId;
+            CreatedOn = audit.Timestamp;
         }
 
         public void SetExternalId(AuditRecord audit, ExternalId externalId)
@@ -34,6 +42,11 @@ namespace Bks.Packages.Domain.Entities
         }
 
         public abstract void ValidateCanBeModified();
-        public abstract void AuditModification(AuditRecord audit);
+
+        protected virtual void AuditModification(AuditRecord audit)
+        {
+            ModifiedBy = audit.UserId;
+            ModifiedOn = audit.Timestamp;
+        }
     }
 }

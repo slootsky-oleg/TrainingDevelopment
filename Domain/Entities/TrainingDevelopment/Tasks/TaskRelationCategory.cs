@@ -1,7 +1,7 @@
 ﻿using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
 {
     public class TaskRelationCategory
     {

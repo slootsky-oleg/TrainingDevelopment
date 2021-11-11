@@ -1,6 +1,6 @@
 ﻿using Bks.Packages.Domain.Values.Ids;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.Operational.Scheduling
 {
     public class IndividualParticipant
     {

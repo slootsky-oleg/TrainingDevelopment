@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using Bks.Packages.Domain.Values.Ids;
 
 namespace Bks.Packages.Domain.Values
 {
     public class AuditRecord : ValueObject
     {
-        public int UserId { get; }
+        public UserId UserId { get; }
         public DateTime Timestamp { get; }
 
-        public AuditRecord(int userId, DateTime timestamp)
+        public AuditRecord(UserId userId, DateTime timestamp)
         {
-            UserId = userId;
+            UserId = userId ?? throw new ArgumentNullException(nameof(userId));
             Timestamp = timestamp;
         }
 
-        public AuditRecord(int userId)
+        public AuditRecord(UserId userId)
             : this(userId, DateTime.Now)
         {
         }

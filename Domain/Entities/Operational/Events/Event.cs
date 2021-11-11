@@ -1,6 +1,6 @@
-﻿using Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling;
+﻿using Bks.Fox.TrainingDevelopment.Domain.Entities.Operational.Scheduling;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Events
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.Operational.Events
 {
     //var event = repo.get(id);
 
@@ -11,15 +11,15 @@ namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Events
     //POST resources/id/allocate {event, daterange}
     //resources/id/avalibility
 
-    public class Event : SchedulableEntity
-    {
-        //public IReadOnlyCollection<ResourceRequirement> ResourceRequirements { get; }
-
-        //public IReadOnlyCollection<Resource> Resources { get; }
-
-        public override void Archive()
-        {
-            throw new System.NotSupportedException("Step can't be archived."); //Applies to all availability methods
-        }
-    }
+    // public class Event : SchedulableEntity
+    // {
+    //     //public IReadOnlyCollection<ResourceRequirement> ResourceRequirements { get; }
+    //
+    //     //public IReadOnlyCollection<Resource> Resources { get; }
+    //
+    //     public override void Archive()
+    //     {
+    //         throw new System.NotSupportedException("Step can't be archived."); //Applies to all availability methods
+    //     }
+    // }
 }
