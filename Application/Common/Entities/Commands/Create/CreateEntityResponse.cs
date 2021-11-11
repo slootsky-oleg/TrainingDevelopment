@@ -1,4 +1,5 @@
 ﻿using System;
+using Bks.Packages.Domain.Entities;
 using Bks.TrainingDevelopment.Domain.Entities;
 
 namespace Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create
@@ -7,7 +8,7 @@ namespace Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create
     {
         public Guid Id { get; }
 
-        public CreateEntityResponse(Entity entity)
+        public CreateEntityResponse(AggregateRoot entity)
         {
             Id = entity.Id;
         }

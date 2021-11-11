@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Bks.TrainingDevelopment.Domain.Values.Strings
+namespace Bks.Packages.Domain.Values.Strings
 {
     public abstract class StringValueObject : ValueObject
     {

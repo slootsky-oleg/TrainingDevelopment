@@ -1,7 +1,6 @@
 ﻿using System;
-using Bks.TrainingDevelopment.Domain.Values;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.Events
+namespace Bks.Packages.Domain.Entities.Notifications.Audit
 {
     public interface INotifyChanged
     {

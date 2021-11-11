@@ -15,4 +15,8 @@
     <Folder Include="Entities\TrainingDevelopment\EvaluationForms\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
+  </ItemGroup>
+
 </Project>

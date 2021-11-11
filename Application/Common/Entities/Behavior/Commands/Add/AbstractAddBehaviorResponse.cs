@@ -1,4 +1,5 @@
 ﻿using System;
+using Bks.Packages.Domain.Entities.Behaviors;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 
 namespace Bks.TrainingDevelopment.Application.Common.Entities.Behavior.Commands.Add

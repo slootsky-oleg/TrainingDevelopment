@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Bks.Packages.Domain.Values;
+using Bks.Packages.Domain.Values.Ids;
 using Bks.TrainingDevelopment.Application.Common.Entities.Commands.Create;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
-using Bks.TrainingDevelopment.Domain.Values;
-using Bks.TrainingDevelopment.Domain.Values.Ids;
 
 namespace Bks.TrainingDevelopment.Application.Tasks.Commands.Create
 {

@@ -1,4 +1,6 @@
-﻿namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
+﻿using Bks.Packages.Domain.Entities.Behaviors;
+
+namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.ResourceRequirements
 {
     public interface IResourceRequirementContainer<T> : IBehaviorContainer<T>
         where T : ResourceRequirement

@@ -3,8 +3,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks;
 using Bks.TrainingDevelopment.Domain.Repositories.TrainingDevelopment.Tasks;
-using Bks.TrainingDevelopment.Domain.Values;
-using Bks.TrainingDevelopment.Domain.Values.Ids;
 
 namespace Bks.TrainingDevelopment.Application.Tasks.Queries.Get
 {
