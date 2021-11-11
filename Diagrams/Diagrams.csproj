@@ -7,7 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Atis.Training.Development.Domain\Atis.TrainingDevelopment.Domain.csproj" />
     <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
-    <ProjectReference Include="..\Domain\Bks.TrainingDevelopment.Domain.csproj" />
+    <ProjectReference Include="..\Domain\Bks.Fox.TrainingDevelopment.Domain.csproj" />
     <ProjectReference Include="..\Presentation.Web\Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.csproj" />
   </ItemGroup>
 

@@ -1,6 +1,6 @@
 ﻿using Bks.Packages.Domain.Values.Ids;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields
 {
     public class CustomFieldContainer
     {

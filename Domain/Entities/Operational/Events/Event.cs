@@ -1,6 +1,6 @@
-﻿using Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling;
+﻿using Bks.Fox.TrainingDevelopment.Domain.Entities.Operational.Scheduling;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Events
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.Operational.Events
 {
     //var event = repo.get(id);
 

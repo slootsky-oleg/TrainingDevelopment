@@ -1,14 +1,15 @@
 ﻿using System;
 using Bks.Packages.Domain.Values;
+using Bks.Packages.Domain.Values.Ids;
 
 namespace Bks.Packages.Domain.Entities.Notifications.Audit
 {
     public class AuditEventArgs : EventArgs
     {
-        public int UserId { get; }
+        public UserId UserId { get; }
         public DateTime Timestamp { get; }
 
-        public AuditEventArgs(int userId, DateTime timestamp)
+        public AuditEventArgs(UserId userId, DateTime timestamp)
         {
             UserId = userId;
             Timestamp = timestamp;
@@ -20,6 +21,11 @@ namespace Bks.Packages.Domain.Entities.Notifications.Audit
 
             UserId = audit.UserId;
             Timestamp = audit.Timestamp;
+        }
+
+        public AuditRecord ToAuditRecord()
+        {
+            return new AuditRecord(UserId, Timestamp);
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
             var typeId = GuidId.Of(request.TypeId);
             var requirement = new ResourceRequirement(typeId, request.Quantity);
 
-            task.Add(audit, requirement);
+            task.AddResourceRequirement(audit, requirement);
             
             //await repository.CommitAsync();
 

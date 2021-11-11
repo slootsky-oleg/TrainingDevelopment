@@ -1,11 +1,11 @@
-﻿using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
+﻿using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Content;
+using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
+using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
+using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
 using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Content;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.CustomFields;
-using Bks.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Prerequisities;
 
-namespace Bks.TrainingDevelopment.Domain.Entities.Operational.Scheduling
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.Operational.Scheduling
 {
     //TODO: Find a better name
     public abstract class SchedulableEntity
