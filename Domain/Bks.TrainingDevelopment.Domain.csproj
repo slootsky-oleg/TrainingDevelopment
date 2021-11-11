@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <Folder Include="Diagrams\" />
-    <Folder Include="Entities\Events\" />
     <Folder Include="Entities\TrainingDevelopment\EvaluationForms\" />
   </ItemGroup>
 

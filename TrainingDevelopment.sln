@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.TrainingDevelopment.Dom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.TrainingDevelopment.Application", "Application\Bks.TrainingDevelopment.Application.csproj", "{739E7B8F-AB17-4EEE-AE89-A016FA27BBFB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground", "Playground\Playground.csproj", "{714F80C1-76B1-4204-8FE3-E8E8E5D41683}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.TrainingDevelopment.Presentation.Web", "Presentation.Web\Bks.TrainingDevelopment.Presentation.Web.csproj", "{14391304-EB74-4329-A707-4B37AA7AE262}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Atis", "Atis", "{F77175EB-5E1B-48CF-9F25-FC7B29A7BCEB}"
@@ -47,10 +45,6 @@ Global
 		{739E7B8F-AB17-4EEE-AE89-A016FA27BBFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{739E7B8F-AB17-4EEE-AE89-A016FA27BBFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{739E7B8F-AB17-4EEE-AE89-A016FA27BBFB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{714F80C1-76B1-4204-8FE3-E8E8E5D41683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{714F80C1-76B1-4204-8FE3-E8E8E5D41683}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{714F80C1-76B1-4204-8FE3-E8E8E5D41683}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{714F80C1-76B1-4204-8FE3-E8E8E5D41683}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14391304-EB74-4329-A707-4B37AA7AE262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14391304-EB74-4329-A707-4B37AA7AE262}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14391304-EB74-4329-A707-4B37AA7AE262}.Release|Any CPU.ActiveCfg = Release|Any CPU
