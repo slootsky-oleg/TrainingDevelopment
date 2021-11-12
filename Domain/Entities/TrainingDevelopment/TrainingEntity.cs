@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
-using Bks.Packages.Domain.Entities;
-using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
-using Bks.Packages.Domain.Entities.Notifications.Changes;
-using Bks.Packages.Domain.Values;
-using Bks.Packages.Domain.Values.Ids;
+using Bks.Packages.Core.Domain.Entities;
+using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
+using Bks.Packages.Core.Domain.Entities.Notifications.Changes;
+using Bks.Packages.Core.Domain.Values;
+using Bks.Packages.Core.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
 {
@@ -36,12 +36,14 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
         public IReadOnlyCollection<TResourceRequirement> ResourceRequirements => resourceRequirements.ToList();
 
 
-        protected TrainingEntity(UserFootprint footprint, Name name)
+        protected TrainingEntity(UserFootprint footprint, Name name, TypeId typeId)
             : base(footprint, name)
         {
             //TODO: how to inject settings?
             this.resourceRequirements = new ResourceRequirementContainer<TResourceRequirement>(settings: null);
             SubscribeToChanges(resourceRequirements);
+
+            TypeId = typeId;
         }
 
         public void Archive()

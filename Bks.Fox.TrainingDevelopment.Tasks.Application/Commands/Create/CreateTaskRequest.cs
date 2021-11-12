@@ -1,8 +1,9 @@
-﻿using Bks.Packages.Application.Entities.Commands.Create;
+﻿using System;
+using Bks.Packages.TrainingDevelopment.Application.Entities.Commands.Create;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
 {
-    public class CreateTaskRequest : CreateEntityRequest
+    public class CreateTaskRequest : CreateTrainingEntityRequest
     {
     }
 }

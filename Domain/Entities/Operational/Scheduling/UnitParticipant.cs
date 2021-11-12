@@ -1,4 +1,4 @@
-﻿using Bks.Packages.Domain.Values.Ids;
+﻿using Bks.Packages.Core.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.Operational.Scheduling
 {
