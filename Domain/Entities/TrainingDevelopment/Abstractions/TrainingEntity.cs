@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions.Settings;
 using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 using Bks.Packages.Core.Domain.Entities;
 using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
@@ -8,13 +9,14 @@ using Bks.Packages.Core.Domain.Entities.Notifications.Changes;
 using Bks.Packages.Core.Domain.Values;
 using Bks.Packages.Core.Domain.Values.Ids;
 
-namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions
 {
-    public abstract class TrainingEntity<TResourceRequirement> : 
+    public abstract class TrainingEntity<TSettings, TResourceRequirement> : 
         AggregateRoot,
         ITrainingEntity<TResourceRequirement>
 
         where TResourceRequirement : ResourceRequirement
+        where TSettings : ITrainingDevelopmentEntitySettings
         
     //IHasRelatedEntities<TrainingTask>
     // IHasCustomFields, 
@@ -28,22 +30,28 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
     {
         //TODO: Is versionable?
         public TypeId TypeId { get; private set; }
+
+        protected TSettings Settings;
         
-        protected readonly ResourceRequirementContainer<TResourceRequirement> resourceRequirements;
+        protected readonly ResourceRequirementContainer<TResourceRequirement> ResourceRequirementContainer;
 
         //TODO: better name
         public AggregationStrategy AggregationStrategy { get; }
-        public IReadOnlyCollection<TResourceRequirement> ResourceRequirements => resourceRequirements.ToList();
+        public IReadOnlyCollection<TResourceRequirement> ResourceRequirements => ResourceRequirementContainer.ToList();
 
-
-        protected TrainingEntity(UserFootprint footprint, Name name, TypeId typeId)
+        //TODO: Add settings, custom field schema
+        protected TrainingEntity(
+            UserFootprint footprint,
+            Name name,
+            TypeId typeId,
+            TSettings settings)
             : base(footprint, name)
         {
-            //TODO: how to inject settings?
-            this.resourceRequirements = new ResourceRequirementContainer<TResourceRequirement>(settings: null);
-            SubscribeToChanges(resourceRequirements);
-
             TypeId = typeId;
+            Settings = settings;
+
+            this.ResourceRequirementContainer = new ResourceRequirementContainer<TResourceRequirement>(settings.ResourceRequirement);
+            SubscribeToChanges(ResourceRequirementContainer);
         }
 
         public void Archive()
@@ -51,20 +59,33 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
             throw new System.NotImplementedException();
         }
 
-        public void SetTypeId(UserFootprint footprint, TypeId typeId)
+        public void SetType(
+            UserFootprint footprint,
+            TypeId typeId,
+            TSettings settings
+            //CustomFieldSchema
+            )
         {
-            ValidateAndAudit(footprint, () => TypeId = typeId);
+            if (typeId == null) throw new ArgumentNullException(nameof(typeId));
+            if (settings == null) throw new ArgumentNullException(nameof(settings));
+
+
+            ValidateAndAudit(footprint, () =>
+            {
+                TypeId = typeId;
+                Settings = settings;
+            });
         }
 
         public void AddResourceRequirement(UserFootprint footprint, TResourceRequirement requirement)
         {
             //Validate has requirements
-            ValidateAndAudit(footprint, () => resourceRequirements.Add(requirement));
+            ValidateAndAudit(footprint, () => ResourceRequirementContainer.Add(requirement));
         }
 
         public void RemoveResourceRequirement(UserFootprint footprint, TResourceRequirement requirement)
         {
-            ValidateAndAudit(footprint, () => resourceRequirements.Remove(requirement));
+            ValidateAndAudit(footprint, () => ResourceRequirementContainer.Remove(requirement));
         }
 
         private void ValidateAndAudit(UserFootprint footprint, Action action)

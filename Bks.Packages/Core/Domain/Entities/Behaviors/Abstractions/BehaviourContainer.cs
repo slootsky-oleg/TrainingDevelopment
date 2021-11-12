@@ -5,10 +5,11 @@ using Bks.Packages.Core.Domain.Entities.Notifications.Changes;
 
 namespace Bks.Packages.Core.Domain.Entities.Behaviors.Abstractions
 {
-    public abstract class BehaviourContainer<T> :
-        IBehaviorContainer<T>,
+    public abstract class BehaviourContainer<T, TSettings> :
+        IBehaviorContainer<T, TSettings>,
         INotifyEntityChanged
         where T : IBehaviorItem
+        where TSettings : IBehaviorContainerSettings
     {
         protected readonly List<T> Items;
 
@@ -16,8 +17,13 @@ namespace Bks.Packages.Core.Domain.Entities.Behaviors.Abstractions
         public bool IsReadOnly => false;
 
         public event EventHandler<ChangeEventArgs> Changed;
+        public TSettings Settings { get; private set; }
 
-        public IBehaviorContainerSettings Settings { get; }
+
+        public void ApplySettings(TSettings settings)
+        {
+            Settings = settings;
+        }
 
         protected BehaviourContainer(/*IBehaviorContainerSettings settings*/)
         {

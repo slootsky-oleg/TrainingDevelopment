@@ -2,6 +2,7 @@
 {
     public interface IBehaviorContainerSettings
     {
+        bool IsEnabled { get; }
         bool RequireUnique { get; }
     }
 }

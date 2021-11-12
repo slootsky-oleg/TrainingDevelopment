@@ -1,4 +1,6 @@
-﻿namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
+﻿using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions;
+
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
 {
     public class PlannedTraining<T> where T : ITrainingEntity
     {
