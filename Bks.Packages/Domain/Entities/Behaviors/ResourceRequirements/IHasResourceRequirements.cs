@@ -7,7 +7,7 @@ namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
         where T : ResourceRequirement
     {
         public IReadOnlyCollection<T> ResourceRequirements { get; }
-        void AddResourceRequirement(AuditRecord audit, T requirement);
-        void RemoveResourceRequirement(AuditRecord audit, T requirement);
+        void AddResourceRequirement(UserFootprint footprint, T requirement);
+        void RemoveResourceRequirement(UserFootprint footprint, T requirement);
     }
 }

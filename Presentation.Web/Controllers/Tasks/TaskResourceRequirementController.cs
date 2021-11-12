@@ -20,8 +20,8 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Controllers.Tasks
             Guid taskId,
             AddTaskResourceRequirementRequest request)
         {
-            var audit = GetAuditRecord();
-            return await interactor.Execute(audit, taskId, request);
+            var footprint = GetUserFootprint();
+            return await interactor.Execute(footprint, taskId, request);
         }
 
         [HttpGet("{requirement:guid}")]

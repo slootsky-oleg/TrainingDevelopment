@@ -7,8 +7,8 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities
 {
     public class TrainingTask : TrainingEntity<ResourceRequirement>
     {
-        public TrainingTask(AuditRecord audit, Name name)
-            : base(audit, name)
+        public TrainingTask(UserFootprint footprint, Name name)
+            : base(footprint, name)
         {
         }
 

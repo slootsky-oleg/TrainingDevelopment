@@ -17,7 +17,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
         }
 
         public async Task<AddTaskResourceRequirementResponse> Execute(
-            AuditRecord audit,
+            UserFootprint footprint,
             Guid taskId,
             AddTaskResourceRequirementRequest request)
         {
@@ -27,7 +27,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
             var typeId = GuidId.Of(request.TypeId);
             var requirement = new ResourceRequirement(typeId, request.Quantity);
 
-            task.AddResourceRequirement(audit, requirement);
+            task.AddResourceRequirement(footprint, requirement);
             
             //await repository.CommitAsync();
 
@@ -37,7 +37,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
         
         
         // public async Task<AddTaskResourceRequirementResponse> Update(
-        //     AuditRecord audit,
+        //     AuditRecord footprint,
         //     Guid taskId,
         //     GuidId reqId)
         // {

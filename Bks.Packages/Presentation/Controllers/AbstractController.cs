@@ -7,7 +7,7 @@ namespace Bks.Packages.Presentation.Controllers
     [ApiController]
     public abstract class AbstractController : ControllerBase
     {
-        protected AuditRecord GetAuditRecord()
+        protected UserFootprint GetUserFootprint()
         {
             var user = User
                 .Identity
@@ -15,7 +15,7 @@ namespace Bks.Packages.Presentation.Controllers
 
             var userId = UserId.Of(user);
 
-            return new AuditRecord(userId);
+            return new UserFootprint(userId);
         }
     }
 }

@@ -16,37 +16,37 @@ namespace Bks.Packages.Domain.Entities
         public UserId ModifiedBy { get; private set; }
         public DateTime ModifiedOn { get; private set; }
 
-        protected AggregateRoot(AuditRecord audit, Name name)
+        protected AggregateRoot(UserFootprint footprint, Name name)
         {
             Name = name;
-            CreatedBy = audit.UserId;
-            CreatedOn = audit.Timestamp;
+            CreatedBy = footprint.UserId;
+            CreatedOn = footprint.Timestamp;
         }
 
-        public void SetExternalId(AuditRecord audit, ExternalId externalId)
+        public void SetExternalId(UserFootprint footprint, ExternalId externalId)
         {
             ExternalId = externalId;
-            AuditModification(audit);
+            AuditModification(footprint);
         }
 
-        public void SetName(AuditRecord audit, Name name)
+        public void SetName(UserFootprint footprint, Name name)
         {
             Name = name;
-            AuditModification(audit);
+            AuditModification(footprint);
         }
 
-        public void SetDescription(AuditRecord audit, Description description)
+        public void SetDescription(UserFootprint footprint, Description description)
         {
             Description = description;
-            AuditModification(audit);
+            AuditModification(footprint);
         }
 
         public abstract void ValidateCanBeModified();
 
-        protected virtual void AuditModification(AuditRecord audit)
+        protected virtual void AuditModification(UserFootprint footprint)
         {
-            ModifiedBy = audit.UserId;
-            ModifiedOn = audit.Timestamp;
+            ModifiedBy = footprint.UserId;
+            ModifiedOn = footprint.Timestamp;
         }
     }
 }

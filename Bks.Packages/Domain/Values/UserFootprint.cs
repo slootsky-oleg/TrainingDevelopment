@@ -4,18 +4,18 @@ using Bks.Packages.Domain.Values.Ids;
 
 namespace Bks.Packages.Domain.Values
 {
-    public class AuditRecord : ValueObject
+    public class UserFootprint : ValueObject
     {
         public UserId UserId { get; }
         public DateTime Timestamp { get; }
 
-        public AuditRecord(UserId userId, DateTime timestamp)
+        public UserFootprint(UserId userId, DateTime timestamp)
         {
             UserId = userId ?? throw new ArgumentNullException(nameof(userId));
             Timestamp = timestamp;
         }
 
-        public AuditRecord(UserId userId)
+        public UserFootprint(UserId userId)
             : this(userId, DateTime.Now)
         {
         }

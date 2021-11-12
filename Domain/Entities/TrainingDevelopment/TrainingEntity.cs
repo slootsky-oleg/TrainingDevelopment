@@ -4,7 +4,7 @@ using System.Linq;
 using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 using Bks.Packages.Domain.Entities;
 using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
-using Bks.Packages.Domain.Entities.Notifications.Audit;
+using Bks.Packages.Domain.Entities.Notifications.Changes;
 using Bks.Packages.Domain.Values;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
@@ -32,8 +32,8 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
         public IReadOnlyCollection<TResourceRequirement> ResourceRequirements => resourceRequirements.ToList();
 
 
-        protected TrainingEntity(AuditRecord audit, Name name)
-            : base(audit, name)
+        protected TrainingEntity(UserFootprint footprint, Name name)
+            : base(footprint, name)
         {
             //TODO: how to inject settings?
             this.resourceRequirements = new ResourceRequirementContainer<TResourceRequirement>(settings: null);
@@ -45,44 +45,44 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
             throw new System.NotImplementedException();
         }
 
-        public void AddResourceRequirement(AuditRecord audit, TResourceRequirement requirement)
+        public void AddResourceRequirement(UserFootprint footprint, TResourceRequirement requirement)
         {
             //Validate has requirements
-            ValidateAndAudit(audit, () => resourceRequirements.Add(requirement));
+            ValidateAndAudit(footprint, () => resourceRequirements.Add(requirement));
         }
 
-        public void RemoveResourceRequirement(AuditRecord audit, TResourceRequirement requirement)
+        public void RemoveResourceRequirement(UserFootprint footprint, TResourceRequirement requirement)
         {
-            ValidateAndAudit(audit, () => resourceRequirements.Remove(requirement));
+            ValidateAndAudit(footprint, () => resourceRequirements.Remove(requirement));
         }
 
-        private void ValidateAndAudit(AuditRecord audit, Action action)
+        private void ValidateAndAudit(UserFootprint footprint, Action action)
         {
             ValidateCanBeModified();
-            AuditModification(audit);
+            AuditModification(footprint);
 
             action.Invoke();
         }
 
-        private T ValidateAndAudit<T>(AuditRecord audit, Func<T> action)
+        private T ValidateAndAudit<T>(UserFootprint footprint, Func<T> action)
         {
             ValidateCanBeModified();
-            AuditModification(audit);
+            AuditModification(footprint);
 
             return action.Invoke();
         }
 
-        private void SubscribeToChanges(INotifyChanged source)
+        private void SubscribeToChanges(INotifyEntityChanged source)
         {
             source.Changed += BehaviorChangeHandler;
         }
 
-        private void BehaviorChangeHandler(object sender, AuditEventArgs @event)
+        private void BehaviorChangeHandler(object sender, ChangeEventArgs @event)
         {
             ValidateCanBeModified();
 
-            var audit = @event.ToAuditRecord();
-            AuditModification(audit);
+            var footprint = @event.ToUserFootprint();
+            AuditModification(footprint);
         }
 
         // private void ValidateCanOwnAggregatableBehaviors()

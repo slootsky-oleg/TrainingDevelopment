@@ -8,16 +8,16 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
 {
     public class CreateTaskInteractor
     {
-        public async Task<CreateEntityResponse> Execute(AuditRecord audit, CreateTaskRequest request)
+        public async Task<CreateEntityResponse> Execute(UserFootprint footprint, CreateTaskRequest request)
         {
             var name = Name.Of(request.Name);
             var externalId = ExternalId.Of(request.ExternalId);
             var description = Description.Of(request.Description);
 
-            var task = new TrainingTask(audit, name);
-            task.SetExternalId(audit, externalId);
-            task.SetName(audit, name);
-            task.SetDescription(audit, description);
+            var task = new TrainingTask(footprint, name);
+            task.SetExternalId(footprint, externalId);
+            task.SetName(footprint, name);
+            task.SetDescription(footprint, description);
 
             return new CreateEntityResponse(task);
         }

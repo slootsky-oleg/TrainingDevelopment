@@ -2,13 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements.Settings;
-using Bks.Packages.Domain.Entities.Notifications.Audit;
+using Bks.Packages.Domain.Entities.Notifications.Changes;
 
 namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
 {
     public abstract class BehaviourContainer<T> :
         IBehaviorContainer<T>,
-        INotifyChanged
+        INotifyEntityChanged
         where T : IBehaviorItem
     {
         protected readonly List<T> Items;
@@ -16,7 +16,7 @@ namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
         public int Count => Items.Count;
         public bool IsReadOnly => false;
 
-        public event EventHandler<AuditEventArgs> Changed;
+        public event EventHandler<ChangeEventArgs> Changed;
 
         public IBehaviorContainerSettings Settings { get; }
 
@@ -70,7 +70,7 @@ namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
             return Items.Remove(item);
         }
 
-        private void ItemChangeHandler(object sender, AuditEventArgs @event)
+        private void ItemChangeHandler(object sender, ChangeEventArgs @event)
         {
             Changed?.Invoke(sender, @event);
         }

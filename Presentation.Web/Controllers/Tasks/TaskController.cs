@@ -20,8 +20,8 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Controllers.Tasks
             [FromServices] CreateTaskInteractor interactor,
             CreateTaskRequest request)
         {
-            var audit = GetAuditRecord();
-            return await interactor.Execute(audit, request);
+            var footprint = GetUserFootprint();
+            return await interactor.Execute(footprint, request);
         }
 
         [HttpGet("{taskId:guid}")]

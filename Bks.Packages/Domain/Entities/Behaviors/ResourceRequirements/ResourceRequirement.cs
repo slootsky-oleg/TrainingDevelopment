@@ -16,16 +16,16 @@ namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
             Quantity = quantity;
         }
 
-        public void SetResourceTypeId(AuditRecord audit, GuidId id)
+        public void SetResourceTypeId(UserFootprint footprint, GuidId id)
         {
             ResourceTypeId = id;
-            OnChanged(audit);
+            OnChanged(footprint);
         }
 
-        public void SetQuantity(AuditRecord audit, int? quantity)
+        public void SetQuantity(UserFootprint footprint, int? quantity)
         {
             Quantity = quantity;
-            OnChanged(audit);
+            OnChanged(footprint);
         }
 
 
