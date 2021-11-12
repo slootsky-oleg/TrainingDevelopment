@@ -18,14 +18,12 @@ namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
 
         public void SetResourceTypeId(UserFootprint footprint, GuidId id)
         {
-            ResourceTypeId = id;
-            OnChanged(footprint);
+            NotifyChanged(footprint, () => ResourceTypeId = id);
         }
 
         public void SetQuantity(UserFootprint footprint, int? quantity)
         {
-            Quantity = quantity;
-            OnChanged(footprint);
+            NotifyChanged(footprint, () => Quantity = quantity);
         }
 
 

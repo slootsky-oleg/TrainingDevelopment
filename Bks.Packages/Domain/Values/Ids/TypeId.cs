@@ -2,9 +2,9 @@
 
 namespace Bks.Packages.Domain.Values.Ids
 {
-    public class EntityTypeId : GuidId
+    public class TypeId : GuidId
     {
-        public EntityTypeId(Guid guid) : base(guid)
+        public TypeId(Guid guid) : base(guid)
         {
         }
     }

@@ -11,10 +11,22 @@ namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
 
         public GuidId Id { get; private set; }
 
-        protected void OnChanged(UserFootprint footprint)
+        protected void NotifyChanged(UserFootprint footprint)
         {
             var @event = new ChangeEventArgs(footprint);
             Changed?.Invoke(this, @event);
+        }
+
+        protected void NotifyChanged(UserFootprint footprint, Action action)
+        {
+            NotifyChanged(footprint);
+            action.Invoke();
+        }
+
+        private T NotifyChanged<T>(UserFootprint footprint, Func<T> action)
+        {
+            NotifyChanged(footprint);
+            return action.Invoke();
         }
     }
 }

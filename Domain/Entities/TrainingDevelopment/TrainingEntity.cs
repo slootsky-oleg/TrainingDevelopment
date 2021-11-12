@@ -6,6 +6,7 @@ using Bks.Packages.Domain.Entities;
 using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
 using Bks.Packages.Domain.Entities.Notifications.Changes;
 using Bks.Packages.Domain.Values;
+using Bks.Packages.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
 {
@@ -25,6 +26,9 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
     // IHasTargetAudience,
     // IHasStatus
     {
+        //TODO: Is versionable?
+        public TypeId TypeId { get; private set; }
+        
         protected readonly ResourceRequirementContainer<TResourceRequirement> resourceRequirements;
 
         //TODO: better name
@@ -43,6 +47,11 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
         public void Archive()
         {
             throw new System.NotImplementedException();
+        }
+
+        public void SetTypeId(UserFootprint footprint, TypeId typeId)
+        {
+            ValidateAndAudit(footprint, () => TypeId = typeId);
         }
 
         public void AddResourceRequirement(UserFootprint footprint, TResourceRequirement requirement)
