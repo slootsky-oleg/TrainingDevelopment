@@ -69,6 +69,9 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
             if (typeId == null) throw new ArgumentNullException(nameof(typeId));
             if (settings == null) throw new ArgumentNullException(nameof(settings));
 
+            //New settings might affect existing values: resource requirements aren't allowed for the new type
+            //New settings might affect custom fields: new schema doesn't contain a field
+
 
             ValidateAndAudit(footprint, () =>
             {
