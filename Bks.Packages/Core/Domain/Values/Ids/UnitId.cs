@@ -2,7 +2,7 @@
 
 namespace Bks.Packages.Core.Domain.Values.Ids
 {
-    public class UnitId : GuidId
+    public class UnitId : GuidValueObject
     {
         public UnitId(Guid guid) : base(guid)
         {

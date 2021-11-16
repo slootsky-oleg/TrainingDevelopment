@@ -31,6 +31,9 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
         //TODO: Is versionable?
         public TypeId TypeId { get; private set; }
 
+        //TODO: Init from ctor
+        public LibraryId LibraryId { get; private set; }
+
         protected TSettings Settings;
         
         protected readonly ResourceRequirementContainer<TResourceRequirement> ResourceRequirementContainer;
