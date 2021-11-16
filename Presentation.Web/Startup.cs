@@ -1,4 +1,4 @@
-using Bks.Packages.Presentation.Filters.Swagger;
+using Bks.Packages.Core.Presentation.Filters.Swagger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

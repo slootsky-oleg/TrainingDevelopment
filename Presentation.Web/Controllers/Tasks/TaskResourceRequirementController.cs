@@ -2,8 +2,8 @@
 using System.Threading.Tasks;
 using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Commands.Add;
 using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Queries.Get;
-using Bks.Packages.Application.Features;
-using Bks.Packages.Presentation.Controllers;
+using Bks.Packages.Core.Application.Features;
+using Bks.Packages.Core.Presentation.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement.Mvc;
 

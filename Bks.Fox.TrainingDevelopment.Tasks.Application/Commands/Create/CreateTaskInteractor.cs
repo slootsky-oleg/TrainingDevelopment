@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
-using Bks.Packages.Application.Entities.Commands.Create;
-using Bks.Packages.Domain.Values;
-using Bks.Packages.Domain.Values.Ids;
+using Bks.Packages.Core.Application.Entities.Commands.Create;
+using Bks.Packages.Core.Domain.Values;
+using Bks.Packages.Core.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
 {
@@ -13,8 +13,12 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
             var name = Name.Of(request.Name);
             var externalId = ExternalId.Of(request.ExternalId);
             var description = Description.Of(request.Description);
+            var typeId = TypeId.Of(request.TypeId);
 
-            var task = new TrainingTask(footprint, name);
+            //Get from type or somewhere
+            var settings = new TaskSettings();
+
+            var task = new TrainingTask(footprint, name, typeId, settings);
             task.SetExternalId(footprint, externalId);
             task.SetName(footprint, name);
             task.SetDescription(footprint, description);

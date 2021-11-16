@@ -14,4 +14,8 @@
     <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Entities\TrainingDevelopment\Abstractions\Settings\" />
+  </ItemGroup>
+
 </Project>
