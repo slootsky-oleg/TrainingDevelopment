@@ -13,7 +13,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities
         {
         }
 
-        public override void ValidateCanBeModified()
+        protected override void ValidateCanBeModified()
         {
         }
     }

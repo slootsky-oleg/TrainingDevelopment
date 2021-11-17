@@ -41,7 +41,7 @@ namespace Bks.Packages.Core.Domain.Entities
             AuditModification(footprint);
         }
 
-        public abstract void ValidateCanBeModified();
+        protected abstract void ValidateCanBeModified();
 
         protected virtual void AuditModification(UserFootprint footprint)
         {
