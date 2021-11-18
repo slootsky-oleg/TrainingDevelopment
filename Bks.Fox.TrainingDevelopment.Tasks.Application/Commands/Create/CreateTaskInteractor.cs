@@ -15,10 +15,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
             var description = Description.Of(request.Description);
             var typeId = TypeId.Of(request.TypeId);
 
-            //Get from type or somewhere
-            var settings = new TaskSettings();
-
-            var task = new TrainingTask(footprint, name, typeId, settings);
+            var task = new TrainingTask(footprint, name, typeId);
             task.SetExternalId(footprint, externalId);
             task.SetName(footprint, name);
             task.SetDescription(footprint, description);

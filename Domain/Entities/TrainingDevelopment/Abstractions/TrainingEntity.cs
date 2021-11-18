@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions.Settings;
 using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
 using Bks.Packages.Core.Domain.Entities;
 using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
@@ -11,12 +10,10 @@ using Bks.Packages.Core.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions
 {
-    public abstract class TrainingEntity<TSettings, TResourceRequirement> : 
+    public abstract class TrainingEntity<TResourceRequirement> : 
         AggregateRoot,
         ITrainingEntity<TResourceRequirement>
-
         where TResourceRequirement : ResourceRequirement
-        where TSettings : ITrainingDevelopmentEntitySettings
         
     //IHasRelatedEntities<TrainingTask>
     // IHasCustomFields, 
@@ -28,32 +25,27 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
     // IHasTargetAudience,
     // IHasStatus
     {
+        protected readonly ResourceRequirementContainer<TResourceRequirement> ResourceRequirementContainer;
+
         //TODO: Is versionable?
         public TypeId TypeId { get; private set; }
 
-        //TODO: Init from ctor
+        //TODO: Init from ctor if mandatory
         public LibraryId LibraryId { get; private set; }
-
-        protected TSettings Settings;
-        
-        protected readonly ResourceRequirementContainer<TResourceRequirement> ResourceRequirementContainer;
 
         //TODO: better name
         public AggregationStrategy AggregationStrategy { get; }
         public IReadOnlyCollection<TResourceRequirement> ResourceRequirements => ResourceRequirementContainer.ToList();
 
-        //TODO: Add settings, custom field schema
         protected TrainingEntity(
             UserFootprint footprint,
             Name name,
-            TypeId typeId,
-            TSettings settings)
+            TypeId typeId)
             : base(footprint, name)
         {
             TypeId = typeId;
-            Settings = settings;
 
-            this.ResourceRequirementContainer = new ResourceRequirementContainer<TResourceRequirement>(settings.ResourceRequirement);
+            this.ResourceRequirementContainer = new ResourceRequirementContainer<TResourceRequirement>();
             SubscribeToChanges(ResourceRequirementContainer);
         }
 
@@ -64,13 +56,11 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
 
         public void SetType(
             UserFootprint footprint,
-            TypeId typeId,
-            TSettings settings
+            TypeId typeId
             //CustomFieldSchema
             )
         {
             if (typeId == null) throw new ArgumentNullException(nameof(typeId));
-            if (settings == null) throw new ArgumentNullException(nameof(settings));
 
             //New settings might affect existing values: resource requirements aren't allowed for the new type
             //New settings might affect custom fields: new schema doesn't contain a field
@@ -79,7 +69,6 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
             ValidateAndAudit(footprint, () =>
             {
                 TypeId = typeId;
-                Settings = settings;
             });
         }
 

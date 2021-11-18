@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Services;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Repositories;
 using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
 using Bks.Packages.Core.Domain.Values;
@@ -10,10 +11,15 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
     public class AddTaskResourceRequirementInteractor
     {
         private readonly ITaskRepository repository;
+        private readonly IResourceRequirementRuleValidator ruleValidator;
 
-        public AddTaskResourceRequirementInteractor(ITaskRepository repository)
+        public AddTaskResourceRequirementInteractor(
+            ITaskRepository repository,
+            IResourceRequirementRuleValidator ruleValidator
+            )
         {
             this.repository = repository;
+            this.ruleValidator = ruleValidator;
         }
 
         public async Task<AddTaskResourceRequirementResponse> Execute(
@@ -23,6 +29,8 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
         {
             var task = await repository.GetAsync(taskId)
                        ?? throw new Exception("Not found");
+
+            await ruleValidator.ValidateEnabled(task.TypeId);
 
             var typeId = GuidId.Of(request.TypeId);
             var requirement = new ResourceRequirement(typeId, request.Quantity);
