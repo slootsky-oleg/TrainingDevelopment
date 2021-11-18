@@ -1,5 +1,4 @@
-﻿using System;
-using Bks.Packages.TrainingDevelopment.Application.Entities.Commands.Create;
+﻿using Bks.Packages.TrainingDevelopment.Application.Entities.Commands.Create;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
 {
