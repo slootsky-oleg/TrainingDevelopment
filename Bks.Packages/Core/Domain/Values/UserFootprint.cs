@@ -15,11 +15,6 @@ namespace Bks.Packages.Core.Domain.Values
             Timestamp = timestamp;
         }
 
-        public UserFootprint(UserId userId)
-            : this(userId, DateTime.Now)
-        {
-        }
-
         protected override IEnumerable<object> GetEqualityComponents()
         {
             yield return UserId;

@@ -1,1 +1,6 @@
-﻿Related items
+﻿var entity = new EntityBuilder("Task")
+.WithBehavior("AtisResourceRequirement")
+.WithBehavior("AtisCustomField")
+.AddRestApi("tasks")
+.UseEntityFramework(...)
+.Generate()

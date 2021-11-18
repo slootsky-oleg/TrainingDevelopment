@@ -1,4 +1,5 @@
-﻿using Bks.Packages.Core.Domain.Values;
+﻿using System;
+using Bks.Packages.Core.Domain.Values;
 using Bks.Packages.Core.Domain.Values.Ids;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,8 +15,8 @@ namespace Bks.Packages.Core.Presentation.Controllers
                 .Name;
 
             var userId = UserId.Of(user);
-
-            return new UserFootprint(userId);
+            var now = DateTime.UtcNow;
+            return new UserFootprint(userId, now);
         }
     }
 }
