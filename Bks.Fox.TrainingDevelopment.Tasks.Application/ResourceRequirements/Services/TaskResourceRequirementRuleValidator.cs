@@ -6,11 +6,11 @@ using Bks.Packages.Core.Domain.Values.Ids;
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Services
 {
     //TODO: choose a better name
-    public class ResourceRequirementRuleValidator : IResourceRequirementRuleValidator
+    public class TaskResourceRequirementRuleValidator : ITaskResourceRequirementRuleValidator
     {
         private readonly ITaskTypeRepository typeRepository;
 
-        public ResourceRequirementRuleValidator(ITaskTypeRepository typeRepository)
+        public TaskResourceRequirementRuleValidator(ITaskTypeRepository typeRepository)
         {
             this.typeRepository = typeRepository;
         }

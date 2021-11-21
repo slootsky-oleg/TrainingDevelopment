@@ -11,11 +11,11 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
     public class AddTaskResourceRequirementInteractor
     {
         private readonly ITaskRepository repository;
-        private readonly IResourceRequirementRuleValidator ruleValidator;
+        private readonly ITaskResourceRequirementRuleValidator ruleValidator;
 
         public AddTaskResourceRequirementInteractor(
             ITaskRepository repository,
-            IResourceRequirementRuleValidator ruleValidator
+            ITaskResourceRequirementRuleValidator ruleValidator
             )
         {
             this.repository = repository;
