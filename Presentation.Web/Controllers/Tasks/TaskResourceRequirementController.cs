@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Commands.Add;
 using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Queries.Get;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add;
