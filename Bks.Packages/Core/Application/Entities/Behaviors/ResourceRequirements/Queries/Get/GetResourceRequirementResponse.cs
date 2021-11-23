@@ -3,7 +3,7 @@ using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
 
 namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Queries.Get
 {
-    public sealed class GetResourceRequirementResponse
+    public class GetResourceRequirementResponse
     {
         public Guid Id { get; }
         public Guid TypeId { get; }

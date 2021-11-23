@@ -17,12 +17,12 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
     public class AddResourceRequirementInteractor<T>
         where T : TrainingEntity
     {
-        private readonly IEntityRepository<T> repository;
+        private readonly ITrainingEntityRepository<T> repository;
         private readonly ITrainingEntityLookup<T> lookup;
         private readonly IResourceRequirementRuleValidator<T> ruleValidator;
 
         public AddResourceRequirementInteractor(
-            IEntityRepository<T> repository,
+            ITrainingEntityRepository<T> repository,
             ITrainingEntityLookup<T> lookup,
             IResourceRequirementRuleValidator<T> ruleValidator
             )
