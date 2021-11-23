@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Core\Application\Entities\Lookups\" />
+    <Folder Include="TrainingDevelopment\Domain\Entities\" />
   </ItemGroup>
 
 </Project>

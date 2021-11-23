@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
+﻿namespace Bks.Packages.Core.Domain.Entities.Behaviors
 {
     public enum AggregationStrategy
     {

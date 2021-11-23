@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions;
 using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Services;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Repositories;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add;
@@ -10,12 +11,11 @@ using Bks.Packages.Core.Domain.Repositories;
 using Bks.Packages.Core.Domain.Values;
 using Bks.Packages.Core.Domain.Values.Ids;
 using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
-using Bks.Packages.TrainingDevelopment.Domain.Entities;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Commands.Add
 {
     public class AddResourceRequirementInteractor<T>
-        where T : ITrainingDevelopmentEntity
+        where T : TrainingEntity
     {
         private readonly IEntityRepository<T> repository;
         private readonly ITrainingEntityLookup<T> lookup;

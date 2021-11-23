@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
-using Bks.Packages.Core.Domain.Entities;
+using Bks.Packages.Core.Domain.Entities.Behaviors;
 using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
 using Bks.Packages.Core.Domain.Entities.Notifications.Changes;
 using Bks.Packages.Core.Domain.Values;
 using Bks.Packages.Core.Domain.Values.Ids;
-using Bks.Packages.TrainingDevelopment.Domain.Entities;
 
-namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions
+namespace Bks.Packages.Core.Domain.Entities
 {
     public abstract class TrainingEntity : 
         AggregateRoot,
-        ITrainingDevelopmentEntity
+        IHasResourceRequirements<ResourceRequirement>
         
     //IHasRelatedEntities<TrainingTask>
     // IHasCustomFields, 
