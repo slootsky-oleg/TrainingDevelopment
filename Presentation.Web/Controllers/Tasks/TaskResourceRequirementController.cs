@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Commands.Add;
 using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Queries.Get;
+using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Queries.Get;
 using Bks.Packages.Core.Application.Features;
@@ -18,7 +19,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Controllers.Tasks
     {
         [HttpPost]
         public async Task<AddResourceRequirementResponse> Add(
-            [FromServices] AddTaskResourceRequirementInteractor interactor,
+            [FromServices] AddResourceRequirementInteractor<TrainingTask> interactor,
             Guid taskId,
             AddResourceRequirementRequest request)
         {
