@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Packages.Core.Application.Entities.Behavior.ResourceRequirements.Commands.Add
+namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add
 {
     public abstract class BaseAddResourceRequirementRequest
     {

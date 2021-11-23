@@ -1,7 +1,7 @@
 ﻿using System;
 using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
 
-namespace Bks.Packages.Core.Application.Entities.Behavior.ResourceRequirements.Queries.Get
+namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Queries.Get
 {
     public abstract class BaseGetResourceRequirementResponse
     {
