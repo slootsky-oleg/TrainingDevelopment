@@ -2,7 +2,7 @@
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions
 {
-    public interface ITrainingEntity<TResourceRequirement> : 
+    public interface ITrainingEntity<TResourceRequirement> :
         ITrainingEntity,
         IHasResourceRequirements<TResourceRequirement>
         where TResourceRequirement : ResourceRequirement

@@ -7,13 +7,13 @@ using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
 using Bks.Packages.Core.Domain.Entities.Notifications.Changes;
 using Bks.Packages.Core.Domain.Values;
 using Bks.Packages.Core.Domain.Values.Ids;
+using Bks.Packages.TrainingDevelopment.Domain.Entities;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions
 {
-    public abstract class TrainingEntity<TResourceRequirement> : 
+    public abstract class TrainingEntity : 
         AggregateRoot,
-        ITrainingEntity<TResourceRequirement>
-        where TResourceRequirement : ResourceRequirement
+        ITrainingEntityConcrete
         
     //IHasRelatedEntities<TrainingTask>
     // IHasCustomFields, 
@@ -25,7 +25,7 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
     // IHasTargetAudience,
     // IHasStatus
     {
-        protected readonly ResourceRequirementContainer<TResourceRequirement> ResourceRequirementContainer;
+        protected readonly ResourceRequirementContainer<ResourceRequirement> ResourceRequirementContainer;
 
         //TODO: Is versionable?
         public TypeId TypeId { get; private set; }
@@ -35,7 +35,7 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
 
         //TODO: better name
         public AggregationStrategy AggregationStrategy { get; }
-        public IReadOnlyCollection<TResourceRequirement> ResourceRequirements => ResourceRequirementContainer.ToList();
+        public IReadOnlyCollection<ResourceRequirement> ResourceRequirements => ResourceRequirementContainer.ToList();
 
         protected TrainingEntity(
             UserFootprint footprint,
@@ -45,7 +45,7 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
         {
             TypeId = typeId;
 
-            this.ResourceRequirementContainer = new ResourceRequirementContainer<TResourceRequirement>();
+            this.ResourceRequirementContainer = new ResourceRequirementContainer<ResourceRequirement>();
             SubscribeToChanges(ResourceRequirementContainer);
         }
 
@@ -72,13 +72,13 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
             });
         }
 
-        public void AddResourceRequirement(UserFootprint footprint, TResourceRequirement requirement)
+        public void AddResourceRequirement(UserFootprint footprint, ResourceRequirement requirement)
         {
             //Validate has requirements
             ValidateAndAudit(footprint, () => ResourceRequirementContainer.Add(requirement));
         }
 
-        public void RemoveResourceRequirement(UserFootprint footprint, TResourceRequirement requirement)
+        public void RemoveResourceRequirement(UserFootprint footprint, ResourceRequirement requirement)
         {
             ValidateAndAudit(footprint, () => ResourceRequirementContainer.Remove(requirement));
         }
