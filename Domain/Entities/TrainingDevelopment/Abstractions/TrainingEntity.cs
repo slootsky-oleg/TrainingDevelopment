@@ -13,7 +13,7 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
 {
     public abstract class TrainingEntity : 
         AggregateRoot,
-        ITrainingEntityConcrete
+        ITrainingDevelopmentEntity
         
     //IHasRelatedEntities<TrainingTask>
     // IHasCustomFields, 

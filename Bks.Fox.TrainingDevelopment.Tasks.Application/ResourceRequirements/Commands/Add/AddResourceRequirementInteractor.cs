@@ -15,7 +15,7 @@ using Bks.Packages.TrainingDevelopment.Domain.Entities;
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Commands.Add
 {
     public class AddResourceRequirementInteractor<T>
-        where T : ITrainingEntityConcrete
+        where T : ITrainingDevelopmentEntity
     {
         private readonly IEntityRepository<T> repository;
         private readonly ITrainingEntityLookup<T> lookup;

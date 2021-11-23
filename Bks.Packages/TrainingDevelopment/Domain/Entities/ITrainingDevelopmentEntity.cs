@@ -2,7 +2,7 @@
 
 namespace Bks.Packages.TrainingDevelopment.Domain.Entities
 {
-    public interface ITrainingEntityConcrete :
+    public interface ITrainingDevelopmentEntity :
         IHasResourceRequirements<ResourceRequirement>
     {
     }
