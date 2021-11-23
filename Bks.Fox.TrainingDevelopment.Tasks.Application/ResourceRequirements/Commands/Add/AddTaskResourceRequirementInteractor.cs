@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Services;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Repositories;
+using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add;
 using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
 using Bks.Packages.Core.Domain.Values;
 using Bks.Packages.Core.Domain.Values.Ids;
@@ -22,10 +23,10 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
             this.ruleValidator = ruleValidator;
         }
 
-        public async Task<AddTaskResourceRequirementResponse> Execute(
+        public async Task<AddResourceRequirementResponse> Execute(
             UserFootprint footprint,
             Guid taskId,
-            AddTaskResourceRequirementRequest request)
+            AddResourceRequirementRequest request)
         {
             var task = await repository.GetAsync(taskId)
                        ?? throw new Exception("Not found");
@@ -40,7 +41,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Com
             //await repository.CommitAsync();
 
 
-            return new AddTaskResourceRequirementResponse(requirement);
+            return new AddResourceRequirementResponse(requirement);
         }
         
         
