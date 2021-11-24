@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Packages.Domain", "Bks.Packages.Domain\Bks.Packages.Domain.csproj", "{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.AspNetCore.WebApi", "Bks.AspNetCore.WebApi\Bks.AspNetCore.WebApi.csproj", "{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{CD296C77-1630-49AA-AA98-7122132C3B62} = {725AF6BD-ADD9-4E68-A3C5-6EBC88E64EC3}
 		{74216181-A2B8-4A49-96DF-E53C1DFA5491} = {725AF6BD-ADD9-4E68-A3C5-6EBC88E64EC3}
 		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
+		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A803B16-B341-4FA0-BCF9-E8890F453720}

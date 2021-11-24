@@ -3,7 +3,7 @@ using Bks.Packages.Domain.Values;
 using Bks.Packages.Domain.Values.Ids;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Bks.Packages.Core.Presentation.Controllers
+namespace Bks.AspNetCore.WebApi.Controllers
 {
     [ApiController]
     public abstract class AbstractController : ControllerBase
