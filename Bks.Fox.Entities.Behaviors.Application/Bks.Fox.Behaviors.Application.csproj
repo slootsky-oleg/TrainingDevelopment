@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bks.WebApi.Cqrs\Bks.Fox.Domain.Behaviors.csproj" />
+    <ProjectReference Include="..\Bks.WebApi.Cqrs\Bks.Fox.Behaviors.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,8 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.Application\Bks.Fox.Application.Behaviors.csproj" />
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.Application\Bks.Fox.Behaviors.Application.csproj" />
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Behaviors.ResourceRequirements.Domain.csproj" />
     <ProjectReference Include="..\Bks.Fox.TrainingDevelopment.Application\Bks.Fox.TrainingDevelopment.Application.csproj" />
+    <ProjectReference Include="..\Bks.WebApi.Cqrs\Bks.Fox.Behaviors.Domain.csproj" />
     <ProjectReference Include="..\Domain\Bks.Fox.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
 

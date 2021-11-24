@@ -5,7 +5,8 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities
 {
     public class TaskType : AggregateRoot
     {
-        public TaskType(UserFootprint footprint, Name name) : base(footprint, name)
+        public TaskType(UserFootprint footprint, Name name)
+            : base(footprint, name)
         {
         }
 
