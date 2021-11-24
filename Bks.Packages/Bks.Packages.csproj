@@ -12,12 +12,6 @@
 
   <ItemGroup>
     <Folder Include="Core\Application\Entities\Lookups\" />
-    <Folder Include="Core\Domain\Entities\Behaviors\Abstractions\" />
-    <Folder Include="Core\Domain\Entities\Behaviors\ResourceRequirements\Settings\Alternatives\" />
-    <Folder Include="Core\Domain\Entities\Notifications\Changes\" />
-    <Folder Include="Core\Domain\Repositories\" />
-    <Folder Include="Core\Domain\Values\Ids\" />
-    <Folder Include="Core\Domain\Values\Strings\" />
     <Folder Include="TrainingDevelopment\Application\Entities\Behaviors\" />
   </ItemGroup>
 
