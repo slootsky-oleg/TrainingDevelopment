@@ -1,7 +1,7 @@
 ﻿using System;
 using Bks.Domain.Entities;
 
-namespace Bks.Packages.Core.Application.Entities.Commands.Create
+namespace Bks.Fox.Entities.Applications.Commands.Create
 {
     public class CreateEntityResponse
     {

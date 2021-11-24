@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Bks.Domain.Values;
 using Bks.Domain.Values.Ids;
+using Bks.Fox.Entities.Applications.Commands.Create;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
-using Bks.Packages.Core.Application.Entities.Commands.Create;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create
 {

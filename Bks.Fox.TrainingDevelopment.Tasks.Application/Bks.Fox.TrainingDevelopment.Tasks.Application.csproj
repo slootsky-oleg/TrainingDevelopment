@@ -7,7 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Application\Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.csproj" />
     <ProjectReference Include="..\Bks.Fox.TrainingDevelopment.Tasks.Domain\Bks.Fox.TrainingDevelopment.Tasks.Domain.csproj" />
-    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Domain.csproj" />
+    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Fox.Entities.Domain.csproj" />
     <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
   </ItemGroup>
 </Project>

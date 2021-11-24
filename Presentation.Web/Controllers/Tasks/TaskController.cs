@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Bks.AspNetCore.WebApi.Controllers;
+using Bks.Fox.Entities.Applications.Commands.Create;
 using Bks.Fox.TrainingDevelopment.Tasks.Application.Commands.Create;
 using Bks.Fox.TrainingDevelopment.Tasks.Application.Queries.Get;
-using Bks.Packages.Core.Application.Entities.Commands.Create;
 using Bks.Packages.Core.Application.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement.Mvc;

@@ -1,7 +1,7 @@
 ﻿using System;
 using Bks.Domain.Entities;
 
-namespace Bks.Packages.Core.Application.Entities.Queries.Get
+namespace Bks.Fox.Entities.Applications.Queries.Get
 {
     public abstract class GetEntityResponse
     {
