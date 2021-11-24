@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Practices.Ddd.Domain.csproj" />
+    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Domain.csproj" />
   </ItemGroup>
 
 </Project>

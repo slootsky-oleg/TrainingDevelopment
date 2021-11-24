@@ -1,7 +1,7 @@
 ﻿using System;
-using Bks.Practices.Ddd.Domain.Notifications.Changes;
-using Bks.Practices.Ddd.Domain.Values;
-using Bks.Practices.Ddd.Domain.Values.Ids;
+using Bks.Domain.Notifications.Changes;
+using Bks.Domain.Values;
+using Bks.Domain.Values.Ids;
 
 namespace Bks.Fox.Entities.Behaviors.Domain
 {

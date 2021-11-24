@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Practices.Ddd.Domain.Values.Ids
+namespace Bks.Domain.Values.Ids
 {
     public class UnitId : GuidValueObject
     {

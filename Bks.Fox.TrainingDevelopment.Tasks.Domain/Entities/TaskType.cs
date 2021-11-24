@@ -1,5 +1,5 @@
-﻿using Bks.Practices.Ddd.Domain.Entities;
-using Bks.Practices.Ddd.Domain.Values;
+﻿using Bks.Domain.Entities;
+using Bks.Domain.Values;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities
 {

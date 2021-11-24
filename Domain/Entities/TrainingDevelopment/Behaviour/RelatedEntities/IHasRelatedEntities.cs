@@ -1,4 +1,4 @@
-﻿using Bks.Practices.Ddd.Domain.Entities;
+﻿using Bks.Domain.Entities;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.RelatedEntities
 {

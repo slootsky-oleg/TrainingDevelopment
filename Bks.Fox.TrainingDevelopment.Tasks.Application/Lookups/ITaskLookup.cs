@@ -1,5 +1,5 @@
-﻿using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
-using Bks.Practices.Ddd.Domain.Lookups;
+﻿using Bks.Domain.Lookups;
+using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.Lookups
 {

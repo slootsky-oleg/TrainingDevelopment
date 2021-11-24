@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Bks.Practices.Ddd.Domain.Values.Ids;
+using Bks.Domain.Values.Ids;
 
-namespace Bks.Practices.Ddd.Domain.Values
+namespace Bks.Domain.Values
 {
     public class UserFootprint : ValueObject
     {

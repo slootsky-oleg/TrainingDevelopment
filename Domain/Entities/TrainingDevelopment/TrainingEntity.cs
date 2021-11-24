@@ -1,6 +1,6 @@
-﻿using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain;
-using Bks.Practices.Ddd.Domain.Values;
-using Bks.Practices.Ddd.Domain.Values.Ids;
+﻿using Bks.Domain.Values;
+using Bks.Domain.Values.Ids;
+using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
 {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
+using Bks.Domain.Values;
+using Bks.Domain.Values.Ids;
 using Bks.Fox.Entities.Behaviors.Domain;
-using Bks.Practices.Ddd.Domain.Values;
-using Bks.Practices.Ddd.Domain.Values.Ids;
 
 namespace Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain
 {

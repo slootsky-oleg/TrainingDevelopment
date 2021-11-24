@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Bks.Practices.Ddd.Domain.Values.Ids
+namespace Bks.Domain.Values.Ids
 {
     public abstract class GuidValueObject : ValueObject
     {

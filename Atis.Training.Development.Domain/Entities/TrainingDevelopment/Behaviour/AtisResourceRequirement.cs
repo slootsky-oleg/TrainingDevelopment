@@ -1,5 +1,5 @@
-﻿using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain;
-using Bks.Practices.Ddd.Domain.Values.Ids;
+﻿using Bks.Domain.Values.Ids;
+using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain;
 
 namespace Atis.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {

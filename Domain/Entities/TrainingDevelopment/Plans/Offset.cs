@@ -1,5 +1,5 @@
 ﻿using System;
-using Bks.Practices.Ddd.Domain.Values.Ids;
+using Bks.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Plans
 {

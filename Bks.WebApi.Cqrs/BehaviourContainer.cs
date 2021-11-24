@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Bks.Practices.Ddd.Domain.Notifications.Changes;
+using Bks.Domain.Notifications.Changes;
 
 namespace Bks.Fox.Entities.Behaviors.Domain
 {

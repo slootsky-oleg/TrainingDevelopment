@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Tasks.Application", "Bks.Fox.TrainingDevelopment.Tasks.Application\Bks.Fox.TrainingDevelopment.Tasks.Application.csproj", "{74216181-A2B8-4A49-96DF-E53C1DFA5491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Practices.Ddd.Domain", "Bks.Packages.Domain\Bks.Practices.Ddd.Domain.csproj", "{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Domain", "Bks.Packages.Domain\Bks.Domain.csproj", "{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.AspNetCore.WebApi", "Bks.AspNetCore.WebApi\Bks.AspNetCore.WebApi.csproj", "{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}"
 EndProject
