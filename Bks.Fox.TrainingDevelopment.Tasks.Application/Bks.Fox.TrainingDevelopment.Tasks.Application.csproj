@@ -9,9 +9,4 @@
     <ProjectReference Include="..\Bks.Packages.Domain\Bks.Packages.Domain.csproj" />
     <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ResourceRequirements\Queries\" />
-  </ItemGroup>
-
 </Project>
