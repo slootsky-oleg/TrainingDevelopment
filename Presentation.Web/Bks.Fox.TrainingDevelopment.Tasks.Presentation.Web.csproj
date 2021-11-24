@@ -12,6 +12,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Bks.Fox.TrainingDevelopment.Tasks.Application\Bks.Fox.TrainingDevelopment.Tasks.Application.csproj" />
     <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
-    <ProjectReference Include="..\Domain\Bks.Fox.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
 </Project>
