@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add;
+using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Queries.Common;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Services;
 using Bks.Packages.Core.Domain.Entities;
 using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
@@ -12,12 +13,12 @@ using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
 
 namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Queries.Get
 {
-    public class GetResourceRequirementInteractor<T>
+    public class GetResourceRequirementsInteractor<T>
         where T : TrainingEntity
     {
         private readonly ITrainingEntityLookup<T> lookup;
 
-        public GetResourceRequirementInteractor(
+        public GetResourceRequirementsInteractor(
             ITrainingEntityRepository<T> repository,
             ITrainingEntityLookup<T> lookup,
             IResourceRequirementRuleValidator<T> ruleValidator
@@ -26,14 +27,16 @@ namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.
             this.lookup = lookup;
         }
 
-        public async Task<IList<GetResourceRequirementResponse>> Execute(Guid id)
+        public async Task<GetResourceRequirementResponse> Execute(Guid entityId, Guid requirementId)
         {
-            var entity = await lookup.GetRequired(id);
+            var entity = await lookup.GetRequired(entityId);
+            var requirementGuidId = GuidId.Of(requirementId);
 
-            return entity
+            var requirement = entity
                 .ResourceRequirements
-                .Select(r => new GetResourceRequirementResponse(r))
-                .ToList();
+                .GetRequired(requirementGuidId);
+
+            return new GetResourceRequirementResponse(requirement);
         }
     }
 }
