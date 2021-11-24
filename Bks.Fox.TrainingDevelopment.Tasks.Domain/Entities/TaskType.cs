@@ -1,11 +1,12 @@
-﻿using Bks.Packages.Core.Domain.Entities;
-using Bks.Packages.Core.Domain.Values;
+﻿using Bks.Fox.Domain.Entities;
+using Bks.Fox.Domain.Values;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities
 {
     public class TaskType : AggregateRoot
     {
-        public TaskType(UserFootprint footprint, Name name) : base(footprint, name)
+        public TaskType(UserFootprint footprint, Name name)
+            : base(footprint, name)
         {
         }
 

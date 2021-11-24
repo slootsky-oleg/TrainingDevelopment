@@ -1,5 +1,5 @@
-﻿using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
-using Bks.Packages.Core.Domain.Values.Ids;
+﻿using Bks.Fox.Domain.Behaviors.ResourceRequirements;
+using Bks.Fox.Domain.Values.Ids;
 
 namespace Atis.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
 {
@@ -7,7 +7,8 @@ namespace Atis.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour
     {
         public bool IsRequired { get; }
 
-        public AtisResourceRequirement(GuidId resourceTypeId, int? quantity) : base(resourceTypeId, quantity)
+        public AtisResourceRequirement(GuidId resourceTypeId, int? quantity)
+            : base(resourceTypeId, quantity)
         {
         }
     }

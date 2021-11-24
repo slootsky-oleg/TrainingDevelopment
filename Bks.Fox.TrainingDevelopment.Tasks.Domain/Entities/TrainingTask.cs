@@ -1,8 +1,6 @@
-﻿using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions;
-using Bks.Packages.Core.Domain.Entities;
-using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
-using Bks.Packages.Core.Domain.Values;
-using Bks.Packages.Core.Domain.Values.Ids;
+﻿using Bks.Fox.Domain.Values;
+using Bks.Fox.Domain.Values.Ids;
+using Bks.Fox.TrainingDevelopment.Domain.Entities;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities
 {

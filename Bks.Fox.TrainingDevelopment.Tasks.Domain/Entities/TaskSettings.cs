@@ -1,5 +1,5 @@
-﻿using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions.Settings;
-using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements.Settings;
+﻿using Bks.Fox.Domain.Behaviors.ResourceRequirements.Settings;
+using Bks.Fox.TrainingDevelopment.Domain.TODO.Settings;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities
 {

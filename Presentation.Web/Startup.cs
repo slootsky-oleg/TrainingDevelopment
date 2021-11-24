@@ -1,4 +1,4 @@
-using Bks.Packages.Core.Presentation.Filters.Swagger;
+using Bks.AspNetCore.Swashbuckle.FeatureGate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

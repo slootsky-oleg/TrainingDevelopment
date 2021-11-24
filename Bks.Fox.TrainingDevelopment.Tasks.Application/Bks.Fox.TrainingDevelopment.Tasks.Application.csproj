@@ -5,12 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Application\Bks.Fox.Behaviors.ResourceRequirements.Application.csproj" />
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Behaviors.ResourceRequirements.Domain.csproj" />
     <ProjectReference Include="..\Bks.Fox.TrainingDevelopment.Tasks.Domain\Bks.Fox.TrainingDevelopment.Tasks.Domain.csproj" />
-    <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
+    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Fox.Domain.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ResourceRequirements\Queries\" />
-  </ItemGroup>
-
 </Project>

@@ -5,17 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
-    <EmbeddedResource Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
-    <None Remove="Entities\TrainingDevelopment\Behaviour\Containers\**" />
+    <Compile Remove="TODO\Behaviour\Containers\**" />
+    <EmbeddedResource Remove="TODO\Behaviour\Containers\**" />
+    <None Remove="TODO\Behaviour\Containers\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Entities\TrainingDevelopment\Abstractions\Settings\" />
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Behaviors.ResourceRequirements.Domain.csproj" />
+    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Fox.Domain.csproj" />
+    <ProjectReference Include="..\Bks.WebApi.Cqrs\Bks.Fox.Behaviors.Domain.csproj" />
   </ItemGroup>
 
 </Project>
