@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bks.AspNetCore.Swashbuckle.Filters\Bks.AspNetCore.Swashbuckle.FeatureGate.csproj" />
     <ProjectReference Include="..\Bks.AspNetCore.WebApi\Bks.AspNetCore.WebApi.csproj" />
     <ProjectReference Include="..\Bks.Fox.TrainingDevelopment.Tasks.Application\Bks.Fox.TrainingDevelopment.Tasks.Application.csproj" />
     <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />

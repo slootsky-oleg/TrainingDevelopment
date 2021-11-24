@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Packages.Domain", "Bks.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.AspNetCore.WebApi", "Bks.AspNetCore.WebApi\Bks.AspNetCore.WebApi.csproj", "{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.AspNetCore.Swashbuckle.FeatureGate", "Bks.AspNetCore.Swashbuckle.Filters\Bks.AspNetCore.Swashbuckle.FeatureGate.csproj", "{E9DE49D3-4C26-4052-AA4E-8B86C175D724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9DE49D3-4C26-4052-AA4E-8B86C175D724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9DE49D3-4C26-4052-AA4E-8B86C175D724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9DE49D3-4C26-4052-AA4E-8B86C175D724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9DE49D3-4C26-4052-AA4E-8B86C175D724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +97,7 @@ Global
 		{74216181-A2B8-4A49-96DF-E53C1DFA5491} = {725AF6BD-ADD9-4E68-A3C5-6EBC88E64EC3}
 		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
+		{E9DE49D3-4C26-4052-AA4E-8B86C175D724} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A803B16-B341-4FA0-BCF9-E8890F453720}
