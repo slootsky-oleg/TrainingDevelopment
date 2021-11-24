@@ -13,12 +13,12 @@ using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
 
 namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Queries.Get
 {
-    public class GetResourceRequirementsInteractor<T>
+    public class GetResourceRequirementInteractor<T>
         where T : TrainingEntity
     {
         private readonly ITrainingEntityLookup<T> lookup;
 
-        public GetResourceRequirementsInteractor(
+        public GetResourceRequirementInteractor(
             ITrainingEntityRepository<T> repository,
             ITrainingEntityLookup<T> lookup,
             IResourceRequirementRuleValidator<T> ruleValidator
