@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Queries.Get;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Queries.Get;
@@ -27,13 +27,12 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Controllers.Tasks
         }
 
         [HttpGet("{requirement:guid}")]
-        public async Task<GetResourceRequirementResponse> Get(
-            [FromServices] GetTaskResourceRequirementInteractor interactor,
+        public async Task<IList<GetResourceRequirementResponse>> Get(
+            [FromServices] GetResourceRequirementInteractor<TrainingTask> interactor,
             [FromRoute] Guid taskId,
-            [FromRoute] Guid requirementId
-            )
+            [FromRoute] Guid requirementId)
         {
-            return await interactor.Execute(taskId, requirementId);
+            return await interactor.Execute(taskId);
         }
     }
 }

@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ResourceRequirements\Commands\Add\" />
+    <Folder Include="ResourceRequirements\Queries\" />
   </ItemGroup>
 
 </Project>
