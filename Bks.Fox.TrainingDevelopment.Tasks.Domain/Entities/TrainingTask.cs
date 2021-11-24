@@ -1,5 +1,4 @@
-﻿using Bks.Fox.Domain.TrainingDevelopment;
-using Bks.Fox.Domain.Values;
+﻿using Bks.Fox.Domain.Values;
 using Bks.Fox.Domain.Values.Ids;
 using Bks.Fox.TrainingDevelopment.Domain.Entities;
 

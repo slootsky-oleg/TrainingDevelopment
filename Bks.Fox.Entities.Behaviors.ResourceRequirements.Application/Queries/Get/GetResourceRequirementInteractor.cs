@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.Common;
 using Bks.Fox.Application.Behaviors.ResourceRequirements.Services;
 using Bks.Fox.Domain.Behaviors.ResourceRequirements;
-using Bks.Fox.Domain.TrainingDevelopment;
 using Bks.Fox.Domain.Values.Ids;
 using Bks.Fox.TrainingDevelopment.Application.Entities.Lookups;
 using Bks.Fox.TrainingDevelopment.Domain.Entities;

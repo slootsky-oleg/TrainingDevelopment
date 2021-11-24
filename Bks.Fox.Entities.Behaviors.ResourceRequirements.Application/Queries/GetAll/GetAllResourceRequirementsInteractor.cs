@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.Common;
 using Bks.Fox.Application.Behaviors.ResourceRequirements.Services;
-using Bks.Fox.Domain.TrainingDevelopment;
 using Bks.Fox.TrainingDevelopment.Application.Entities.Lookups;
 using Bks.Fox.TrainingDevelopment.Domain.Entities;
 using Bks.Fox.TrainingDevelopment.Domain.Repositories;
