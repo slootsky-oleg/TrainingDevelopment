@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Services;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Repositories;
-using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Services;
 using Bks.Practices.Ddd.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Services
