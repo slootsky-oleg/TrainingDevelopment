@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.Packages.Core.Domain.Values.Ids;
 
 namespace Bks.Packages.Core.Application.Entities.Lookups
 {

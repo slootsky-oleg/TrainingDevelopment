@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Services;
-using Bks.Packages.Core.Domain.Entities;
-using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
-using Bks.Packages.Core.Domain.Values;
-using Bks.Packages.Core.Domain.Values.Ids;
+using Bks.Packages.Domain.Entities;
+using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
+using Bks.Packages.Domain.Values;
+using Bks.Packages.Domain.Values.Ids;
 using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
+using Bks.Packages.TrainingDevelopment.Domain.Repositories;
 
 namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add
 {

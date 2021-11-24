@@ -1,5 +1,5 @@
 ﻿using System;
-using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
+using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
 
 namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Queries.Common
 {

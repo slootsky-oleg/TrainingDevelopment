@@ -1,7 +1,7 @@
-﻿using Bks.Packages.Core.Domain.Entities;
-using Bks.Packages.Core.Domain.Repositories;
+﻿using Bks.Packages.Domain.Entities;
+using Bks.Packages.Domain.Repositories;
 
-namespace Bks.Packages.TrainingDevelopment.Application.Entities.Lookups
+namespace Bks.Packages.TrainingDevelopment.Domain.Repositories
 {
     public interface ITrainingEntityRepository<T>: IEntityRepository<T>
         where T: TrainingEntity

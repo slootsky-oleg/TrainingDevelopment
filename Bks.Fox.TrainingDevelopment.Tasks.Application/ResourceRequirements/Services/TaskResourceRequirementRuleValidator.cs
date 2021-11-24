@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Repositories;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Services;
-using Bks.Packages.Core.Domain.Values.Ids;
+using Bks.Packages.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Services
 {

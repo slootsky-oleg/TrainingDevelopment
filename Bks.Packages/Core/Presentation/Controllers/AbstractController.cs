@@ -1,6 +1,6 @@
 ﻿using System;
-using Bks.Packages.Core.Domain.Values;
-using Bks.Packages.Core.Domain.Values.Ids;
+using Bks.Packages.Domain.Values;
+using Bks.Packages.Domain.Values.Ids;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bks.Packages.Core.Presentation.Controllers

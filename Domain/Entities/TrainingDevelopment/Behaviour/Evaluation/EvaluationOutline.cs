@@ -1,4 +1,4 @@
-﻿using Bks.Packages.Core.Domain.Entities.Behaviors;
+﻿using Bks.Packages.Domain.Entities.Behaviors;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation
 {

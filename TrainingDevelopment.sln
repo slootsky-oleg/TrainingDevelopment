@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Tasks.Application", "Bks.Fox.TrainingDevelopment.Tasks.Application\Bks.Fox.TrainingDevelopment.Tasks.Application.csproj", "{74216181-A2B8-4A49-96DF-E53C1DFA5491}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Packages.Domain", "Bks.Packages.Domain\Bks.Packages.Domain.csproj", "{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{74216181-A2B8-4A49-96DF-E53C1DFA5491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74216181-A2B8-4A49-96DF-E53C1DFA5491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74216181-A2B8-4A49-96DF-E53C1DFA5491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{67583F61-2206-44F8-A017-7D13044054BB} = {5E610032-3B97-4AD4-B64C-A309A7CEFC81}
 		{CD296C77-1630-49AA-AA98-7122132C3B62} = {725AF6BD-ADD9-4E68-A3C5-6EBC88E64EC3}
 		{74216181-A2B8-4A49-96DF-E53C1DFA5491} = {725AF6BD-ADD9-4E68-A3C5-6EBC88E64EC3}
+		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A803B16-B341-4FA0-BCF9-E8890F453720}

@@ -1,5 +1,5 @@
 ﻿using System;
-using Bks.Packages.Core.Domain.Entities;
+using Bks.Packages.Domain.Entities;
 
 namespace Bks.Packages.Core.Application.Entities.Queries.Get
 {

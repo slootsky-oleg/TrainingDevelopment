@@ -11,11 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
+    <Folder Include="Entities\TrainingDevelopment\Abstractions\Settings\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\TrainingDevelopment\Abstractions\Settings\" />
+    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Packages.Domain.csproj" />
   </ItemGroup>
 
 </Project>
