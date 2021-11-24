@@ -1,7 +1,7 @@
 ﻿using System;
 using Bks.Packages.Core.Domain.Entities.Behaviors.Abstractions;
 
-namespace Bks.Packages.Core.Application.Entities.Behavior.Commands.Add
+namespace Bks.Packages.Core.Application.Entities.Behaviors.Commands.Add
 {
     public abstract class AddBehaviorResponse
     {

@@ -1,4 +1,6 @@
-﻿namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation
+﻿using Bks.Packages.Core.Domain.Entities.Behaviors;
+
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour.Evaluation
 {
     public class EvaluationOutline
     {

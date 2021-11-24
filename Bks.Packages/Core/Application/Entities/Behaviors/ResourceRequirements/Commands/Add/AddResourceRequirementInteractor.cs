@@ -1,46 +1,50 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Services;
-using Bks.Fox.TrainingDevelopment.Tasks.Domain.Repositories;
+using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Services;
+using Bks.Packages.Core.Domain.Entities;
 using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
 using Bks.Packages.Core.Domain.Values;
 using Bks.Packages.Core.Domain.Values.Ids;
+using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
 
-namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Commands.Add
+namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add
 {
-    public class AddTaskResourceRequirementInteractor
+    public class AddResourceRequirementInteractor<T>
+        where T : TrainingEntity
     {
-        private readonly ITaskRepository repository;
-        private readonly ITaskResourceRequirementRuleValidator ruleValidator;
+        private readonly ITrainingEntityRepository<T> repository;
+        private readonly ITrainingEntityLookup<T> lookup;
+        private readonly IResourceRequirementRuleValidator<T> ruleValidator;
 
-        public AddTaskResourceRequirementInteractor(
-            ITaskRepository repository,
-            ITaskResourceRequirementRuleValidator ruleValidator
+        public AddResourceRequirementInteractor(
+            ITrainingEntityRepository<T> repository,
+            ITrainingEntityLookup<T> lookup,
+            IResourceRequirementRuleValidator<T> ruleValidator
             )
         {
             this.repository = repository;
+            this.lookup = lookup;
             this.ruleValidator = ruleValidator;
         }
 
-        public async Task<AddTaskResourceRequirementResponse> Execute(
+        public async Task<AddResourceRequirementResponse> Execute(
             UserFootprint footprint,
-            Guid taskId,
-            AddTaskResourceRequirementRequest request)
+            Guid id,
+            AddResourceRequirementRequest request)
         {
-            var task = await repository.GetAsync(taskId)
-                       ?? throw new Exception("Not found");
+            var entity = await lookup.GetRequired(id);
 
-            await ruleValidator.ValidateEnabled(task.TypeId);
+            //await ruleValidator.ValidateEnabled(entity.TypeId);
 
             var typeId = GuidId.Of(request.TypeId);
             var requirement = new ResourceRequirement(typeId, request.Quantity);
 
-            task.AddResourceRequirement(footprint, requirement);
+            entity.AddResourceRequirement(footprint, requirement);
             
             //await repository.CommitAsync();
 
 
-            return new AddTaskResourceRequirementResponse(requirement);
+            return new AddResourceRequirementResponse(requirement);
         }
         
         

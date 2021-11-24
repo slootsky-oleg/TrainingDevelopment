@@ -1,29 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Behaviour;
-using Bks.Packages.Core.Domain.Entities;
+using Bks.Packages.Core.Domain.Entities.Behaviors;
 using Bks.Packages.Core.Domain.Entities.Behaviors.ResourceRequirements;
 using Bks.Packages.Core.Domain.Entities.Notifications.Changes;
 using Bks.Packages.Core.Domain.Values;
 using Bks.Packages.Core.Domain.Values.Ids;
 
-namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions
+namespace Bks.Packages.Core.Domain.Entities
 {
-    public abstract class TrainingEntity<TResourceRequirement> : 
-        AggregateRoot,
-        ITrainingEntity<TResourceRequirement>
-        where TResourceRequirement : ResourceRequirement
+    public abstract class BaseTrainingEntity<TResourceRequirement> : 
+            AggregateRoot,
+            IHasResourceRequirements<TResourceRequirement>
         
-    //IHasRelatedEntities<TrainingTask>
-    // IHasCustomFields, 
-    // IHasContent, 
-    // IVersionable,
-    // IHasEvaluationCriteria,
-    // IHasPrerequisites,
-    // IHasConditions,
-    // IHasTargetAudience,
-    // IHasStatus
+        //IHasRelatedEntities<TrainingTask>
+        // IHasCustomFields, 
+        // IHasContent, 
+        // IVersionable,
+        // IHasEvaluationCriteria,
+        // IHasPrerequisites,
+        // IHasConditions,
+        // IHasTargetAudience,
+        // IHasStatus
+        where TResourceRequirement: ResourceRequirement
     {
         protected readonly ResourceRequirementContainer<TResourceRequirement> ResourceRequirementContainer;
 
@@ -37,7 +36,7 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
         public AggregationStrategy AggregationStrategy { get; }
         public IReadOnlyCollection<TResourceRequirement> ResourceRequirements => ResourceRequirementContainer.ToList();
 
-        protected TrainingEntity(
+        protected BaseTrainingEntity(
             UserFootprint footprint,
             Name name,
             TypeId typeId)
@@ -58,7 +57,7 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstra
             UserFootprint footprint,
             TypeId typeId
             //CustomFieldSchema
-            )
+        )
         {
             if (typeId == null) throw new ArgumentNullException(nameof(typeId));
 
