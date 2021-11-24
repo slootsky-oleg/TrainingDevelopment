@@ -1,7 +1,7 @@
 ﻿using System;
 using Bks.Fox.Entities.Behaviors.Domain;
 
-namespace Bks.Packages.Core.Application.Entities.Behaviors.Commands.Add
+namespace Bks.Fox.Entities.Behaviors.Application.Commands.Add
 {
     public abstract class AddBehaviorResponse
     {

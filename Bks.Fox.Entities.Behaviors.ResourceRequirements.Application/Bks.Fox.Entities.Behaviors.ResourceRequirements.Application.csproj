@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.Application\Bks.Fox.Entities.Behaviors.Application.csproj" />
     <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
     <ProjectReference Include="..\Domain\Bks.Fox.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Bks.Domain.Notifications.Changes;
+using Bks.Fox.Entities.Domain.Notifications.Changes;
 
 namespace Bks.Fox.Entities.Behaviors.Domain
 {

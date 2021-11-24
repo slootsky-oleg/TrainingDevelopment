@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Domain.Notifications.Changes
+namespace Bks.Fox.Entities.Domain.Notifications.Changes
 {
     public interface INotifyEntityChanged
     {

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Bks.Domain.Values;
+using Bks.Fox.Entities.Domain.Values;
 
 namespace Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain
 {

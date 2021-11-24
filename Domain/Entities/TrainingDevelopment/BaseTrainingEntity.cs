@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Bks.Domain.Entities;
-using Bks.Domain.Notifications.Changes;
-using Bks.Domain.Values;
-using Bks.Domain.Values.Ids;
 using Bks.Fox.Entities.Behaviors.Domain;
 using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain;
+using Bks.Fox.Entities.Domain.Entities;
+using Bks.Fox.Entities.Domain.Notifications.Changes;
+using Bks.Fox.Entities.Domain.Values;
+using Bks.Fox.Entities.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment
 {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.Domain.Values.Ids;
 using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Queries.Common;
 using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Services;
 using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain;
+using Bks.Fox.Entities.Domain.Values.Ids;
 using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment;
 using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
 using Bks.Packages.TrainingDevelopment.Domain.Repositories;

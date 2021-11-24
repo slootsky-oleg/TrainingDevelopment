@@ -1,6 +1,6 @@
-﻿using Bks.Domain.Values.Strings;
+﻿using Bks.Fox.Entities.Domain.Values.Strings;
 
-namespace Bks.Domain.Values.Ids
+namespace Bks.Fox.Entities.Domain.Values.Ids
 {
     public class ExternalId : StringValueObject
     {

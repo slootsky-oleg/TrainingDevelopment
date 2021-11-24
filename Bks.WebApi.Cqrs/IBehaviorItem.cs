@@ -1,5 +1,5 @@
-﻿using Bks.Domain.Notifications.Changes;
-using Bks.Domain.Values.Ids;
+﻿using Bks.Fox.Entities.Domain.Notifications.Changes;
+using Bks.Fox.Entities.Domain.Values.Ids;
 
 namespace Bks.Fox.Entities.Behaviors.Domain
 {

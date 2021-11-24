@@ -1,5 +1,5 @@
-﻿using Bks.Domain.Values;
-using Bks.Domain.Values.Ids;
+﻿using Bks.Fox.Entities.Domain.Values;
+using Bks.Fox.Entities.Domain.Values.Ids;
 using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment;
 using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions;
 

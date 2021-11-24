@@ -1,5 +1,5 @@
 ﻿using System;
-using Bks.Domain.Entities;
+using Bks.Fox.Entities.Domain.Entities;
 
 namespace Bks.Fox.Entities.Applications.Commands.Create
 {

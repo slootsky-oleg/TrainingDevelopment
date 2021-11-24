@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.Domain.Values.Ids;
 using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Services;
+using Bks.Fox.Entities.Domain.Values.Ids;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Repositories;
 

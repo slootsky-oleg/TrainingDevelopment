@@ -1,4 +1,4 @@
-﻿using Bks.Domain.Repositories;
+﻿using Bks.Fox.Entities.Domain.Repositories;
 using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment;
 
 namespace Bks.Packages.TrainingDevelopment.Domain.Repositories

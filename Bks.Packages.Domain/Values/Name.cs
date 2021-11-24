@@ -1,6 +1,6 @@
-﻿using Bks.Domain.Values.Strings;
+﻿using Bks.Fox.Entities.Domain.Values.Strings;
 
-namespace Bks.Domain.Values
+namespace Bks.Fox.Entities.Domain.Values
 {
     public class Name : StringValueObject
     {

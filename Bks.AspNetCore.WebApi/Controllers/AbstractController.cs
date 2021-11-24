@@ -1,6 +1,6 @@
 ﻿using System;
-using Bks.Domain.Values;
-using Bks.Domain.Values.Ids;
+using Bks.Fox.Entities.Domain.Values;
+using Bks.Fox.Entities.Domain.Values.Ids;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bks.AspNetCore.WebApi.Controllers

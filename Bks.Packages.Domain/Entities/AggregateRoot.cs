@@ -1,8 +1,8 @@
 ﻿using System;
-using Bks.Domain.Values;
-using Bks.Domain.Values.Ids;
+using Bks.Fox.Entities.Domain.Values;
+using Bks.Fox.Entities.Domain.Values.Ids;
 
-namespace Bks.Domain.Entities
+namespace Bks.Fox.Entities.Domain.Entities
 {
     public abstract class AggregateRoot
     {
