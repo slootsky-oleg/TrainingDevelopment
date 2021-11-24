@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Behaviour.TargetAudience
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Behaviour.TargetAudience
 {
     public interface IHasTargetAudience
     {

@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 using Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.Common;
 using Bks.Fox.Application.Behaviors.ResourceRequirements.Services;
 using Bks.Fox.Domain.TrainingDevelopment;
-using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
-using Bks.Packages.TrainingDevelopment.Domain.Repositories;
+using Bks.Fox.TrainingDevelopment.Application.Entities.Lookups;
+using Bks.Fox.TrainingDevelopment.Domain.Entities;
+using Bks.Fox.TrainingDevelopment.Domain.Repositories;
 
 namespace Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.GetAll
 {

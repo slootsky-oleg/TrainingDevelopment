@@ -1,6 +1,6 @@
 ﻿using Bks.Fox.Domain.Behaviors;
 
-namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Behaviour.Evaluation
+namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Behaviour.Evaluation
 {
     public class EvaluationOutline
     {

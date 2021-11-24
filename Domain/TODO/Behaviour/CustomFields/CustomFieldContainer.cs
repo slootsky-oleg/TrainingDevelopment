@@ -1,6 +1,6 @@
 ﻿using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Behaviour.CustomFields
+namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Behaviour.CustomFields
 {
     public class CustomFieldContainer
     {

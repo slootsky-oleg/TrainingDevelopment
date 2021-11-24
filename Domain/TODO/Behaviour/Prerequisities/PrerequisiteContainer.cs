@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Behaviour.Prerequisities
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Behaviour.Prerequisities
 {
     public class PrerequisiteContainer
     {

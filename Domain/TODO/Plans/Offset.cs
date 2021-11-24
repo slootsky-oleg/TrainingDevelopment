@@ -1,7 +1,7 @@
 ﻿using System;
 using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Plans
+namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Plans
 {
     public class Offset
     {

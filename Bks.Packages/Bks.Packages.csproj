@@ -14,7 +14,12 @@
     <ProjectReference Include="..\Bks.Fox.Entities.Applications\Bks.Fox.Application.Entities.csproj" />
     <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Domain.Behaviors.ResourceRequirements.csproj" />
     <ProjectReference Include="..\Bks.Packages.Domain\Bks.Fox.Domain.csproj" />
-    <ProjectReference Include="..\Domain\Bks.Fox.Domain.TrainingDevelopment.csproj" />
+    <ProjectReference Include="..\Domain\Bks.Fox.TrainingDevelopment.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TrainingDevelopment\Application\" />
+    <Folder Include="TrainingDevelopment\Domain\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Behaviour.CheckList
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Behaviour.CheckList
 {
     public interface IHasCheckList
     {

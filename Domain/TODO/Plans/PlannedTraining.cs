@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Plans
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Plans
 {
     // public class PlannedTraining<T> where T : ITrainingEntity
     // {

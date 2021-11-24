@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.Domain.TrainingDevelopment", "Domain\Bks.Fox.Domain.TrainingDevelopment.csproj", "{A87CCBA8-3B27-4EAB-904E-D17D87A70F2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Domain", "Domain\Bks.Fox.TrainingDevelopment.Domain.csproj", "{A87CCBA8-3B27-4EAB-904E-D17D87A70F2D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web", "Presentation.Web\Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.csproj", "{14391304-EB74-4329-A707-4B37AA7AE262}"
 EndProject
@@ -12,8 +12,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atis.TrainingDevelopment.Domain", "Atis.Training.Development.Domain\Atis.TrainingDevelopment.Domain.csproj", "{8B22475B-1E0E-4967-A4B1-704297988792}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{FC8FAB14-9071-4DDB-A065-B02D77599FCA}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Packages", "Bks.Packages\Bks.Packages.csproj", "{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagrams", "Diagrams\Diagrams.csproj", "{0E6A8DBE-8039-4660-8A59-0966440C1372}"
 EndProject
@@ -45,7 +43,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Application.Entitie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Application.Behaviors", "Bks.Fox.Entities.Behaviors.Application\Bks.Fox.Application.Behaviors.csproj", "{145F4200-32DD-4D16-B93D-B7370D4C2C73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Domain.Operational", "Bks.Fox.Domain.Operational\Bks.Fox.Domain.Operational.csproj", "{AF4F1542-6A94-47CE-89D5-475C15DA6C54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Operational.Domain", "Bks.Fox.Domain.Operational\Bks.Fox.Operational.Domain.csproj", "{AF4F1542-6A94-47CE-89D5-475C15DA6C54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.TrainingDevelopment.Application", "Bks.Fox.TrainingDevelopment.Application\Bks.Fox.TrainingDevelopment.Application.csproj", "{F9B62DEF-1F3E-454B-9A98-090651D26FB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +65,6 @@ Global
 		{8B22475B-1E0E-4967-A4B1-704297988792}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B22475B-1E0E-4967-A4B1-704297988792}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B22475B-1E0E-4967-A4B1-704297988792}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0E6A8DBE-8039-4660-8A59-0966440C1372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0E6A8DBE-8039-4660-8A59-0966440C1372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E6A8DBE-8039-4660-8A59-0966440C1372}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -117,6 +113,10 @@ Global
 		{AF4F1542-6A94-47CE-89D5-475C15DA6C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF4F1542-6A94-47CE-89D5-475C15DA6C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF4F1542-6A94-47CE-89D5-475C15DA6C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B62DEF-1F3E-454B-9A98-090651D26FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B62DEF-1F3E-454B-9A98-090651D26FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B62DEF-1F3E-454B-9A98-090651D26FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B62DEF-1F3E-454B-9A98-090651D26FB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,7 +125,6 @@ Global
 		{A87CCBA8-3B27-4EAB-904E-D17D87A70F2D} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 		{14391304-EB74-4329-A707-4B37AA7AE262} = {725AF6BD-ADD9-4E68-A3C5-6EBC88E64EC3}
 		{8B22475B-1E0E-4967-A4B1-704297988792} = {F77175EB-5E1B-48CF-9F25-FC7B29A7BCEB}
-		{B90B6B05-8C5E-40BA-B841-1C3CB989E85A} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 		{725AF6BD-ADD9-4E68-A3C5-6EBC88E64EC3} = {5E610032-3B97-4AD4-B64C-A309A7CEFC81}
 		{5905CFF1-5F82-4406-9932-0A4FD9479CEE} = {5E610032-3B97-4AD4-B64C-A309A7CEFC81}
 		{67583F61-2206-44F8-A017-7D13044054BB} = {5E610032-3B97-4AD4-B64C-A309A7CEFC81}
@@ -140,6 +139,7 @@ Global
 		{B9AC5C50-6A26-4A47-BF6C-F0EC7A9324D1} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 		{145F4200-32DD-4D16-B93D-B7370D4C2C73} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 		{AF4F1542-6A94-47CE-89D5-475C15DA6C54} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
+		{F9B62DEF-1F3E-454B-9A98-090651D26FB4} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A803B16-B341-4FA0-BCF9-E8890F453720}

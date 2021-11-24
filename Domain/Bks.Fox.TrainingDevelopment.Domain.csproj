@@ -15,8 +15,4 @@
     <ProjectReference Include="..\Bks.Packages.Domain\Bks.Fox.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\" />
-  </ItemGroup>
-
 </Project>

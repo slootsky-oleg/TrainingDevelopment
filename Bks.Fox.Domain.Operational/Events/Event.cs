@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.Operational.Events
+﻿namespace Bks.Fox.Operational.Domain.Events
 {
     //var event = repo.get(id);
 

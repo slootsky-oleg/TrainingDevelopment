@@ -1,6 +1,6 @@
 ﻿using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Domain.Operational.Scheduling
+namespace Bks.Fox.Operational.Domain.Scheduling
 {
     public class UnitParticipant
     {

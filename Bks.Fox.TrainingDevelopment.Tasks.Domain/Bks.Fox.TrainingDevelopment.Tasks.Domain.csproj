@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Bks.Packages.Domain\Bks.Fox.Domain.csproj" />
-    <ProjectReference Include="..\Domain\Bks.Fox.Domain.TrainingDevelopment.csproj" />
+    <ProjectReference Include="..\Domain\Bks.Fox.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
 
 </Project>

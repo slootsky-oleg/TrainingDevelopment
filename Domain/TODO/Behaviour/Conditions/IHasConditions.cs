@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Behaviour.Conditions
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Behaviour.Conditions
 {
     public interface IHasConditions
     {

@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Behaviour.Evaluation
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Behaviour.Evaluation
 {
     public interface IHasEvaluationCriteria
     {

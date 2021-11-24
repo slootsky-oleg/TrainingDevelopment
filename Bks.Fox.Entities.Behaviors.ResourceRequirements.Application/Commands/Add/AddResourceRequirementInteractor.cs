@@ -5,8 +5,9 @@ using Bks.Fox.Domain.Behaviors.ResourceRequirements;
 using Bks.Fox.Domain.TrainingDevelopment;
 using Bks.Fox.Domain.Values;
 using Bks.Fox.Domain.Values.Ids;
-using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
-using Bks.Packages.TrainingDevelopment.Domain.Repositories;
+using Bks.Fox.TrainingDevelopment.Application.Entities.Lookups;
+using Bks.Fox.TrainingDevelopment.Domain.Entities;
+using Bks.Fox.TrainingDevelopment.Domain.Repositories;
 
 namespace Bks.Fox.Application.Behaviors.ResourceRequirements.Commands.Add
 {

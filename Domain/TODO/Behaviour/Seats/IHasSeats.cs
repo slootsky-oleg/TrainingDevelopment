@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Behaviour.Seats
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Behaviour.Seats
 {
     public interface IHasSeats
     {

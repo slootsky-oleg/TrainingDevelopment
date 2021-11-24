@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Behaviour.CustomFields
+﻿namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Behaviour.CustomFields
 {
     public interface IHasCustomFields
     {

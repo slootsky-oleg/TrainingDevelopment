@@ -2,7 +2,7 @@
 using Bks.Fox.Domain.Values;
 using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Domain.TrainingDevelopment
+namespace Bks.Fox.TrainingDevelopment.Domain.Entities
 {
     public abstract class TrainingEntity : BaseTrainingEntity<ResourceRequirement>
     {

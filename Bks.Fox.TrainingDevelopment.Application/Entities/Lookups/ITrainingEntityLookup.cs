@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.Fox.Domain.TrainingDevelopment;
+using Bks.Fox.TrainingDevelopment.Domain.Entities;
 
-namespace Bks.Packages.TrainingDevelopment.Application.Entities.Lookups
+namespace Bks.Fox.TrainingDevelopment.Application.Entities.Lookups
 {
     public interface ITrainingEntityLookup<T>
         where T: TrainingEntity

@@ -1,5 +1,5 @@
 ﻿using Bks.Fox.Domain.Behaviors.ResourceRequirements.Settings;
-using Bks.Fox.Domain.TrainingDevelopment.TODO.Settings;
+using Bks.Fox.TrainingDevelopment.Domain.TODO.Settings;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities
 {

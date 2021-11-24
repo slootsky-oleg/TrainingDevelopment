@@ -1,7 +1,7 @@
 ﻿
 using Bks.Fox.Domain.Behaviors.ResourceRequirements.Settings;
 
-namespace Bks.Fox.Domain.TrainingDevelopment.TODO.Settings
+namespace Bks.Fox.TrainingDevelopment.Domain.TODO.Settings
 {
     public interface ITrainingDevelopmentEntitySettings
     {

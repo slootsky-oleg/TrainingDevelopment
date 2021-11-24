@@ -1,7 +1,7 @@
 ﻿using Bks.Fox.Domain.Repositories;
-using Bks.Fox.Domain.TrainingDevelopment;
+using Bks.Fox.TrainingDevelopment.Domain.Entities;
 
-namespace Bks.Packages.TrainingDevelopment.Domain.Repositories
+namespace Bks.Fox.TrainingDevelopment.Domain.Repositories
 {
     public interface ITrainingEntityRepository<T>: IEntityRepository<T>
         where T: TrainingEntity

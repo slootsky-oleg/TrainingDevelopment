@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.Operational.Scheduling
+﻿namespace Bks.Fox.Operational.Domain.Scheduling
 {
     public class ResourceContainer
     {
