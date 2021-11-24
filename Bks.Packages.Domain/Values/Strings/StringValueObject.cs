@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Bks.Fox.Entities.Domain.Values.Strings
+namespace Bks.Fox.Domain.Values.Strings
 {
     public abstract class StringValueObject : ValueObject
     {

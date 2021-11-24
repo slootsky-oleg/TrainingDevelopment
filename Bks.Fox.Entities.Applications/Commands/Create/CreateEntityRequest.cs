@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Entities.Applications.Commands.Create
+﻿namespace Bks.Fox.Application.Entities.Commands.Create
 {
     public abstract class CreateEntityRequest
     {

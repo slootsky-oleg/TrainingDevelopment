@@ -1,7 +1,7 @@
 ﻿using System;
-using Bks.Fox.Entities.Domain.Values.Strings;
+using Bks.Fox.Domain.Values.Strings;
 
-namespace Bks.Fox.Entities.Domain.Values
+namespace Bks.Fox.Domain.Values
 {
     public class Description : StringValueObject
     {

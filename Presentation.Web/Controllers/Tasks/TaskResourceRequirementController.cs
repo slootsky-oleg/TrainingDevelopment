@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using Bks.AspNetCore.WebApi.Controllers;
-using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Commands.Add;
-using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Queries.Common;
-using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Queries.Get;
-using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Queries.GetAll;
+using Bks.Fox.Application.Behaviors.ResourceRequirements.Commands.Add;
+using Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.Common;
+using Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.Get;
+using Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.GetAll;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
-using Bks.Packages.Core.Application.Features;
+using Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement.Mvc;
 

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TODO\Behaviour\Containers\**" />
+    <EmbeddedResource Remove="TODO\Behaviour\Containers\**" />
+    <None Remove="TODO\Behaviour\Containers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Domain.Behaviors.ResourceRequirements.csproj" />
+    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Fox.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
+
+</Project>

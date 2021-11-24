@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Bks.Fox.Entities.Domain.Repositories
+namespace Bks.Fox.Domain.Repositories
 {
     public interface IEntityRepository<T>
     {

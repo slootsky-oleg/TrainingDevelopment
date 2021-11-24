@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.Application\Bks.Fox.Application.Behaviors.csproj" />
+    <ProjectReference Include="..\Bks.Packages\Bks.Packages.csproj" />
+    <ProjectReference Include="..\Domain\Bks.Fox.Domain.TrainingDevelopment.csproj" />
+  </ItemGroup>
+
+</Project>

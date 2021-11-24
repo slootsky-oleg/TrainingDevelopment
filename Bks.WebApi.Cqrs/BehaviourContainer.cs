@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Bks.Fox.Entities.Domain.Notifications.Changes;
+using Bks.Fox.Domain.Notifications.Changes;
 
-namespace Bks.Fox.Entities.Behaviors.Domain
+namespace Bks.Fox.Domain.Behaviors
 {
     public abstract class BehaviourContainer<T> :
         IBehaviorContainer<T>,

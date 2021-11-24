@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Fox.Entities.Domain.Values.Strings
+namespace Bks.Fox.Domain.Values.Strings
 {
     public class StringValueObjectValidator
     {

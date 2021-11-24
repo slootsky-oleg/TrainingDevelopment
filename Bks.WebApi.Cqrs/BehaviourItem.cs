@@ -1,9 +1,9 @@
 ﻿using System;
-using Bks.Fox.Entities.Domain.Notifications.Changes;
-using Bks.Fox.Entities.Domain.Values;
-using Bks.Fox.Entities.Domain.Values.Ids;
+using Bks.Fox.Domain.Notifications.Changes;
+using Bks.Fox.Domain.Values;
+using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Entities.Behaviors.Domain
+namespace Bks.Fox.Domain.Behaviors
 {
     public abstract class BehaviourItem : ValueObject, IBehaviorItem
     {

@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Queries.Common;
-using Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Services;
-using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain;
-using Bks.Fox.Entities.Domain.Values.Ids;
-using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment;
+using Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.Common;
+using Bks.Fox.Application.Behaviors.ResourceRequirements.Services;
+using Bks.Fox.Domain.Behaviors.ResourceRequirements;
+using Bks.Fox.Domain.TrainingDevelopment;
+using Bks.Fox.Domain.Values.Ids;
 using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
 using Bks.Packages.TrainingDevelopment.Domain.Repositories;
 
-namespace Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Queries.Get
+namespace Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.Get
 {
     public class GetResourceRequirementInteractor<T>
         where T : TrainingEntity

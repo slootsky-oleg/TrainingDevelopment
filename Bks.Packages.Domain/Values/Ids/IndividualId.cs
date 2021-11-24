@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Fox.Entities.Domain.Values.Ids
+namespace Bks.Fox.Domain.Values.Ids
 {
     public class IndividualId : GuidId
     {

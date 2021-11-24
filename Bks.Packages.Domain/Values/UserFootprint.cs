@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Bks.Fox.Entities.Domain.Values.Ids;
+using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Entities.Domain.Values
+namespace Bks.Fox.Domain.Values
 {
     public class UserFootprint : ValueObject
     {

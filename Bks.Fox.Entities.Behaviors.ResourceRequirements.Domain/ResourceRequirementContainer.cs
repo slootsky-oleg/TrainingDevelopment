@@ -1,6 +1,4 @@
-﻿using Bks.Fox.Entities.Behaviors.Domain;
-
-namespace Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain
+﻿namespace Bks.Fox.Domain.Behaviors.ResourceRequirements
 {
     public class ResourceRequirementContainer<T> : BehaviourContainer<T>
         where T : ResourceRequirement

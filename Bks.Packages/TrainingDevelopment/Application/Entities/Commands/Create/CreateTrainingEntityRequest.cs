@@ -1,5 +1,5 @@
 ﻿using System;
-using Bks.Fox.Entities.Applications.Commands.Create;
+using Bks.Fox.Application.Entities.Commands.Create;
 
 namespace Bks.Packages.TrainingDevelopment.Application.Entities.Commands.Create
 {

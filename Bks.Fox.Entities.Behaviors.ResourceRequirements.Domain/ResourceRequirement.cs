@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using Bks.Fox.Entities.Behaviors.Domain;
-using Bks.Fox.Entities.Domain.Values;
-using Bks.Fox.Entities.Domain.Values.Ids;
+using Bks.Fox.Domain.Values;
+using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain
+namespace Bks.Fox.Domain.Behaviors.ResourceRequirements
 {
     public class ResourceRequirement : BehaviourItem
     {

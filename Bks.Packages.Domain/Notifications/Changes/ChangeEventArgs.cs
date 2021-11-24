@@ -1,8 +1,8 @@
 ﻿using System;
-using Bks.Fox.Entities.Domain.Values;
-using Bks.Fox.Entities.Domain.Values.Ids;
+using Bks.Fox.Domain.Values;
+using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Entities.Domain.Notifications.Changes
+namespace Bks.Fox.Domain.Notifications.Changes
 {
     public class ChangeEventArgs : EventArgs
     {

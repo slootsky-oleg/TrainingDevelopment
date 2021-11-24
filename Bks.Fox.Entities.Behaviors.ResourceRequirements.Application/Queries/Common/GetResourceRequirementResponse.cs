@@ -1,7 +1,7 @@
 ﻿using System;
-using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain;
+using Bks.Fox.Domain.Behaviors.ResourceRequirements;
 
-namespace Bks.Fox.Entities.Behaviors.ResourceRequirements.Application.Queries.Common
+namespace Bks.Fox.Application.Behaviors.ResourceRequirements.Queries.Common
 {
     public class GetResourceRequirementResponse
     {
