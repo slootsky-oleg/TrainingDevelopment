@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Packages.Domain.Entities.Notifications.Changes
+namespace Bks.Practices.Ddd.Domain.Notifications.Changes
 {
     public interface INotifyEntityChanged
     {

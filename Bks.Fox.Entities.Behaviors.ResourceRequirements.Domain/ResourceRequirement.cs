@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Bks.Packages.Domain.Entities.Behaviors.Abstractions;
-using Bks.Packages.Domain.Values;
-using Bks.Packages.Domain.Values.Ids;
+using Bks.Fox.Entities.Behaviors.Domain;
+using Bks.Practices.Ddd.Domain.Values;
+using Bks.Practices.Ddd.Domain.Values.Ids;
 
-namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
+namespace Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain
 {
     public class ResourceRequirement : BehaviourItem
     {

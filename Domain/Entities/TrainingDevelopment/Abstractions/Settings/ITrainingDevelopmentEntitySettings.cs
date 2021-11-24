@@ -1,4 +1,5 @@
-﻿using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements.Settings;
+﻿
+using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain.Settings;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Abstractions.Settings
 {

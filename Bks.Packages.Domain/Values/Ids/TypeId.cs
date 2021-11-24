@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Packages.Domain.Values.Ids
+namespace Bks.Practices.Ddd.Domain.Values.Ids
 {
     public class TypeId : GuidValueObject
     {

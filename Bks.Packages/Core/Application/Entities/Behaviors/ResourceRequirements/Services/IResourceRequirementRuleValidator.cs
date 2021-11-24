@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Bks.Packages.Domain.Values.Ids;
+using Bks.Practices.Ddd.Domain.Values.Ids;
 
 namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Services
 {

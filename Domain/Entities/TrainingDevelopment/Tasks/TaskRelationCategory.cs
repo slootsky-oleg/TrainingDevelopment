@@ -1,5 +1,5 @@
-﻿using Bks.Packages.Domain.Values;
-using Bks.Packages.Domain.Values.Ids;
+﻿using Bks.Practices.Ddd.Domain.Values;
+using Bks.Practices.Ddd.Domain.Values.Ids;
 
 namespace Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment.Tasks
 {

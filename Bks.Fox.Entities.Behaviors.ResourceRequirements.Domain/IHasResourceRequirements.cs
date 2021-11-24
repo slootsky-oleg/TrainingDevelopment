@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Bks.Packages.Domain.Values;
+using Bks.Practices.Ddd.Domain.Values;
 
-namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
+namespace Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain
 {
     public interface IHasResourceRequirements<T>
         where T : ResourceRequirement

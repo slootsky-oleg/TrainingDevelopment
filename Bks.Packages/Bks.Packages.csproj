@@ -11,12 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Core\Application\Entities\Lookups\" />
     <Folder Include="TrainingDevelopment\Application\Entities\Behaviors\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Packages.Domain.csproj" />
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain.csproj" />
+    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Practices.Ddd.Domain.csproj" />
+    <ProjectReference Include="..\Domain\Bks.Fox.TrainingDevelopment.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
 ﻿using System;
-using Bks.Packages.Domain.Values;
-using Bks.Packages.Domain.Values.Ids;
+using Bks.Practices.Ddd.Domain.Values;
+using Bks.Practices.Ddd.Domain.Values.Ids;
 
-namespace Bks.Packages.Domain.Entities.Notifications.Changes
+namespace Bks.Practices.Ddd.Domain.Notifications.Changes
 {
     public class ChangeEventArgs : EventArgs
     {

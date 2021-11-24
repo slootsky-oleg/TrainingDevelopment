@@ -29,11 +29,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Tasks.Application", "Bks.Fox.TrainingDevelopment.Tasks.Application\Bks.Fox.TrainingDevelopment.Tasks.Application.csproj", "{74216181-A2B8-4A49-96DF-E53C1DFA5491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Packages.Domain", "Bks.Packages.Domain\Bks.Packages.Domain.csproj", "{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Practices.Ddd.Domain", "Bks.Packages.Domain\Bks.Practices.Ddd.Domain.csproj", "{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.AspNetCore.WebApi", "Bks.AspNetCore.WebApi\Bks.AspNetCore.WebApi.csproj", "{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.AspNetCore.Swashbuckle.FeatureGate", "Bks.AspNetCore.Swashbuckle.Filters\Bks.AspNetCore.Swashbuckle.FeatureGate.csproj", "{E9DE49D3-4C26-4052-AA4E-8B86C175D724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Entities.Behaviors.Domain", "Bks.WebApi.Cqrs\Bks.Fox.Entities.Behaviors.Domain.csproj", "{75E4A05D-77D1-42EC-8BEC-2DC06CDA54E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain", "Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain.csproj", "{0DF38F24-464D-42E2-94F1-69B6ED79BD4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,14 @@ Global
 		{E9DE49D3-4C26-4052-AA4E-8B86C175D724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9DE49D3-4C26-4052-AA4E-8B86C175D724}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9DE49D3-4C26-4052-AA4E-8B86C175D724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E4A05D-77D1-42EC-8BEC-2DC06CDA54E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E4A05D-77D1-42EC-8BEC-2DC06CDA54E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E4A05D-77D1-42EC-8BEC-2DC06CDA54E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E4A05D-77D1-42EC-8BEC-2DC06CDA54E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF38F24-464D-42E2-94F1-69B6ED79BD4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF38F24-464D-42E2-94F1-69B6ED79BD4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF38F24-464D-42E2-94F1-69B6ED79BD4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF38F24-464D-42E2-94F1-69B6ED79BD4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +110,8 @@ Global
 		{8813C083-F9DF-40E8-9B9A-FBF05CC56E74} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 		{75E29E33-52A4-4BC2-B178-8800DFB3CEFD} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 		{E9DE49D3-4C26-4052-AA4E-8B86C175D724} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
+		{75E4A05D-77D1-42EC-8BEC-2DC06CDA54E3} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
+		{0DF38F24-464D-42E2-94F1-69B6ED79BD4F} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A803B16-B341-4FA0-BCF9-E8890F453720}

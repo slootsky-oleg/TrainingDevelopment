@@ -1,5 +1,5 @@
-﻿using Bks.Packages.Core.Application.Entities.Behaviors.Commands.Add;
-using Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements;
+﻿using Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain;
+using Bks.Packages.Core.Application.Entities.Behaviors.Commands.Add;
 
 namespace Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Commands.Add
 {

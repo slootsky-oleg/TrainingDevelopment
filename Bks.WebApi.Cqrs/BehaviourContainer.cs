@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Bks.Packages.Domain.Entities.Notifications.Changes;
+using Bks.Practices.Ddd.Domain.Notifications.Changes;
 
-namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
+namespace Bks.Fox.Entities.Behaviors.Domain
 {
-    public abstract class BehaviourContainer<T, TSettings> :
-        IBehaviorContainer<T, TSettings>,
+    public abstract class BehaviourContainer<T> :
+        IBehaviorContainer<T>,
         INotifyEntityChanged
         where T : IBehaviorItem
-        where TSettings : IBehaviorContainerSettings
     {
         protected readonly List<T> Items;
 
@@ -17,13 +16,6 @@ namespace Bks.Packages.Domain.Entities.Behaviors.Abstractions
         public bool IsReadOnly => false;
 
         public event EventHandler<ChangeEventArgs> Changed;
-        public TSettings Settings { get; private set; }
-
-
-        public void ApplySettings(TSettings settings)
-        {
-            Settings = settings;
-        }
 
         protected BehaviourContainer(/*IBehaviorContainerSettings settings*/)
         {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Bks.Packages.Core.Application.Entities.Lookups
+namespace Bks.Practices.Ddd.Domain.Lookups
 {
     public interface IEntityLookup<T>
     {

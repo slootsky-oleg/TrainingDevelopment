@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Queries.Common;
 using Bks.Packages.Core.Application.Entities.Behaviors.ResourceRequirements.Services;
-using Bks.Packages.Domain.Entities;
 using Bks.Packages.TrainingDevelopment.Application.Entities.Lookups;
 using Bks.Packages.TrainingDevelopment.Domain.Repositories;
 

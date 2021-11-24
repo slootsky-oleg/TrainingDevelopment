@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Packages.Domain.Values.Strings
+namespace Bks.Practices.Ddd.Domain.Values.Strings
 {
     public class StringValueObjectValidator
     {

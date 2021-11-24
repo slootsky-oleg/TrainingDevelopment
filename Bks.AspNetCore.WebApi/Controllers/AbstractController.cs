@@ -1,6 +1,6 @@
 ﻿using System;
-using Bks.Packages.Domain.Values;
-using Bks.Packages.Domain.Values.Ids;
+using Bks.Practices.Ddd.Domain.Values;
+using Bks.Practices.Ddd.Domain.Values.Ids;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bks.AspNetCore.WebApi.Controllers

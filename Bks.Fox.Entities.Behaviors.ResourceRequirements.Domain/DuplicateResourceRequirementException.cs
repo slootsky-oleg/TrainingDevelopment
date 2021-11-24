@@ -1,7 +1,7 @@
 ﻿using System;
-using Bks.Packages.Domain.Values.Ids;
+using Bks.Practices.Ddd.Domain.Values.Ids;
 
-namespace Bks.Packages.Domain.Entities.Behaviors.ResourceRequirements
+namespace Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain
 {
     public class DuplicateResourceRequirementException : Exception
     {

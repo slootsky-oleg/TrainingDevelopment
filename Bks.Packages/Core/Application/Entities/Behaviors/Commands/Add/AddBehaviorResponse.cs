@@ -1,5 +1,5 @@
 ﻿using System;
-using Bks.Packages.Domain.Entities.Behaviors.Abstractions;
+using Bks.Fox.Entities.Behaviors.Domain;
 
 namespace Bks.Packages.Core.Application.Entities.Behaviors.Commands.Add
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Bks.Packages.Domain.Entities;
+using Bks.Fox.TrainingDevelopment.Domain.Entities.TrainingDevelopment;
 
 namespace Bks.Packages.TrainingDevelopment.Application.Entities.Lookups
 {
