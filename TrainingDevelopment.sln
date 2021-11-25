@@ -25,31 +25,33 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Tasks.Application", "Bks.Fox.TrainingDevelopment.Tasks.Application\Bks.Fox.TrainingDevelopment.Tasks.Application.csproj", "{74216181-A2B8-4A49-96DF-E53C1DFA5491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Domain", "Bks.Packages.Domain\Bks.Fox.Domain.csproj", "{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.Domain", "Bks.Packages.Domain\Bks.Fox.Domain.csproj", "{8813C083-F9DF-40E8-9B9A-FBF05CC56E74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.WebApi", "Bks.AspNetCore.WebApi\Bks.WebApi.csproj", "{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.WebApi", "Bks.AspNetCore.WebApi\Bks.WebApi.csproj", "{75E29E33-52A4-4BC2-B178-8800DFB3CEFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.WebApi.Swashbuckle.FeatureGate", "Bks.AspNetCore.Swashbuckle.Filters\Bks.WebApi.Swashbuckle.FeatureGate.csproj", "{E9DE49D3-4C26-4052-AA4E-8B86C175D724}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.WebApi.Swashbuckle.FeatureGate", "Bks.AspNetCore.Swashbuckle.Filters\Bks.WebApi.Swashbuckle.FeatureGate.csproj", "{E9DE49D3-4C26-4052-AA4E-8B86C175D724}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Behaviors.Domain", "Bks.WebApi.Cqrs\Bks.Fox.Behaviors.Domain.csproj", "{75E4A05D-77D1-42EC-8BEC-2DC06CDA54E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.Behaviors.Domain", "Bks.WebApi.Cqrs\Bks.Fox.Behaviors.Domain.csproj", "{75E4A05D-77D1-42EC-8BEC-2DC06CDA54E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Behaviors.ResourceRequirements.Domain", "Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Behaviors.ResourceRequirements.Domain.csproj", "{0DF38F24-464D-42E2-94F1-69B6ED79BD4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.Behaviors.ResourceRequirements.Domain", "Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Behaviors.ResourceRequirements.Domain.csproj", "{0DF38F24-464D-42E2-94F1-69B6ED79BD4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Behaviors.ResourceRequirements.Application", "Bks.Fox.Entities.Behaviors.ResourceRequirements.Application\Bks.Fox.Behaviors.ResourceRequirements.Application.csproj", "{0D4C0074-2B79-4860-9BFD-5D24845EDF7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.Behaviors.ResourceRequirements.Application", "Bks.Fox.Entities.Behaviors.ResourceRequirements.Application\Bks.Fox.Behaviors.ResourceRequirements.Application.csproj", "{0D4C0074-2B79-4860-9BFD-5D24845EDF7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Application", "Bks.Fox.Entities.Applications\Bks.Fox.Application.csproj", "{B9AC5C50-6A26-4A47-BF6C-F0EC7A9324D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.Application", "Bks.Fox.Entities.Applications\Bks.Fox.Application.csproj", "{B9AC5C50-6A26-4A47-BF6C-F0EC7A9324D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Behaviors.Application", "Bks.Fox.Entities.Behaviors.Application\Bks.Fox.Behaviors.Application.csproj", "{145F4200-32DD-4D16-B93D-B7370D4C2C73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.Behaviors.Application", "Bks.Fox.Entities.Behaviors.Application\Bks.Fox.Behaviors.Application.csproj", "{145F4200-32DD-4D16-B93D-B7370D4C2C73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.Operational.Domain", "Bks.Fox.Domain.Operational\Bks.Fox.Operational.Domain.csproj", "{AF4F1542-6A94-47CE-89D5-475C15DA6C54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.Operational.Domain", "Bks.Fox.Domain.Operational\Bks.Fox.Operational.Domain.csproj", "{AF4F1542-6A94-47CE-89D5-475C15DA6C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.TrainingDevelopment.Application", "Bks.Fox.TrainingDevelopment.Application\Bks.Fox.TrainingDevelopment.Application.csproj", "{F9B62DEF-1F3E-454B-9A98-090651D26FB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bks.Fox.TrainingDevelopment.Application", "Bks.Fox.TrainingDevelopment.Application\Bks.Fox.TrainingDevelopment.Application.csproj", "{F9B62DEF-1F3E-454B-9A98-090651D26FB4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behaviors", "Behaviors", "{6A0248AD-8720-418C-96B0-C3FA8E29E850}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{47B9B65F-FA2D-4899-B4CE-88361D82E65D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrainingDevelopment", "TrainingDevelopment", "{62762740-CBA4-4E52-81A4-069FDE508DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bks.Fox.TrainingDevelopment.Tasks.Infrastructure", "Bks.Fox.TrainingDevelopment.Tasks.Infrastructure\Bks.Fox.TrainingDevelopment.Tasks.Infrastructure.csproj", "{F84EC9AF-C870-46DA-8FF7-6B8051F3DAFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +123,10 @@ Global
 		{F9B62DEF-1F3E-454B-9A98-090651D26FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9B62DEF-1F3E-454B-9A98-090651D26FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9B62DEF-1F3E-454B-9A98-090651D26FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84EC9AF-C870-46DA-8FF7-6B8051F3DAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84EC9AF-C870-46DA-8FF7-6B8051F3DAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84EC9AF-C870-46DA-8FF7-6B8051F3DAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84EC9AF-C870-46DA-8FF7-6B8051F3DAFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,7 @@ Global
 		{6A0248AD-8720-418C-96B0-C3FA8E29E850} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 		{47B9B65F-FA2D-4899-B4CE-88361D82E65D} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
 		{62762740-CBA4-4E52-81A4-069FDE508DC6} = {FC8FAB14-9071-4DDB-A065-B02D77599FCA}
+		{F84EC9AF-C870-46DA-8FF7-6B8051F3DAFC} = {725AF6BD-ADD9-4E68-A3C5-6EBC88E64EC3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A803B16-B341-4FA0-BCF9-E8890F453720}

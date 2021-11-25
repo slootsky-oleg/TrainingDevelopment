@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Bks.Fox.TrainingDevelopment.Tasks.Domain\Bks.Fox.TrainingDevelopment.Tasks.Domain.csproj" />
     <ProjectReference Include="..\Bks.Packages.Domain\Bks.Fox.Domain.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Lookups\" />
+  </ItemGroup>
 </Project>

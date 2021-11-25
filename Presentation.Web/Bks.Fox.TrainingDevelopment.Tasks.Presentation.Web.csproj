@@ -13,5 +13,6 @@
     <ProjectReference Include="..\Bks.AspNetCore.Swashbuckle.Filters\Bks.WebApi.Swashbuckle.FeatureGate.csproj" />
     <ProjectReference Include="..\Bks.AspNetCore.WebApi\Bks.WebApi.csproj" />
     <ProjectReference Include="..\Bks.Fox.TrainingDevelopment.Tasks.Application\Bks.Fox.TrainingDevelopment.Tasks.Application.csproj" />
+    <ProjectReference Include="..\Bks.Fox.TrainingDevelopment.Tasks.Infrastructure\Bks.Fox.TrainingDevelopment.Tasks.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

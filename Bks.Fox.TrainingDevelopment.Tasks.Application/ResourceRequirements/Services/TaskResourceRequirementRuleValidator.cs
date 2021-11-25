@@ -10,25 +10,29 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Application.ResourceRequirements.Ser
     //TODO: choose a better name
     public class TaskResourceRequirementRuleValidator : IResourceRequirementRuleValidator<TrainingTask>
     {
-        private readonly ITaskTypeRepository typeRepository;
-
-        public TaskResourceRequirementRuleValidator(ITaskTypeRepository typeRepository)
+        // private readonly ITaskTypeRepository typeRepository;
+        //
+        // public TaskResourceRequirementRuleValidator(ITaskTypeRepository typeRepository)
+        // {
+        //     this.typeRepository = typeRepository;
+        // }
+        //
+        // public async Task ValidateEnabled(TypeId taskTypeId)
+        // {
+        //     var type = await  typeRepository.GetAsync(taskTypeId);
+        //     // //Get from type or somewhere
+        //     var settings = type.Settings;
+        //     var requirementSettings = settings.ResourceRequirement; 
+        //
+        //     if (!requirementSettings.IsEnabled)
+        //     {
+        //         //TODO: replace with a custom exception
+        //         throw new NotSupportedException($"Resource requirements are not supported for the Type [{taskTypeId}].");
+        //     }
+        // }
+        public async Task ValidateEnabled(TypeId typeId)
         {
-            this.typeRepository = typeRepository;
-        }
-
-        public async Task ValidateEnabled(TypeId taskTypeId)
-        {
-            var type = await  typeRepository.GetAsync(taskTypeId);
-            // //Get from type or somewhere
-            var settings = type.Settings;
-            var requirementSettings = settings.ResourceRequirement; 
-
-            if (!requirementSettings.IsEnabled)
-            {
-                //TODO: replace with a custom exception
-                throw new NotSupportedException($"Resource requirements are not supported for the Type [{taskTypeId}].");
-            }
+            throw new NotImplementedException();
         }
     }
 }
