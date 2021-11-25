@@ -1,6 +1,6 @@
-﻿using Bks.Fox.Domain.Behaviors.ResourceRequirements.Settings.Alternatives;
+﻿using Bks.Fox.Behaviors.ResourceRequirements.Domain.Settings.Alternatives;
 
-namespace Bks.Fox.Domain.Behaviors.ResourceRequirements.Settings
+namespace Bks.Fox.Behaviors.ResourceRequirements.Domain.Settings
 {
     public interface IResourceRequirementSettings : IBehaviorContainerSettings
     {

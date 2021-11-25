@@ -1,4 +1,4 @@
-﻿using Bks.Fox.Domain.Behaviors.ResourceRequirements.Settings;
+﻿using Bks.Fox.Behaviors.ResourceRequirements.Domain.Settings;
 using Bks.Fox.TrainingDevelopment.Domain.TODO.Settings;
 
 namespace Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities

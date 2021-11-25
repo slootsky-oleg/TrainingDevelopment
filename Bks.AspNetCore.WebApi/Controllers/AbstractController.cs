@@ -3,7 +3,7 @@ using Bks.Fox.Domain.Values;
 using Bks.Fox.Domain.Values.Ids;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Bks.AspNetCore.WebApi.Controllers
+namespace Bks.WebApi.Controllers
 {
     [ApiController]
     public abstract class AbstractController : ControllerBase

@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.Behaviors
+﻿namespace Bks.Fox.Behaviors.Domain
 {
     public enum AggregationStrategy
     {

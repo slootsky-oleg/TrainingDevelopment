@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Bks.Fox.Application.Entities.Commands.Create;
+using Bks.Fox.Application.Commands.Create;
 using Bks.Fox.Domain.Values;
 using Bks.Fox.Domain.Values.Ids;
 using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;

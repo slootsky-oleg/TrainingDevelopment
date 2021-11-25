@@ -1,4 +1,6 @@
-using Bks.AspNetCore.Swashbuckle.FeatureGate;
+using Bks.Fox.Behaviors.ResourceRequirements.Application.Commands.Add;
+using Bks.Fox.TrainingDevelopment.Tasks.Domain.Entities;
+using Bks.WebApi.Swashbuckle.FeatureGate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -31,6 +33,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web
                 c.DescribeAllParametersInCamelCase();
             });
 
+            services.AddScoped<AddResourceRequirementInteractor<TrainingTask>>();
             // services.AddScoped(typeof(IGetTrainingEntityInteractor<>), typeof(GetTrainingEntityInteractor<>));
             //
             //

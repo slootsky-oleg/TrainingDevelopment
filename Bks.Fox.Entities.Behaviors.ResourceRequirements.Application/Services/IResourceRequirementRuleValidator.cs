@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Application.Behaviors.ResourceRequirements.Services
+namespace Bks.Fox.Behaviors.ResourceRequirements.Application.Services
 {
     public interface IResourceRequirementRuleValidator<T>
     {

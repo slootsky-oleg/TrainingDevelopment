@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Bks.Fox.Domain.Behaviors;
-using Bks.Fox.Domain.Behaviors.ResourceRequirements;
+using Bks.Fox.Behaviors.Domain;
+using Bks.Fox.Behaviors.ResourceRequirements.Domain;
 using Bks.Fox.Domain.Entities;
 using Bks.Fox.Domain.Notifications.Changes;
 using Bks.Fox.Domain.Values;

@@ -1,4 +1,4 @@
-﻿namespace Bks.Fox.Domain.Behaviors.ResourceRequirements.Settings.Alternatives
+﻿namespace Bks.Fox.Behaviors.ResourceRequirements.Domain.Settings.Alternatives
 {
     public interface IResourceRequirementAlternativeSettings
     {

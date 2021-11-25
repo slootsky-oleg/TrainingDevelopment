@@ -1,7 +1,7 @@
-﻿using Bks.Fox.Application.Behaviors.Commands.Add;
-using Bks.Fox.Domain.Behaviors.ResourceRequirements;
+﻿using Bks.Fox.Behaviors.Application.Commands.Add;
+using Bks.Fox.Behaviors.ResourceRequirements.Domain;
 
-namespace Bks.Fox.Application.Behaviors.ResourceRequirements.Commands.Add
+namespace Bks.Fox.Behaviors.ResourceRequirements.Application.Commands.Add
 {
     public class AddResourceRequirementResponse : AddBehaviorResponse
     {

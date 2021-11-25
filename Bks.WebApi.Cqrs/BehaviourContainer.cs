@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Bks.Fox.Domain.Notifications.Changes;
 
-namespace Bks.Fox.Domain.Behaviors
+namespace Bks.Fox.Behaviors.Domain
 {
     public abstract class BehaviourContainer<T> :
         IBehaviorContainer<T>,

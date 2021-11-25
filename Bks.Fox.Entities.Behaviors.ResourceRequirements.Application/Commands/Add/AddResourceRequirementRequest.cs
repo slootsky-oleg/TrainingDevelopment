@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bks.Fox.Application.Behaviors.ResourceRequirements.Commands.Add
+namespace Bks.Fox.Behaviors.ResourceRequirements.Application.Commands.Add
 {
     public class AddResourceRequirementRequest
     {

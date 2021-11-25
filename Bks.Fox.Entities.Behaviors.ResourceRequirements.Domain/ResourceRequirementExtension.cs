@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Domain.Behaviors.ResourceRequirements
+namespace Bks.Fox.Behaviors.ResourceRequirements.Domain
 {
     public static class ResourceRequirementExtension
     {

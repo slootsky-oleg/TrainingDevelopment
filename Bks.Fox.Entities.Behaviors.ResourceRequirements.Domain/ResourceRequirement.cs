@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using Bks.Fox.Behaviors.Domain;
 using Bks.Fox.Domain.Values;
 using Bks.Fox.Domain.Values.Ids;
 
-namespace Bks.Fox.Domain.Behaviors.ResourceRequirements
+namespace Bks.Fox.Behaviors.ResourceRequirements.Domain
 {
     public class ResourceRequirement : BehaviourItem
     {
