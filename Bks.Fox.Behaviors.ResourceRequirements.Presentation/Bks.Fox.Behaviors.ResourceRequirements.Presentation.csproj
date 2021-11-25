@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bks.AspNetCore.WebApi\Bks.WebApi.csproj" />
+    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Application\Bks.Fox.Behaviors.ResourceRequirements.Application.csproj" />
+    <ProjectReference Include="..\Domain\Bks.Fox.TrainingDevelopment.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
