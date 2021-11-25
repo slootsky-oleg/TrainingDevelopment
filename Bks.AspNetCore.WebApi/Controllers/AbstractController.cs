@@ -10,9 +10,12 @@ namespace Bks.WebApi.Controllers
     {
         protected UserFootprint GetUserFootprint()
         {
-            var user = User
-                .Identity
-                .Name;
+            //TODO: remove when auth is implemented
+            var user = 0;
+
+            // var user = User
+            //     .Identity
+            //     .Name;
 
             var userId = UserId.Of(user);
             var now = DateTime.UtcNow;

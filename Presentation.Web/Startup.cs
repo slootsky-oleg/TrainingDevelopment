@@ -52,6 +52,7 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web
             services.AddScoped<GetAllResourceRequirementsInteractor<TrainingTask>>();
             services.AddScoped<GetResourceRequirementInteractor<TrainingTask>>();
             
+            services.AddScoped<ITaskRepository, TaskRepository>();
             services.AddScoped<ITrainingEntityRepository<TrainingTask>, TaskRepository>();
             services.AddScoped<ITrainingEntityLookup<TrainingTask>, TaskLookup>();
             services.AddScoped<IResourceRequirementRuleValidator<TrainingTask>, TaskResourceRequirementRuleValidator>();
