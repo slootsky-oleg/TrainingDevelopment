@@ -24,12 +24,12 @@ namespace Bks.Fox.TrainingDevelopment.Tasks.Presentation.Web.Controllers.Tasks
             return await interactor.Execute(footprint, request);
         }
 
-        [HttpGet("{taskId:guid}")]
+        [HttpGet("{id:guid}")]
         public async Task<GetTaskResponse> Get(
             [FromServices] GetTaskInteractor interactor,
-            [FromRoute] Guid taskId)
+            [FromRoute] Guid id)
         {
-            return await interactor.Execute(taskId);
+            return await interactor.Execute(id);
         }
     }
 }
