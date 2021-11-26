@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Threading.Channels;
 using Bks.Fox.Behaviors.Domain;
+using Bks.Fox.Domain.Entities;
 using Bks.Fox.Domain.Notifications.Changes;
 using Bks.Fox.Domain.Values;
 using Bks.Fox.Domain.Values.Ids;
 
 namespace Bks.Fox.Behaviors.ResourceRequirements.Domain
 {
-    public class ResourceRequirement : ValueObject, INotifyEntityChanged
+    public class ResourceRequirement : Entity, INotifyEntityChanged
     {
         public event EventHandler<ChangeEventArgs> Changed;
 
-        public Guid Id { get; private set; }
         public GuidId ResourceTypeId { get; private set; }
         public int? Quantity { get; private set; }
 
@@ -52,9 +52,5 @@ namespace Bks.Fox.Behaviors.ResourceRequirements.Domain
         //TODO: Is mandatory
 
         //TODO: Required qualifications
-        protected override IEnumerable<object> GetEqualityComponents()
-        {
-            yield return ResourceTypeId;
-        }
     }
 }

@@ -6,36 +6,50 @@ namespace Bks.Fox.Domain.Entities
 {
     public abstract class AggregateRoot : Entity
     {
+        public Name Name { get; private set; }
+        public Description Description { get; private set; }
+
         public UserId CreatedBy { get; }
         public DateTime CreatedOn { get; }
         public UserId ModifiedBy { get; private set; }
         public DateTime ModifiedOn { get; private set; }
 
         protected AggregateRoot(UserFootprint footprint, Name name)
-            : base(name)
 
         {
+            if (footprint == null) throw new ArgumentNullException(nameof(footprint));
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+
             CreatedBy = footprint.UserId;
             CreatedOn = footprint.Timestamp;
         }
 
         protected abstract void ValidateCanBeModified();
 
-        public override void SetDescription(UserFootprint footprint, Description description)
+        public void SetDescription(UserFootprint footprint, Description description)
         {
-            base.SetDescription(footprint, description);
+            ValidateCanBeModified();
+
+            Description = description;
+
             AuditModification(footprint);
         }
 
-        public override void SetExternalId(UserFootprint footprint, ExternalId externalId)
+        public void SetExternalId(UserFootprint footprint, ExternalId externalId)
         {
-            base.SetExternalId(footprint, externalId);
+            ValidateCanBeModified();
+
+            ExternalId = externalId;
+
             AuditModification(footprint);
         }
 
-        public override void SetName(UserFootprint footprint, Name name)
+        public void SetName(UserFootprint footprint, Name name)
         {
-            base.SetName(footprint, name);
+            ValidateCanBeModified();
+
+            Name = name;
+
             AuditModification(footprint);
         }
 
