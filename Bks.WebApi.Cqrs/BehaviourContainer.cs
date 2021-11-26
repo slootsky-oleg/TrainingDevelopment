@@ -8,7 +8,7 @@ namespace Bks.Fox.Behaviors.Domain
     public abstract class BehaviourContainer<T> :
         IBehaviorContainer<T>,
         INotifyEntityChanged
-        where T : IBehaviorItem
+        where T : INotifyEntityChanged
     {
         protected readonly List<T> Items;
 
