@@ -12,13 +12,33 @@ namespace Bks.Fox.Domain.Entities
         public DateTime ModifiedOn { get; private set; }
 
         protected AggregateRoot(UserFootprint footprint, Name name)
+            : base(name)
+
         {
-            Name = name;
             CreatedBy = footprint.UserId;
             CreatedOn = footprint.Timestamp;
         }
 
         protected abstract void ValidateCanBeModified();
+
+        public override void SetDescription(UserFootprint footprint, Description description)
+        {
+            base.SetDescription(footprint, description);
+            AuditModification(footprint);
+        }
+
+        public override void SetExternalId(UserFootprint footprint, ExternalId externalId)
+        {
+            base.SetExternalId(footprint, externalId);
+            AuditModification(footprint);
+        }
+
+        public override void SetsName(UserFootprint footprint, Name name)
+        {
+            base.SetName(footprint, name);
+            AuditModification(footprint);
+        }
+
 
         protected virtual void AuditModification(UserFootprint footprint)
         {

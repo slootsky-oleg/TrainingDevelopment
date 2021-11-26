@@ -1,5 +1,6 @@
 ﻿using Bks.Fox.Domain.Values;
 using Bks.Fox.Domain.Values.Ids;
+using System;
 
 namespace Bks.Fox.Domain.Entities
 {
@@ -10,22 +11,24 @@ namespace Bks.Fox.Domain.Entities
         public Name Name { get; private set; }
         public Description Description { get; private set; }
 
-        public void SetDescription(UserFootprint footprint, Description description)
+        protected Entity(Name name)
+        {
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+        }
+
+        public virtual void SetDescription(UserFootprint footprint, Description description)
         {
             Description = description;
-            AuditModification(footprint);
         }
 
-        public void SetExternalId(UserFootprint footprint, ExternalId externalId)
+        public virtual void SetExternalId(UserFootprint footprint, ExternalId externalId)
         {
             ExternalId = externalId;
-            AuditModification(footprint);
         }
 
-        public void SetName(UserFootprint footprint, Name name)
+        public virtual void SetName(UserFootprint footprint, Name name)
         {
             Name = name;
-            AuditModification(footprint);
         }
     }
 }
