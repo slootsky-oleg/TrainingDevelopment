@@ -4,13 +4,8 @@ using Bks.Fox.Domain.Values.Ids;
 
 namespace Bks.Fox.Domain.Entities
 {
-    public abstract class AggregateRoot
+    public abstract class AggregateRoot : Entity
     {
-        public GuidId Id { get; private set; }
-        public ExternalId ExternalId { get; private set; }
-        public Name Name { get; private set;}
-        public Description Description { get; private set;}
-
         public UserId CreatedBy { get; }
         public DateTime CreatedOn { get; }
         public UserId ModifiedBy { get; private set; }
@@ -21,24 +16,6 @@ namespace Bks.Fox.Domain.Entities
             Name = name;
             CreatedBy = footprint.UserId;
             CreatedOn = footprint.Timestamp;
-        }
-
-        public void SetExternalId(UserFootprint footprint, ExternalId externalId)
-        {
-            ExternalId = externalId;
-            AuditModification(footprint);
-        }
-
-        public void SetName(UserFootprint footprint, Name name)
-        {
-            Name = name;
-            AuditModification(footprint);
-        }
-
-        public void SetDescription(UserFootprint footprint, Description description)
-        {
-            Description = description;
-            AuditModification(footprint);
         }
 
         protected abstract void ValidateCanBeModified();
