@@ -33,7 +33,7 @@ namespace Bks.Fox.Domain.Entities
             AuditModification(footprint);
         }
 
-        public override void SetsName(UserFootprint footprint, Name name)
+        public override void SetName(UserFootprint footprint, Name name)
         {
             base.SetName(footprint, name);
             AuditModification(footprint);
