@@ -5,7 +5,7 @@ using Bks.Fox.Domain.Notifications.Changes;
 
 namespace Bks.Fox.Behaviors.Domain
 {
-    public abstract class BehaviourContainer<T> :
+    public class BehaviourContainer<T> :
         IBehaviorContainer<T>,
         INotifyEntityChanged
         where T : INotifyEntityChanged
@@ -17,7 +17,7 @@ namespace Bks.Fox.Behaviors.Domain
 
         public event EventHandler<ChangeEventArgs> Changed;
 
-        protected BehaviourContainer(/*IBehaviorContainerSettings settings*/)
+        public BehaviourContainer(/*IBehaviorContainerSettings settings*/)
         {
             Items = new List<T>();
             Changed = delegate { };

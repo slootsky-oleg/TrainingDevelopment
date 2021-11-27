@@ -28,9 +28,10 @@ namespace Bks.Fox.Behaviors.ResourceRequirements.Application.Queries.GetAll
         {
             var entity = await lookup.GetRequired(entityId);
 
-            return Enumerable.ToList<GetResourceRequirementResponse>(entity
-                    .ResourceRequirements
-                    .Select(r => new GetResourceRequirementResponse(r)));
+            throw new NotImplementedException();
+            // return Enumerable.ToList<GetResourceRequirementResponse>(entity
+            //         .ResourceRequirements
+            //         .Select(r => new GetResourceRequirementResponse(r)));
         }
     }
 }

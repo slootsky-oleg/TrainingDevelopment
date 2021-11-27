@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Mail;
 using System.Threading.Channels;
 using Bks.Fox.Behaviors.Domain;
+using Bks.Fox.Behaviors.ResourceRequirements.Domain.Criteria;
 using Bks.Fox.Domain.Entities;
 using Bks.Fox.Domain.Notifications.Changes;
 using Bks.Fox.Domain.Values;
@@ -11,31 +13,36 @@ namespace Bks.Fox.Behaviors.ResourceRequirements.Domain
 {
     public class ResourceRequirement : Entity, INotifyEntityChanged
     {
+        private readonly BehaviourContainer<ResourceRequirementCriterion> criteria;
+
         public event EventHandler<ChangeEventArgs> Changed;
 
-        public GuidId ResourceTypeId { get; private set; }
-        public int? Quantity { get; private set; }
+        public Name Name { get; private set; }
+        public Description Description { get; private set; }
 
-        public ResourceRequirement(GuidId resourceTypeId, int? quantity)
+        public ResourceRequirement(Name name)
         {
-            ResourceTypeId = resourceTypeId;
-            Quantity = quantity;
+            Bubble criteria change events
+            
+            Changed = delegate { };
+
+            Name = name;
+            criteria = new BehaviourContainer<ResourceRequirementCriterion>();
         }
 
-        public void SetResourceTypeId(UserFootprint footprint, GuidId id)
+        public void SetName(UserFootprint footprint, Name name)
         {
-            Notify(footprint);
-            ResourceTypeId = id;
+            Notify(footprint, () => Name = name);
         }
 
-        public void SetQuantity(UserFootprint footprint, int? quantity)
+        public void SetDescription(UserFootprint footprint, Description description)
         {
-            Notify(footprint);
-            Quantity = quantity;
+            Notify(footprint, () => Description = description);
         }
 
-        private void Notify(UserFootprint footprint)
+        private void Notify(UserFootprint footprint, Action action)
         {
+            action.Invoke();
             Changed?.Notify(this, footprint);
         }
 

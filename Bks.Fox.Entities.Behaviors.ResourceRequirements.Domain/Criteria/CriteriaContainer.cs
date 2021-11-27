@@ -2,7 +2,7 @@
 
 namespace Bks.Fox.Behaviors.ResourceRequirements.Domain
 {
-    public class ResourceRequirementContainer<T> : BehaviourContainer<T>
+    public class CriteriaContainer<T> : BehaviourContainer<T>
         where T : ResourceRequirement
     {
     }
