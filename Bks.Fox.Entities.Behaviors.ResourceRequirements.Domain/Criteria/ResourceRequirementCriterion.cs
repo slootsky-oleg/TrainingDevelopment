@@ -1,4 +1,5 @@
 ﻿using System;
+using Bks.Fox.Behaviors.Domain;
 using Bks.Fox.Domain.Entities;
 using Bks.Fox.Domain.Notifications.Changes;
 using Bks.Fox.Domain.Values;
@@ -6,10 +7,8 @@ using Bks.Fox.Domain.Values.Ids;
 
 namespace Bks.Fox.Behaviors.ResourceRequirements.Domain.Criteria
 {
-    public class ResourceRequirementCriterion: Entity, INotifyEntityChanged
+    public class ResourceRequirementCriterion: BehaviourEntity
     {
-        public event EventHandler<ChangeEventArgs> Changed;
-
         //TODO: Implement ordered collection
         public ItemPosition ItemPosition { get; private set; }
         public GuidId ResourceTypeId { get; private set; }
@@ -19,6 +18,8 @@ namespace Bks.Fox.Behaviors.ResourceRequirements.Domain.Criteria
 
         public void SetResourceTypeId(UserFootprint footprint, GuidId id)
         {
+            if (id == null) throw new ArgumentNullException(nameof(id));
+
             Notify(footprint, () => ResourceTypeId = id);
         }
         
@@ -27,10 +28,11 @@ namespace Bks.Fox.Behaviors.ResourceRequirements.Domain.Criteria
             Notify(footprint, () => Quantity = quantity);
         }
 
-        private void Notify(UserFootprint footprint, Action action)
+        public void SetPosition(UserFootprint footprint, ItemPosition position)
         {
-            action.Invoke();
-            Changed?.Notify(this, footprint);
+            if (position == null) throw new ArgumentNullException(nameof(position));
+
+            Notify(footprint, () => ItemPosition = position);
         }
     }
 }

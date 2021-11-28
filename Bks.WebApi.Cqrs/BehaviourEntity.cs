@@ -12,7 +12,9 @@ namespace Bks.Fox.Behaviors.Domain
         protected void Notify(UserFootprint footprint, Action action)
         {
             action.Invoke();
-            Changed?.Notify(this, footprint);
+
+            var @event = new ChangeEventArgs(footprint);
+            Notify(this, @event);
         }
         
         protected void Notify(object sender, ChangeEventArgs @event)
