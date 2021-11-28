@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Bks.Fox.Behaviors.ResourceRequirements.Application.Queries.Common;
 using Bks.Fox.Behaviors.ResourceRequirements.Application.Services;

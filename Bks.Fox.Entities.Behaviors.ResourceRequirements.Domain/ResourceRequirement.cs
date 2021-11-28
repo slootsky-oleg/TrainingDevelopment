@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net.Mail;
-using System.Threading.Channels;
 using Bks.Fox.Behaviors.Domain;
 using Bks.Fox.Behaviors.ResourceRequirements.Domain.Criteria;
 using Bks.Fox.Domain.Values;
