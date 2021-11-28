@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Bks.Fox.Behaviors.ResourceRequirements.Application.Queries.Common;
 using Bks.Fox.Behaviors.ResourceRequirements.Application.Services;
@@ -28,9 +27,10 @@ namespace Bks.Fox.Behaviors.ResourceRequirements.Application.Queries.GetAll
         {
             var entity = await lookup.GetRequired(entityId);
 
-            return Enumerable.ToList<GetResourceRequirementResponse>(entity
-                    .ResourceRequirements
-                    .Select(r => new GetResourceRequirementResponse(r)));
+            throw new NotImplementedException();
+            // return Enumerable.ToList<GetResourceRequirementResponse>(entity
+            //         .ResourceRequirements
+            //         .Select(r => new GetResourceRequirementResponse(r)));
         }
     }
 }

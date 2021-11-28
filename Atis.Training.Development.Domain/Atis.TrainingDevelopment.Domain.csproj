@@ -4,10 +4,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Bks.Fox.Entities.Behaviors.ResourceRequirements.Domain\Bks.Fox.Behaviors.ResourceRequirements.Domain.csproj" />
-    <ProjectReference Include="..\Bks.Packages.Domain\Bks.Fox.Domain.csproj" />
-    <ProjectReference Include="..\Bks.WebApi.Cqrs\Bks.Fox.Behaviors.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

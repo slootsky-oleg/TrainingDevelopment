@@ -1,13 +1,15 @@
-﻿using Bks.Fox.Behaviors.Application.Commands.Add;
-using Bks.Fox.Behaviors.ResourceRequirements.Domain;
+﻿using Bks.Fox.Behaviors.ResourceRequirements.Domain;
+using System;
 
 namespace Bks.Fox.Behaviors.ResourceRequirements.Application.Commands.Add
 {
-    public class AddResourceRequirementResponse : AddBehaviorResponse
+    public class AddResourceRequirementResponse
     {
+        public Guid Id { get; }
+
         public AddResourceRequirementResponse(ResourceRequirement behaviour)
-            : base(behaviour)
         {
+            Id = behaviour.Id;
         }
     }
 }

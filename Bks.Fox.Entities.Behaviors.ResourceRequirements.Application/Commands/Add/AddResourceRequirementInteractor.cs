@@ -33,38 +33,20 @@ namespace Bks.Fox.Behaviors.ResourceRequirements.Application.Commands.Add
             Guid id,
             AddResourceRequirementRequest request)
         {
-            var entity = await lookup.GetRequired(id);
-
-            //await ruleValidator.ValidateEnabled(entity.TypeId);
-
-            var typeId = GuidId.Of(request.TypeId);
-            var requirement = new ResourceRequirement(typeId, request.Quantity);
-
-            entity.AddResourceRequirement(footprint, requirement);
-            
-            //await repository.CommitAsync();
-
-
-            return new AddResourceRequirementResponse(requirement);
+            // var entity = await lookup.GetRequired(id);
+            //
+            // //await ruleValidator.ValidateEnabled(entity.TypeId);
+            //
+            // var typeId = GuidId.Of(request.TypeId);
+            // var requirement = new ResourceRequirement(typeId, request.Quantity);
+            //
+            // entity.AddResourceRequirement(footprint, requirement);
+            //
+            // //await repository.CommitAsync();
+            //
+            //
+            // return new AddResourceRequirementResponse(requirement);
+            throw new NotImplementedException();
         }
-        
-        
-        // public async Task<AddTaskResourceRequirementResponse> Update(
-        //     AuditRecord footprint,
-        //     Guid taskId,
-        //     GuidId reqId)
-        // {
-        //     var task = await repository.GetAsync(taskId)
-        //                ?? throw new Exception("Not found");
-        //
-        //     var requirement = task.ResourceRequirements.SingleOrDefault(x => x.Id == reqId);
-        //
-        //     requirement.SetQuantity(quantity: 6);
-        //     
-        //     //await repository.CommitAsync();
-        //
-        //
-        //     return new AddTaskResourceRequirementResponse(requirement);
-        // }
     }
 }

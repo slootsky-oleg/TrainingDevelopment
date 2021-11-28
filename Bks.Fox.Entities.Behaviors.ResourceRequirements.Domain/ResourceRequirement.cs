@@ -1,31 +1,36 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Bks.Fox.Behaviors.Domain;
+using Bks.Fox.Behaviors.ResourceRequirements.Domain.Criteria;
 using Bks.Fox.Domain.Values;
 using Bks.Fox.Domain.Values.Ids;
 
 namespace Bks.Fox.Behaviors.ResourceRequirements.Domain
 {
-    public class ResourceRequirement : BehaviourItem
+    public class ResourceRequirement : BehaviourEntity
     {
-        public GuidId ResourceTypeId { get; private set; }
-        public int? Quantity { get; private set; }
+        private readonly BehaviourContainer<ResourceRequirementCriterion> criteria;
 
-        public ResourceRequirement(GuidId resourceTypeId, int? quantity)
+        public Name Name { get; private set; }
+        public Description Description { get; private set; }
+        public IReadOnlyCollection<ResourceRequirementCriterion> Criteria => criteria.ToList();
+
+        public ResourceRequirement(Name name)
         {
-            ResourceTypeId = resourceTypeId;
-            Quantity = quantity;
+            Name = name;
+            criteria = new BehaviourContainer<ResourceRequirementCriterion>();
+            criteria.Changed += ChangeHandler;
         }
 
-        public void SetResourceTypeId(UserFootprint footprint, GuidId id)
+        public void SetName(UserFootprint footprint, Name name)
         {
-            NotifyChanged(footprint, () => ResourceTypeId = id);
+            Notify(footprint, () => Name = name);
         }
 
-        public void SetQuantity(UserFootprint footprint, int? quantity)
+        public void SetDescription(UserFootprint footprint, Description description)
         {
-            NotifyChanged(footprint, () => Quantity = quantity);
+            Notify(footprint, () => Description = description);
         }
-
 
         //1 laptop per 2 participants
         //public int Ratio { get; set; }
@@ -39,9 +44,5 @@ namespace Bks.Fox.Behaviors.ResourceRequirements.Domain
         //TODO: Is mandatory
 
         //TODO: Required qualifications
-        protected override IEnumerable<object> GetEqualityComponents()
-        {
-            yield return ResourceTypeId;
-        }
     }
 }

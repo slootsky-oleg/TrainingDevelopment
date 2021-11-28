@@ -25,7 +25,7 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities
         // IHasStatus
         where TResourceRequirement: ResourceRequirement
     {
-        protected readonly ResourceRequirementContainer<TResourceRequirement> ResourceRequirementContainer;
+        protected readonly BehaviourContainer<TResourceRequirement> ResourceRequirementContainer;
 
         //TODO: Is versionable?
         public TypeId TypeId { get; private set; }
@@ -45,7 +45,7 @@ namespace Bks.Fox.TrainingDevelopment.Domain.Entities
         {
             TypeId = typeId;
 
-            this.ResourceRequirementContainer = new ResourceRequirementContainer<TResourceRequirement>();
+            this.ResourceRequirementContainer = new BehaviourContainer<TResourceRequirement>();
             SubscribeToChanges(ResourceRequirementContainer);
         }
 

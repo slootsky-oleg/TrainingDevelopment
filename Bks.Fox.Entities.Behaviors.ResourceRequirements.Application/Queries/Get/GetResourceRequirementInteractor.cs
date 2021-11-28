@@ -33,7 +33,8 @@ namespace Bks.Fox.Behaviors.ResourceRequirements.Application.Queries.Get
                 .ResourceRequirements
                 .GetRequired(requirementGuidId);
 
-            return new GetResourceRequirementResponse(requirement);
+            //return new GetResourceRequirementResponse(requirement);
+            throw new NotImplementedException();
         }
     }
 }
